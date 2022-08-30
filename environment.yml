@@ -1,0 +1,22 @@
+name: polyid
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7
+  - rdkit
+  - seaborn
+  - pandas
+  - scikit-learn
+  - jupyter
+  - notebook
+  - tqdm
+  - cudatoolkit
+  - conda-build
+  - pip
+  - pip:
+    - m2p
+    - nfp
+    - networkx
+    - tensorflow
+    - tensorflow-addons
