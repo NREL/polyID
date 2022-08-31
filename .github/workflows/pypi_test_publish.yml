@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: CI_dev
+name: Publish to test PyPi
 
 on:
   push:
