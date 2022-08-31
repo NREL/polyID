@@ -51,7 +51,7 @@ jobs:
     - name: Check the package
       run: twine check dist/*
     - name: Push to TestPyPI
-        python3 -m twine upload dist/*
+      run: python3 -m twine upload dist/*
       env:
         STACKMANAGER_VERSION: ${{ github.event.release.tag_name }}
         TWINE_USERNAME: __token__
