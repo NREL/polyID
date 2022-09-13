@@ -957,7 +957,7 @@ class MultiModel:
     def generate_data_scaler(self) -> None:
         """Generate a data scaler for all of the models."""
         for model in self.models:
-            model.generate_data_scaler
+            model.generate_data_scaler()
 
     def dump_training_data(self, fname: Union[Path, str]) -> None:
         """Dumps the training data to a file.
