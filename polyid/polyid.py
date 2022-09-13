@@ -712,27 +712,42 @@ class MultiModel:
         kfold_save: str
             A file path to save the kfold split information
         """
-        # Remove any existing models
+            # Remove any existing models
         self.models = []
         # Assign a kfold-id to each column
+
+        # getting just the 0 replicate structuctures
         data_zero_rep = (
             self.df_polymer[self.df_polymer.replicate_structure == 0]
             .copy()
             .reset_index()
         )
 
+        #replacing nans for logical statements later
+        data_zero_rep.distribution = data_zero_rep.distribution.fillna(0)
+
         data = self.df_polymer.copy()
 
-        # Assign a data_id column to aid in kfolds
+        # Assign a data_id column to aid in kfolds; data id acts as a unique identifer for creating stratified splits. It should be a unique integer. 
         if "data_id" not in data:
             data["data_id"] = 0
+            #replacing nans for logical statements later
+            data.distribution = data.distribution.fillna(0)
             for i, row in data_zero_rep.iterrows():
-                f = (data["smiles_monomer"] == row.smiles_monomer) & (
-                    data["distribution"] == row.distribution
-                )
+
                 if "pm" in row:
-                    f = f & (data["pm"] == row.pm)
-                data.loc[f, "data_id"] = i
+                    idxs = data[
+                        (data["smiles_monomer"] == row.smiles_monomer) & 
+                        (data["distribution"] == row.distribution)&
+                        (data["pm"]==row.pm)
+                    ].index.tolist()
+
+                else: 
+                    idxs = data[(data["smiles_monomer"] == row.smiles_monomer) & (
+                        data["distribution"] == row.distribution
+                    )].index.tolist()
+
+                data.loc[idxs, "data_id"] = i
 
         if not load_kfold:
             if stratify:
@@ -973,7 +988,12 @@ class MultiModel:
 
 
 class RenameUnpickler(pk.Unpickler):
-    """For handling the renaming of modules previously named polyml. Backwards compatibilty for older models."""
+    """For handling the renaming of modules previously named polyml. Backwards compatibilty for older models.
+    
+    example:
+
+    params = RenameUnpickler.load_pickle(filepath_of_picklefile)
+    """
 
     def find_class(self, module, name):
         renamed_module = module
@@ -984,3 +1004,7 @@ class RenameUnpickler(pk.Unpickler):
 
     def renamed_load(file_obj):
         return RenameUnpickler(file_obj).load()
+
+    def load_pickle(filepath):
+        with open(filepath, 'rb') as file:
+            return RenameUnpickler.renamed_load(file)
