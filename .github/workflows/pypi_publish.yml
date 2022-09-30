@@ -6,12 +6,12 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Publish to test PyPi
+name: Publish to PyPi
 
 on:
   push:
     branches:
-      - "develop"
+      - "master"
     tags:
       - "*"
 
@@ -45,8 +45,8 @@ jobs:
         python -m pip install --upgrade pip setuptools wheel
         python -m pip install twine
 
-    # Upload to TestPyPI
-    - name: Build and Upload to TestPyPI
+    # Upload to PyPI
+    - name: Build and Upload to PyPI
       run: python3 setup.py sdist bdist_wheel
     - name: Check the package
       run: twine check dist/*
@@ -56,4 +56,3 @@ jobs:
         STACKMANAGER_VERSION: ${{ github.event.release.tag_name }}
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.PYPI_TEST_TOKEN }}
-        TWINE_REPOSITORY: testpypi
