@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://github.com/NREL/polyID/blob/master/images/polyID-logo_color-full.svg" alt="PolyID Logo" width="400"/>
+  <img src="https://raw.githubusercontent.com/NREL/polyID/master/images/polyID-logo_color-full.svg" alt="PolyID Logo" width="400"/>
 </p>
 
 PolyID<sup>TM</sup> provides a framework for building, training, and predicting polymer properities using graph neural networks. The codes leverages [nfp](https://pypi.org/project/nfp/), for building tensorflow-based message-passing neural networ, and [m2p](https://pypi.org/project/m2p/), for building polymer structures.  To understand and use the pipeline, the following examples have been provided:
