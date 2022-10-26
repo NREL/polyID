@@ -20,6 +20,7 @@ from typing import Dict, List, Union
 
 import nfp
 import pandas as pd
+import numpy as np
 import shortuuid
 import tensorflow as tf
 from keras.models import load_model as load_keras_model
@@ -483,7 +484,7 @@ class MultiModel:
 
     @classmethod
     def load_models(
-        cls, folder: Union[Path, str], custom_objects: Dict[Callable] = None
+        cls, folder: Union[Path, str], custom_objects: Dict[Callable] = None,nmodels: Union[int,list]=None
     ) -> MultiModel:
         """Load models to create a MultiModel Class
 
@@ -495,6 +496,10 @@ class MultiModel:
             The custom objects used to create the model. If none are provided defaults
             are nfp GlobalUpdate, EdgeUpdate, NodeUpdate, and masked_mean_absolute_error
             , by default None
+        nmodels : Union[int, list], optional
+            Used to import models 0 through nmodels if value passed is an int. If value
+            passed is a list, then those models will be imported. Should be a list of 
+            integers. by default None
 
         Returns
         -------
@@ -527,14 +532,36 @@ class MultiModel:
         # Wipe models just to be safe
         mm.models = []
 
-        for model_folder in model_folders:
-            model_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + ".h5")
-            data_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + "_data.pk")
-            mm.models.append(
-                SingleModel.load_model(
-                    model_path, data_path, custom_objects=custom_objects_dict
+        if nmodels == None:
+            for model_folder in model_folders:
+                model_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + ".h5")
+                data_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + "_data.pk")
+                mm.models.append(
+                    SingleModel.load_model(
+                        model_path, data_path, custom_objects=custom_objects_dict
+                    )
                 )
-            )
+        elif type(nmodels)==int:
+            nmodels = list(np.arange(0,nmodels))
+            for nmodel in nmodels:
+                model_path = Path(str(folder / 'model_{}/model_{}.h5'.format(nmodel,nmodel)))
+                data_path =  Path(str(folder / 'model_{}/model_{}_data.pk'.format(nmodel,nmodel)))
+                mm.models.append(
+                    SingleModel.load_model(
+                        model_path, data_path, custom_objects=custom_objects_dict
+                    )
+                )
+        elif type(nmodels)==list:
+            for nmodel in nmodels:
+                model_path = Path(str(folder / 'model_{}/model_{}.h5'.format(nmodel,nmodel)))
+                data_path =  Path(str(folder / 'model_{}/model_{}_data.pk'.format(nmodel,nmodel)))
+                mm.models.append(
+                    SingleModel.load_model(
+                        model_path, data_path, custom_objects=custom_objects_dict
+                    )
+                )
+        else:
+            print("Error: nmodel type not recognized. Must be int or list.")
 
         return mm
 
