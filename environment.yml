@@ -1,4 +1,4 @@
-name: polyID_test
+name: polyID
 channels:
   - conda-forge
   - defaults
