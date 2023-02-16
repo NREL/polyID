@@ -327,8 +327,9 @@ class SingleModel:
             data=predictions, columns=[f"{col}_pred" for col in self.prediction_columns]
         )
 
+        # append the columns with predictions to the original dataframe
         df_prediction_results.index = df_prediction.index
-        df_prediction_results = df_prediction.join(df_prediction_results, how="outer")
+        df_prediction_results = pd.concat([df_prediction, df_prediction_results], axis=1)
 
         return df_prediction_results
 
