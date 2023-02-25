@@ -11,7 +11,7 @@ dependencies:
   - pip
   - tqdm
   - cudatoolkit
-  - ipykerne
+  - ipykernel
   - pip
   - pip:
     - nfp
