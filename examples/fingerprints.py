@@ -1,6 +1,7 @@
 import pandas as pd
 from typing import Dict, List, Union
 import shortuuid
+import warnings
 
 import rdkit
 from rdkit import Chem
@@ -10,8 +11,6 @@ from rdkit.Chem import rdFingerprintGenerator
 
 from mordred import Calculator, descriptors
 
-
-import warnings
 warnings.filterwarnings('ignore')
 
 class HierarchticalFingerprints():
@@ -107,14 +106,3 @@ class HierarchticalFingerprints():
         self.df_atomic_molecular_morphological = pd.merge(self.df_atomic,self.df_molecular_morphological,left_index=True,right_index=True,how='inner')
         
         assert self.df_atomic.shape[1]+self.df_molecular_morphological.shape[1]==self.df_atomic_molecular_morphological.shape[1],"Shape mismatch."
-
-            
-    # def __fingerprint_circular(self,smiles_or_mol)->pd.Series:
-    #     smiles,mol = self._parse_smiles_or_mol(smiles_or_mol)
-    #     fp_gen = rdFingerprintGenerator.GetMorganGenerator()
-    #     return pd.Series(fp_gen.GetCountFingerprintAsNumPy(mol).astype(int),name=smiles)
-    
-    # def __fingerprint_rdkit(self,smiles_or_mol)->pd.Series:
-    #     smiles,mol = self._parse_smiles_or_mol(smiles_or_mol)
-    #     fp_gen = rdFingerprintGenerator.GetRDKitFPGenerator()
-    #     return pd.Series(fp_gen.GetCountFingerprintAsNumPy(mol).astype(int),name=smiles)
