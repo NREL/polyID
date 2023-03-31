@@ -1,0 +1,1825 @@
+﻿module,name,constructor,dimention,description
+ABCIndex,ABC,ABCIndex(),2D,atom-bond connectivity index
+,ABCGG,ABCGGIndex(),2D,Graovac-Ghorbani atom-bond connectivity index
+AcidBase,nAcid,AcidicGroupCount(),2D,acidic group count
+,nBase,BasicGroupCount(),2D,basic group count
+AdjacencyMatrix,SpAbs_A,AdjacencyMatrix('SpAbs'),2D,SpAbs of adjacency matrix
+,SpMax_A,AdjacencyMatrix('SpMax'),2D,SpMax of adjacency matrix
+,SpDiam_A,AdjacencyMatrix('SpDiam'),2D,SpDiam of adjacency matrix
+,SpAD_A,AdjacencyMatrix('SpAD'),2D,SpAD of adjacency matrix
+,SpMAD_A,AdjacencyMatrix('SpMAD'),2D,SpMAD of adjacency matrix
+,LogEE_A,AdjacencyMatrix('LogEE'),2D,LogEE of adjacency matrix
+,SM1_A,AdjacencyMatrix('SM1'),2D,SM1 of adjacency matrix
+,VE1_A,AdjacencyMatrix('VE1'),2D,VE1 of adjacency matrix
+,VE2_A,AdjacencyMatrix('VE2'),2D,VE2 of adjacency matrix
+,VE3_A,AdjacencyMatrix('VE3'),2D,VE3 of adjacency matrix
+,VR1_A,AdjacencyMatrix('VR1'),2D,VR1 of adjacency matrix
+,VR2_A,AdjacencyMatrix('VR2'),2D,VR2 of adjacency matrix
+,VR3_A,AdjacencyMatrix('VR3'),2D,VR3 of adjacency matrix
+Aromatic,nAromAtom,AromaticAtomsCount(),2D,aromatic atoms count
+,nAromBond,AromaticBondsCount(),2D,aromatic bonds count
+AtomCount,nAtom,AtomCount('Atom'),2D,number of all atoms
+,nHeavyAtom,AtomCount('HeavyAtom'),2D,number of heavy atoms
+,nSpiro,AtomCount('Spiro'),2D,number of spiro atoms
+,nBridgehead,AtomCount('Bridgehead'),2D,number of bridgehead atoms
+,nH,AtomCount('H'),2D,number of H atoms
+,nB,AtomCount('B'),2D,number of B atoms
+,nC,AtomCount('C'),2D,number of C atoms
+,nN,AtomCount('N'),2D,number of N atoms
+,nO,AtomCount('O'),2D,number of O atoms
+,nS,AtomCount('S'),2D,number of S atoms
+,nP,AtomCount('P'),2D,number of P atoms
+,nF,AtomCount('F'),2D,number of F atoms
+,nCl,AtomCount('Cl'),2D,number of Cl atoms
+,nBr,AtomCount('Br'),2D,number of Br atoms
+,nI,AtomCount('I'),2D,number of I atoms
+,nX,AtomCount('X'),2D,number of halogen atoms
+Autocorrelation,ATS0dv,"ATS(0, 'dv')",2D,moreau-broto autocorrelation of lag 0 weighted by valence electrons
+,ATS1dv,"ATS(1, 'dv')",2D,moreau-broto autocorrelation of lag 1 weighted by valence electrons
+,ATS2dv,"ATS(2, 'dv')",2D,moreau-broto autocorrelation of lag 2 weighted by valence electrons
+,ATS3dv,"ATS(3, 'dv')",2D,moreau-broto autocorrelation of lag 3 weighted by valence electrons
+,ATS4dv,"ATS(4, 'dv')",2D,moreau-broto autocorrelation of lag 4 weighted by valence electrons
+,ATS5dv,"ATS(5, 'dv')",2D,moreau-broto autocorrelation of lag 5 weighted by valence electrons
+,ATS6dv,"ATS(6, 'dv')",2D,moreau-broto autocorrelation of lag 6 weighted by valence electrons
+,ATS7dv,"ATS(7, 'dv')",2D,moreau-broto autocorrelation of lag 7 weighted by valence electrons
+,ATS8dv,"ATS(8, 'dv')",2D,moreau-broto autocorrelation of lag 8 weighted by valence electrons
+,ATS0d,"ATS(0, 'd')",2D,moreau-broto autocorrelation of lag 0 weighted by sigma electrons
+,ATS1d,"ATS(1, 'd')",2D,moreau-broto autocorrelation of lag 1 weighted by sigma electrons
+,ATS2d,"ATS(2, 'd')",2D,moreau-broto autocorrelation of lag 2 weighted by sigma electrons
+,ATS3d,"ATS(3, 'd')",2D,moreau-broto autocorrelation of lag 3 weighted by sigma electrons
+,ATS4d,"ATS(4, 'd')",2D,moreau-broto autocorrelation of lag 4 weighted by sigma electrons
+,ATS5d,"ATS(5, 'd')",2D,moreau-broto autocorrelation of lag 5 weighted by sigma electrons
+,ATS6d,"ATS(6, 'd')",2D,moreau-broto autocorrelation of lag 6 weighted by sigma electrons
+,ATS7d,"ATS(7, 'd')",2D,moreau-broto autocorrelation of lag 7 weighted by sigma electrons
+,ATS8d,"ATS(8, 'd')",2D,moreau-broto autocorrelation of lag 8 weighted by sigma electrons
+,ATS0s,"ATS(0, 's')",2D,moreau-broto autocorrelation of lag 0 weighted by intrinsic state
+,ATS1s,"ATS(1, 's')",2D,moreau-broto autocorrelation of lag 1 weighted by intrinsic state
+,ATS2s,"ATS(2, 's')",2D,moreau-broto autocorrelation of lag 2 weighted by intrinsic state
+,ATS3s,"ATS(3, 's')",2D,moreau-broto autocorrelation of lag 3 weighted by intrinsic state
+,ATS4s,"ATS(4, 's')",2D,moreau-broto autocorrelation of lag 4 weighted by intrinsic state
+,ATS5s,"ATS(5, 's')",2D,moreau-broto autocorrelation of lag 5 weighted by intrinsic state
+,ATS6s,"ATS(6, 's')",2D,moreau-broto autocorrelation of lag 6 weighted by intrinsic state
+,ATS7s,"ATS(7, 's')",2D,moreau-broto autocorrelation of lag 7 weighted by intrinsic state
+,ATS8s,"ATS(8, 's')",2D,moreau-broto autocorrelation of lag 8 weighted by intrinsic state
+,ATS0Z,"ATS(0, 'Z')",2D,moreau-broto autocorrelation of lag 0 weighted by atomic number
+,ATS1Z,"ATS(1, 'Z')",2D,moreau-broto autocorrelation of lag 1 weighted by atomic number
+,ATS2Z,"ATS(2, 'Z')",2D,moreau-broto autocorrelation of lag 2 weighted by atomic number
+,ATS3Z,"ATS(3, 'Z')",2D,moreau-broto autocorrelation of lag 3 weighted by atomic number
+,ATS4Z,"ATS(4, 'Z')",2D,moreau-broto autocorrelation of lag 4 weighted by atomic number
+,ATS5Z,"ATS(5, 'Z')",2D,moreau-broto autocorrelation of lag 5 weighted by atomic number
+,ATS6Z,"ATS(6, 'Z')",2D,moreau-broto autocorrelation of lag 6 weighted by atomic number
+,ATS7Z,"ATS(7, 'Z')",2D,moreau-broto autocorrelation of lag 7 weighted by atomic number
+,ATS8Z,"ATS(8, 'Z')",2D,moreau-broto autocorrelation of lag 8 weighted by atomic number
+,ATS0m,"ATS(0, 'm')",2D,moreau-broto autocorrelation of lag 0 weighted by mass
+,ATS1m,"ATS(1, 'm')",2D,moreau-broto autocorrelation of lag 1 weighted by mass
+,ATS2m,"ATS(2, 'm')",2D,moreau-broto autocorrelation of lag 2 weighted by mass
+,ATS3m,"ATS(3, 'm')",2D,moreau-broto autocorrelation of lag 3 weighted by mass
+,ATS4m,"ATS(4, 'm')",2D,moreau-broto autocorrelation of lag 4 weighted by mass
+,ATS5m,"ATS(5, 'm')",2D,moreau-broto autocorrelation of lag 5 weighted by mass
+,ATS6m,"ATS(6, 'm')",2D,moreau-broto autocorrelation of lag 6 weighted by mass
+,ATS7m,"ATS(7, 'm')",2D,moreau-broto autocorrelation of lag 7 weighted by mass
+,ATS8m,"ATS(8, 'm')",2D,moreau-broto autocorrelation of lag 8 weighted by mass
+,ATS0v,"ATS(0, 'v')",2D,moreau-broto autocorrelation of lag 0 weighted by vdw volume
+,ATS1v,"ATS(1, 'v')",2D,moreau-broto autocorrelation of lag 1 weighted by vdw volume
+,ATS2v,"ATS(2, 'v')",2D,moreau-broto autocorrelation of lag 2 weighted by vdw volume
+,ATS3v,"ATS(3, 'v')",2D,moreau-broto autocorrelation of lag 3 weighted by vdw volume
+,ATS4v,"ATS(4, 'v')",2D,moreau-broto autocorrelation of lag 4 weighted by vdw volume
+,ATS5v,"ATS(5, 'v')",2D,moreau-broto autocorrelation of lag 5 weighted by vdw volume
+,ATS6v,"ATS(6, 'v')",2D,moreau-broto autocorrelation of lag 6 weighted by vdw volume
+,ATS7v,"ATS(7, 'v')",2D,moreau-broto autocorrelation of lag 7 weighted by vdw volume
+,ATS8v,"ATS(8, 'v')",2D,moreau-broto autocorrelation of lag 8 weighted by vdw volume
+,ATS0se,"ATS(0, 'se')",2D,moreau-broto autocorrelation of lag 0 weighted by sanderson EN
+,ATS1se,"ATS(1, 'se')",2D,moreau-broto autocorrelation of lag 1 weighted by sanderson EN
+,ATS2se,"ATS(2, 'se')",2D,moreau-broto autocorrelation of lag 2 weighted by sanderson EN
+,ATS3se,"ATS(3, 'se')",2D,moreau-broto autocorrelation of lag 3 weighted by sanderson EN
+,ATS4se,"ATS(4, 'se')",2D,moreau-broto autocorrelation of lag 4 weighted by sanderson EN
+,ATS5se,"ATS(5, 'se')",2D,moreau-broto autocorrelation of lag 5 weighted by sanderson EN
+,ATS6se,"ATS(6, 'se')",2D,moreau-broto autocorrelation of lag 6 weighted by sanderson EN
+,ATS7se,"ATS(7, 'se')",2D,moreau-broto autocorrelation of lag 7 weighted by sanderson EN
+,ATS8se,"ATS(8, 'se')",2D,moreau-broto autocorrelation of lag 8 weighted by sanderson EN
+,ATS0pe,"ATS(0, 'pe')",2D,moreau-broto autocorrelation of lag 0 weighted by pauling EN
+,ATS1pe,"ATS(1, 'pe')",2D,moreau-broto autocorrelation of lag 1 weighted by pauling EN
+,ATS2pe,"ATS(2, 'pe')",2D,moreau-broto autocorrelation of lag 2 weighted by pauling EN
+,ATS3pe,"ATS(3, 'pe')",2D,moreau-broto autocorrelation of lag 3 weighted by pauling EN
+,ATS4pe,"ATS(4, 'pe')",2D,moreau-broto autocorrelation of lag 4 weighted by pauling EN
+,ATS5pe,"ATS(5, 'pe')",2D,moreau-broto autocorrelation of lag 5 weighted by pauling EN
+,ATS6pe,"ATS(6, 'pe')",2D,moreau-broto autocorrelation of lag 6 weighted by pauling EN
+,ATS7pe,"ATS(7, 'pe')",2D,moreau-broto autocorrelation of lag 7 weighted by pauling EN
+,ATS8pe,"ATS(8, 'pe')",2D,moreau-broto autocorrelation of lag 8 weighted by pauling EN
+,ATS0are,"ATS(0, 'are')",2D,moreau-broto autocorrelation of lag 0 weighted by allred-rocow EN
+,ATS1are,"ATS(1, 'are')",2D,moreau-broto autocorrelation of lag 1 weighted by allred-rocow EN
+,ATS2are,"ATS(2, 'are')",2D,moreau-broto autocorrelation of lag 2 weighted by allred-rocow EN
+,ATS3are,"ATS(3, 'are')",2D,moreau-broto autocorrelation of lag 3 weighted by allred-rocow EN
+,ATS4are,"ATS(4, 'are')",2D,moreau-broto autocorrelation of lag 4 weighted by allred-rocow EN
+,ATS5are,"ATS(5, 'are')",2D,moreau-broto autocorrelation of lag 5 weighted by allred-rocow EN
+,ATS6are,"ATS(6, 'are')",2D,moreau-broto autocorrelation of lag 6 weighted by allred-rocow EN
+,ATS7are,"ATS(7, 'are')",2D,moreau-broto autocorrelation of lag 7 weighted by allred-rocow EN
+,ATS8are,"ATS(8, 'are')",2D,moreau-broto autocorrelation of lag 8 weighted by allred-rocow EN
+,ATS0p,"ATS(0, 'p')",2D,moreau-broto autocorrelation of lag 0 weighted by polarizability
+,ATS1p,"ATS(1, 'p')",2D,moreau-broto autocorrelation of lag 1 weighted by polarizability
+,ATS2p,"ATS(2, 'p')",2D,moreau-broto autocorrelation of lag 2 weighted by polarizability
+,ATS3p,"ATS(3, 'p')",2D,moreau-broto autocorrelation of lag 3 weighted by polarizability
+,ATS4p,"ATS(4, 'p')",2D,moreau-broto autocorrelation of lag 4 weighted by polarizability
+,ATS5p,"ATS(5, 'p')",2D,moreau-broto autocorrelation of lag 5 weighted by polarizability
+,ATS6p,"ATS(6, 'p')",2D,moreau-broto autocorrelation of lag 6 weighted by polarizability
+,ATS7p,"ATS(7, 'p')",2D,moreau-broto autocorrelation of lag 7 weighted by polarizability
+,ATS8p,"ATS(8, 'p')",2D,moreau-broto autocorrelation of lag 8 weighted by polarizability
+,ATS0i,"ATS(0, 'i')",2D,moreau-broto autocorrelation of lag 0 weighted by ionization potential
+,ATS1i,"ATS(1, 'i')",2D,moreau-broto autocorrelation of lag 1 weighted by ionization potential
+,ATS2i,"ATS(2, 'i')",2D,moreau-broto autocorrelation of lag 2 weighted by ionization potential
+,ATS3i,"ATS(3, 'i')",2D,moreau-broto autocorrelation of lag 3 weighted by ionization potential
+,ATS4i,"ATS(4, 'i')",2D,moreau-broto autocorrelation of lag 4 weighted by ionization potential
+,ATS5i,"ATS(5, 'i')",2D,moreau-broto autocorrelation of lag 5 weighted by ionization potential
+,ATS6i,"ATS(6, 'i')",2D,moreau-broto autocorrelation of lag 6 weighted by ionization potential
+,ATS7i,"ATS(7, 'i')",2D,moreau-broto autocorrelation of lag 7 weighted by ionization potential
+,ATS8i,"ATS(8, 'i')",2D,moreau-broto autocorrelation of lag 8 weighted by ionization potential
+,AATS0dv,"AATS(0, 'dv')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by valence electrons
+,AATS1dv,"AATS(1, 'dv')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by valence electrons
+,AATS2dv,"AATS(2, 'dv')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by valence electrons
+,AATS3dv,"AATS(3, 'dv')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by valence electrons
+,AATS4dv,"AATS(4, 'dv')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by valence electrons
+,AATS5dv,"AATS(5, 'dv')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by valence electrons
+,AATS6dv,"AATS(6, 'dv')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by valence electrons
+,AATS7dv,"AATS(7, 'dv')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by valence electrons
+,AATS8dv,"AATS(8, 'dv')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by valence electrons
+,AATS0d,"AATS(0, 'd')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by sigma electrons
+,AATS1d,"AATS(1, 'd')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by sigma electrons
+,AATS2d,"AATS(2, 'd')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by sigma electrons
+,AATS3d,"AATS(3, 'd')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by sigma electrons
+,AATS4d,"AATS(4, 'd')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by sigma electrons
+,AATS5d,"AATS(5, 'd')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by sigma electrons
+,AATS6d,"AATS(6, 'd')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by sigma electrons
+,AATS7d,"AATS(7, 'd')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by sigma electrons
+,AATS8d,"AATS(8, 'd')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by sigma electrons
+,AATS0s,"AATS(0, 's')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by intrinsic state
+,AATS1s,"AATS(1, 's')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by intrinsic state
+,AATS2s,"AATS(2, 's')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by intrinsic state
+,AATS3s,"AATS(3, 's')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by intrinsic state
+,AATS4s,"AATS(4, 's')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by intrinsic state
+,AATS5s,"AATS(5, 's')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by intrinsic state
+,AATS6s,"AATS(6, 's')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by intrinsic state
+,AATS7s,"AATS(7, 's')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by intrinsic state
+,AATS8s,"AATS(8, 's')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by intrinsic state
+,AATS0Z,"AATS(0, 'Z')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by atomic number
+,AATS1Z,"AATS(1, 'Z')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by atomic number
+,AATS2Z,"AATS(2, 'Z')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by atomic number
+,AATS3Z,"AATS(3, 'Z')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by atomic number
+,AATS4Z,"AATS(4, 'Z')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by atomic number
+,AATS5Z,"AATS(5, 'Z')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by atomic number
+,AATS6Z,"AATS(6, 'Z')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by atomic number
+,AATS7Z,"AATS(7, 'Z')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by atomic number
+,AATS8Z,"AATS(8, 'Z')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by atomic number
+,AATS0m,"AATS(0, 'm')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by mass
+,AATS1m,"AATS(1, 'm')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by mass
+,AATS2m,"AATS(2, 'm')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by mass
+,AATS3m,"AATS(3, 'm')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by mass
+,AATS4m,"AATS(4, 'm')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by mass
+,AATS5m,"AATS(5, 'm')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by mass
+,AATS6m,"AATS(6, 'm')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by mass
+,AATS7m,"AATS(7, 'm')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by mass
+,AATS8m,"AATS(8, 'm')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by mass
+,AATS0v,"AATS(0, 'v')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by vdw volume
+,AATS1v,"AATS(1, 'v')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by vdw volume
+,AATS2v,"AATS(2, 'v')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by vdw volume
+,AATS3v,"AATS(3, 'v')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by vdw volume
+,AATS4v,"AATS(4, 'v')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by vdw volume
+,AATS5v,"AATS(5, 'v')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by vdw volume
+,AATS6v,"AATS(6, 'v')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by vdw volume
+,AATS7v,"AATS(7, 'v')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by vdw volume
+,AATS8v,"AATS(8, 'v')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by vdw volume
+,AATS0se,"AATS(0, 'se')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by sanderson EN
+,AATS1se,"AATS(1, 'se')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by sanderson EN
+,AATS2se,"AATS(2, 'se')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by sanderson EN
+,AATS3se,"AATS(3, 'se')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by sanderson EN
+,AATS4se,"AATS(4, 'se')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by sanderson EN
+,AATS5se,"AATS(5, 'se')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by sanderson EN
+,AATS6se,"AATS(6, 'se')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by sanderson EN
+,AATS7se,"AATS(7, 'se')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by sanderson EN
+,AATS8se,"AATS(8, 'se')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by sanderson EN
+,AATS0pe,"AATS(0, 'pe')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by pauling EN
+,AATS1pe,"AATS(1, 'pe')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by pauling EN
+,AATS2pe,"AATS(2, 'pe')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by pauling EN
+,AATS3pe,"AATS(3, 'pe')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by pauling EN
+,AATS4pe,"AATS(4, 'pe')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by pauling EN
+,AATS5pe,"AATS(5, 'pe')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by pauling EN
+,AATS6pe,"AATS(6, 'pe')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by pauling EN
+,AATS7pe,"AATS(7, 'pe')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by pauling EN
+,AATS8pe,"AATS(8, 'pe')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by pauling EN
+,AATS0are,"AATS(0, 'are')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by allred-rocow EN
+,AATS1are,"AATS(1, 'are')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by allred-rocow EN
+,AATS2are,"AATS(2, 'are')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by allred-rocow EN
+,AATS3are,"AATS(3, 'are')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by allred-rocow EN
+,AATS4are,"AATS(4, 'are')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by allred-rocow EN
+,AATS5are,"AATS(5, 'are')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by allred-rocow EN
+,AATS6are,"AATS(6, 'are')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by allred-rocow EN
+,AATS7are,"AATS(7, 'are')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by allred-rocow EN
+,AATS8are,"AATS(8, 'are')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by allred-rocow EN
+,AATS0p,"AATS(0, 'p')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by polarizability
+,AATS1p,"AATS(1, 'p')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by polarizability
+,AATS2p,"AATS(2, 'p')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by polarizability
+,AATS3p,"AATS(3, 'p')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by polarizability
+,AATS4p,"AATS(4, 'p')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by polarizability
+,AATS5p,"AATS(5, 'p')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by polarizability
+,AATS6p,"AATS(6, 'p')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by polarizability
+,AATS7p,"AATS(7, 'p')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by polarizability
+,AATS8p,"AATS(8, 'p')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by polarizability
+,AATS0i,"AATS(0, 'i')",2D,averaged moreau-broto autocorrelation of lag 0 weighted by ionization potential
+,AATS1i,"AATS(1, 'i')",2D,averaged moreau-broto autocorrelation of lag 1 weighted by ionization potential
+,AATS2i,"AATS(2, 'i')",2D,averaged moreau-broto autocorrelation of lag 2 weighted by ionization potential
+,AATS3i,"AATS(3, 'i')",2D,averaged moreau-broto autocorrelation of lag 3 weighted by ionization potential
+,AATS4i,"AATS(4, 'i')",2D,averaged moreau-broto autocorrelation of lag 4 weighted by ionization potential
+,AATS5i,"AATS(5, 'i')",2D,averaged moreau-broto autocorrelation of lag 5 weighted by ionization potential
+,AATS6i,"AATS(6, 'i')",2D,averaged moreau-broto autocorrelation of lag 6 weighted by ionization potential
+,AATS7i,"AATS(7, 'i')",2D,averaged moreau-broto autocorrelation of lag 7 weighted by ionization potential
+,AATS8i,"AATS(8, 'i')",2D,averaged moreau-broto autocorrelation of lag 8 weighted by ionization potential
+,ATSC0c,"ATSC(0, 'c')",2D,centered moreau-broto autocorrelation of lag 0 weighted by gasteiger charge
+,ATSC1c,"ATSC(1, 'c')",2D,centered moreau-broto autocorrelation of lag 1 weighted by gasteiger charge
+,ATSC2c,"ATSC(2, 'c')",2D,centered moreau-broto autocorrelation of lag 2 weighted by gasteiger charge
+,ATSC3c,"ATSC(3, 'c')",2D,centered moreau-broto autocorrelation of lag 3 weighted by gasteiger charge
+,ATSC4c,"ATSC(4, 'c')",2D,centered moreau-broto autocorrelation of lag 4 weighted by gasteiger charge
+,ATSC5c,"ATSC(5, 'c')",2D,centered moreau-broto autocorrelation of lag 5 weighted by gasteiger charge
+,ATSC6c,"ATSC(6, 'c')",2D,centered moreau-broto autocorrelation of lag 6 weighted by gasteiger charge
+,ATSC7c,"ATSC(7, 'c')",2D,centered moreau-broto autocorrelation of lag 7 weighted by gasteiger charge
+,ATSC8c,"ATSC(8, 'c')",2D,centered moreau-broto autocorrelation of lag 8 weighted by gasteiger charge
+,ATSC0dv,"ATSC(0, 'dv')",2D,centered moreau-broto autocorrelation of lag 0 weighted by valence electrons
+,ATSC1dv,"ATSC(1, 'dv')",2D,centered moreau-broto autocorrelation of lag 1 weighted by valence electrons
+,ATSC2dv,"ATSC(2, 'dv')",2D,centered moreau-broto autocorrelation of lag 2 weighted by valence electrons
+,ATSC3dv,"ATSC(3, 'dv')",2D,centered moreau-broto autocorrelation of lag 3 weighted by valence electrons
+,ATSC4dv,"ATSC(4, 'dv')",2D,centered moreau-broto autocorrelation of lag 4 weighted by valence electrons
+,ATSC5dv,"ATSC(5, 'dv')",2D,centered moreau-broto autocorrelation of lag 5 weighted by valence electrons
+,ATSC6dv,"ATSC(6, 'dv')",2D,centered moreau-broto autocorrelation of lag 6 weighted by valence electrons
+,ATSC7dv,"ATSC(7, 'dv')",2D,centered moreau-broto autocorrelation of lag 7 weighted by valence electrons
+,ATSC8dv,"ATSC(8, 'dv')",2D,centered moreau-broto autocorrelation of lag 8 weighted by valence electrons
+,ATSC0d,"ATSC(0, 'd')",2D,centered moreau-broto autocorrelation of lag 0 weighted by sigma electrons
+,ATSC1d,"ATSC(1, 'd')",2D,centered moreau-broto autocorrelation of lag 1 weighted by sigma electrons
+,ATSC2d,"ATSC(2, 'd')",2D,centered moreau-broto autocorrelation of lag 2 weighted by sigma electrons
+,ATSC3d,"ATSC(3, 'd')",2D,centered moreau-broto autocorrelation of lag 3 weighted by sigma electrons
+,ATSC4d,"ATSC(4, 'd')",2D,centered moreau-broto autocorrelation of lag 4 weighted by sigma electrons
+,ATSC5d,"ATSC(5, 'd')",2D,centered moreau-broto autocorrelation of lag 5 weighted by sigma electrons
+,ATSC6d,"ATSC(6, 'd')",2D,centered moreau-broto autocorrelation of lag 6 weighted by sigma electrons
+,ATSC7d,"ATSC(7, 'd')",2D,centered moreau-broto autocorrelation of lag 7 weighted by sigma electrons
+,ATSC8d,"ATSC(8, 'd')",2D,centered moreau-broto autocorrelation of lag 8 weighted by sigma electrons
+,ATSC0s,"ATSC(0, 's')",2D,centered moreau-broto autocorrelation of lag 0 weighted by intrinsic state
+,ATSC1s,"ATSC(1, 's')",2D,centered moreau-broto autocorrelation of lag 1 weighted by intrinsic state
+,ATSC2s,"ATSC(2, 's')",2D,centered moreau-broto autocorrelation of lag 2 weighted by intrinsic state
+,ATSC3s,"ATSC(3, 's')",2D,centered moreau-broto autocorrelation of lag 3 weighted by intrinsic state
+,ATSC4s,"ATSC(4, 's')",2D,centered moreau-broto autocorrelation of lag 4 weighted by intrinsic state
+,ATSC5s,"ATSC(5, 's')",2D,centered moreau-broto autocorrelation of lag 5 weighted by intrinsic state
+,ATSC6s,"ATSC(6, 's')",2D,centered moreau-broto autocorrelation of lag 6 weighted by intrinsic state
+,ATSC7s,"ATSC(7, 's')",2D,centered moreau-broto autocorrelation of lag 7 weighted by intrinsic state
+,ATSC8s,"ATSC(8, 's')",2D,centered moreau-broto autocorrelation of lag 8 weighted by intrinsic state
+,ATSC0Z,"ATSC(0, 'Z')",2D,centered moreau-broto autocorrelation of lag 0 weighted by atomic number
+,ATSC1Z,"ATSC(1, 'Z')",2D,centered moreau-broto autocorrelation of lag 1 weighted by atomic number
+,ATSC2Z,"ATSC(2, 'Z')",2D,centered moreau-broto autocorrelation of lag 2 weighted by atomic number
+,ATSC3Z,"ATSC(3, 'Z')",2D,centered moreau-broto autocorrelation of lag 3 weighted by atomic number
+,ATSC4Z,"ATSC(4, 'Z')",2D,centered moreau-broto autocorrelation of lag 4 weighted by atomic number
+,ATSC5Z,"ATSC(5, 'Z')",2D,centered moreau-broto autocorrelation of lag 5 weighted by atomic number
+,ATSC6Z,"ATSC(6, 'Z')",2D,centered moreau-broto autocorrelation of lag 6 weighted by atomic number
+,ATSC7Z,"ATSC(7, 'Z')",2D,centered moreau-broto autocorrelation of lag 7 weighted by atomic number
+,ATSC8Z,"ATSC(8, 'Z')",2D,centered moreau-broto autocorrelation of lag 8 weighted by atomic number
+,ATSC0m,"ATSC(0, 'm')",2D,centered moreau-broto autocorrelation of lag 0 weighted by mass
+,ATSC1m,"ATSC(1, 'm')",2D,centered moreau-broto autocorrelation of lag 1 weighted by mass
+,ATSC2m,"ATSC(2, 'm')",2D,centered moreau-broto autocorrelation of lag 2 weighted by mass
+,ATSC3m,"ATSC(3, 'm')",2D,centered moreau-broto autocorrelation of lag 3 weighted by mass
+,ATSC4m,"ATSC(4, 'm')",2D,centered moreau-broto autocorrelation of lag 4 weighted by mass
+,ATSC5m,"ATSC(5, 'm')",2D,centered moreau-broto autocorrelation of lag 5 weighted by mass
+,ATSC6m,"ATSC(6, 'm')",2D,centered moreau-broto autocorrelation of lag 6 weighted by mass
+,ATSC7m,"ATSC(7, 'm')",2D,centered moreau-broto autocorrelation of lag 7 weighted by mass
+,ATSC8m,"ATSC(8, 'm')",2D,centered moreau-broto autocorrelation of lag 8 weighted by mass
+,ATSC0v,"ATSC(0, 'v')",2D,centered moreau-broto autocorrelation of lag 0 weighted by vdw volume
+,ATSC1v,"ATSC(1, 'v')",2D,centered moreau-broto autocorrelation of lag 1 weighted by vdw volume
+,ATSC2v,"ATSC(2, 'v')",2D,centered moreau-broto autocorrelation of lag 2 weighted by vdw volume
+,ATSC3v,"ATSC(3, 'v')",2D,centered moreau-broto autocorrelation of lag 3 weighted by vdw volume
+,ATSC4v,"ATSC(4, 'v')",2D,centered moreau-broto autocorrelation of lag 4 weighted by vdw volume
+,ATSC5v,"ATSC(5, 'v')",2D,centered moreau-broto autocorrelation of lag 5 weighted by vdw volume
+,ATSC6v,"ATSC(6, 'v')",2D,centered moreau-broto autocorrelation of lag 6 weighted by vdw volume
+,ATSC7v,"ATSC(7, 'v')",2D,centered moreau-broto autocorrelation of lag 7 weighted by vdw volume
+,ATSC8v,"ATSC(8, 'v')",2D,centered moreau-broto autocorrelation of lag 8 weighted by vdw volume
+,ATSC0se,"ATSC(0, 'se')",2D,centered moreau-broto autocorrelation of lag 0 weighted by sanderson EN
+,ATSC1se,"ATSC(1, 'se')",2D,centered moreau-broto autocorrelation of lag 1 weighted by sanderson EN
+,ATSC2se,"ATSC(2, 'se')",2D,centered moreau-broto autocorrelation of lag 2 weighted by sanderson EN
+,ATSC3se,"ATSC(3, 'se')",2D,centered moreau-broto autocorrelation of lag 3 weighted by sanderson EN
+,ATSC4se,"ATSC(4, 'se')",2D,centered moreau-broto autocorrelation of lag 4 weighted by sanderson EN
+,ATSC5se,"ATSC(5, 'se')",2D,centered moreau-broto autocorrelation of lag 5 weighted by sanderson EN
+,ATSC6se,"ATSC(6, 'se')",2D,centered moreau-broto autocorrelation of lag 6 weighted by sanderson EN
+,ATSC7se,"ATSC(7, 'se')",2D,centered moreau-broto autocorrelation of lag 7 weighted by sanderson EN
+,ATSC8se,"ATSC(8, 'se')",2D,centered moreau-broto autocorrelation of lag 8 weighted by sanderson EN
+,ATSC0pe,"ATSC(0, 'pe')",2D,centered moreau-broto autocorrelation of lag 0 weighted by pauling EN
+,ATSC1pe,"ATSC(1, 'pe')",2D,centered moreau-broto autocorrelation of lag 1 weighted by pauling EN
+,ATSC2pe,"ATSC(2, 'pe')",2D,centered moreau-broto autocorrelation of lag 2 weighted by pauling EN
+,ATSC3pe,"ATSC(3, 'pe')",2D,centered moreau-broto autocorrelation of lag 3 weighted by pauling EN
+,ATSC4pe,"ATSC(4, 'pe')",2D,centered moreau-broto autocorrelation of lag 4 weighted by pauling EN
+,ATSC5pe,"ATSC(5, 'pe')",2D,centered moreau-broto autocorrelation of lag 5 weighted by pauling EN
+,ATSC6pe,"ATSC(6, 'pe')",2D,centered moreau-broto autocorrelation of lag 6 weighted by pauling EN
+,ATSC7pe,"ATSC(7, 'pe')",2D,centered moreau-broto autocorrelation of lag 7 weighted by pauling EN
+,ATSC8pe,"ATSC(8, 'pe')",2D,centered moreau-broto autocorrelation of lag 8 weighted by pauling EN
+,ATSC0are,"ATSC(0, 'are')",2D,centered moreau-broto autocorrelation of lag 0 weighted by allred-rocow EN
+,ATSC1are,"ATSC(1, 'are')",2D,centered moreau-broto autocorrelation of lag 1 weighted by allred-rocow EN
+,ATSC2are,"ATSC(2, 'are')",2D,centered moreau-broto autocorrelation of lag 2 weighted by allred-rocow EN
+,ATSC3are,"ATSC(3, 'are')",2D,centered moreau-broto autocorrelation of lag 3 weighted by allred-rocow EN
+,ATSC4are,"ATSC(4, 'are')",2D,centered moreau-broto autocorrelation of lag 4 weighted by allred-rocow EN
+,ATSC5are,"ATSC(5, 'are')",2D,centered moreau-broto autocorrelation of lag 5 weighted by allred-rocow EN
+,ATSC6are,"ATSC(6, 'are')",2D,centered moreau-broto autocorrelation of lag 6 weighted by allred-rocow EN
+,ATSC7are,"ATSC(7, 'are')",2D,centered moreau-broto autocorrelation of lag 7 weighted by allred-rocow EN
+,ATSC8are,"ATSC(8, 'are')",2D,centered moreau-broto autocorrelation of lag 8 weighted by allred-rocow EN
+,ATSC0p,"ATSC(0, 'p')",2D,centered moreau-broto autocorrelation of lag 0 weighted by polarizability
+,ATSC1p,"ATSC(1, 'p')",2D,centered moreau-broto autocorrelation of lag 1 weighted by polarizability
+,ATSC2p,"ATSC(2, 'p')",2D,centered moreau-broto autocorrelation of lag 2 weighted by polarizability
+,ATSC3p,"ATSC(3, 'p')",2D,centered moreau-broto autocorrelation of lag 3 weighted by polarizability
+,ATSC4p,"ATSC(4, 'p')",2D,centered moreau-broto autocorrelation of lag 4 weighted by polarizability
+,ATSC5p,"ATSC(5, 'p')",2D,centered moreau-broto autocorrelation of lag 5 weighted by polarizability
+,ATSC6p,"ATSC(6, 'p')",2D,centered moreau-broto autocorrelation of lag 6 weighted by polarizability
+,ATSC7p,"ATSC(7, 'p')",2D,centered moreau-broto autocorrelation of lag 7 weighted by polarizability
+,ATSC8p,"ATSC(8, 'p')",2D,centered moreau-broto autocorrelation of lag 8 weighted by polarizability
+,ATSC0i,"ATSC(0, 'i')",2D,centered moreau-broto autocorrelation of lag 0 weighted by ionization potential
+,ATSC1i,"ATSC(1, 'i')",2D,centered moreau-broto autocorrelation of lag 1 weighted by ionization potential
+,ATSC2i,"ATSC(2, 'i')",2D,centered moreau-broto autocorrelation of lag 2 weighted by ionization potential
+,ATSC3i,"ATSC(3, 'i')",2D,centered moreau-broto autocorrelation of lag 3 weighted by ionization potential
+,ATSC4i,"ATSC(4, 'i')",2D,centered moreau-broto autocorrelation of lag 4 weighted by ionization potential
+,ATSC5i,"ATSC(5, 'i')",2D,centered moreau-broto autocorrelation of lag 5 weighted by ionization potential
+,ATSC6i,"ATSC(6, 'i')",2D,centered moreau-broto autocorrelation of lag 6 weighted by ionization potential
+,ATSC7i,"ATSC(7, 'i')",2D,centered moreau-broto autocorrelation of lag 7 weighted by ionization potential
+,ATSC8i,"ATSC(8, 'i')",2D,centered moreau-broto autocorrelation of lag 8 weighted by ionization potential
+,AATSC0c,"AATSC(0, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by gasteiger charge
+,AATSC1c,"AATSC(1, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by gasteiger charge
+,AATSC2c,"AATSC(2, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by gasteiger charge
+,AATSC3c,"AATSC(3, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by gasteiger charge
+,AATSC4c,"AATSC(4, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by gasteiger charge
+,AATSC5c,"AATSC(5, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by gasteiger charge
+,AATSC6c,"AATSC(6, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by gasteiger charge
+,AATSC7c,"AATSC(7, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by gasteiger charge
+,AATSC8c,"AATSC(8, 'c')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by gasteiger charge
+,AATSC0dv,"AATSC(0, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by valence electrons
+,AATSC1dv,"AATSC(1, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by valence electrons
+,AATSC2dv,"AATSC(2, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by valence electrons
+,AATSC3dv,"AATSC(3, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by valence electrons
+,AATSC4dv,"AATSC(4, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by valence electrons
+,AATSC5dv,"AATSC(5, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by valence electrons
+,AATSC6dv,"AATSC(6, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by valence electrons
+,AATSC7dv,"AATSC(7, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by valence electrons
+,AATSC8dv,"AATSC(8, 'dv')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by valence electrons
+,AATSC0d,"AATSC(0, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by sigma electrons
+,AATSC1d,"AATSC(1, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by sigma electrons
+,AATSC2d,"AATSC(2, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by sigma electrons
+,AATSC3d,"AATSC(3, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by sigma electrons
+,AATSC4d,"AATSC(4, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by sigma electrons
+,AATSC5d,"AATSC(5, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by sigma electrons
+,AATSC6d,"AATSC(6, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by sigma electrons
+,AATSC7d,"AATSC(7, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by sigma electrons
+,AATSC8d,"AATSC(8, 'd')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by sigma electrons
+,AATSC0s,"AATSC(0, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by intrinsic state
+,AATSC1s,"AATSC(1, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by intrinsic state
+,AATSC2s,"AATSC(2, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by intrinsic state
+,AATSC3s,"AATSC(3, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by intrinsic state
+,AATSC4s,"AATSC(4, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by intrinsic state
+,AATSC5s,"AATSC(5, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by intrinsic state
+,AATSC6s,"AATSC(6, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by intrinsic state
+,AATSC7s,"AATSC(7, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by intrinsic state
+,AATSC8s,"AATSC(8, 's')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by intrinsic state
+,AATSC0Z,"AATSC(0, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by atomic number
+,AATSC1Z,"AATSC(1, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by atomic number
+,AATSC2Z,"AATSC(2, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by atomic number
+,AATSC3Z,"AATSC(3, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by atomic number
+,AATSC4Z,"AATSC(4, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by atomic number
+,AATSC5Z,"AATSC(5, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by atomic number
+,AATSC6Z,"AATSC(6, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by atomic number
+,AATSC7Z,"AATSC(7, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by atomic number
+,AATSC8Z,"AATSC(8, 'Z')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by atomic number
+,AATSC0m,"AATSC(0, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by mass
+,AATSC1m,"AATSC(1, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by mass
+,AATSC2m,"AATSC(2, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by mass
+,AATSC3m,"AATSC(3, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by mass
+,AATSC4m,"AATSC(4, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by mass
+,AATSC5m,"AATSC(5, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by mass
+,AATSC6m,"AATSC(6, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by mass
+,AATSC7m,"AATSC(7, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by mass
+,AATSC8m,"AATSC(8, 'm')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by mass
+,AATSC0v,"AATSC(0, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by vdw volume
+,AATSC1v,"AATSC(1, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by vdw volume
+,AATSC2v,"AATSC(2, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by vdw volume
+,AATSC3v,"AATSC(3, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by vdw volume
+,AATSC4v,"AATSC(4, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by vdw volume
+,AATSC5v,"AATSC(5, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by vdw volume
+,AATSC6v,"AATSC(6, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by vdw volume
+,AATSC7v,"AATSC(7, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by vdw volume
+,AATSC8v,"AATSC(8, 'v')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by vdw volume
+,AATSC0se,"AATSC(0, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by sanderson EN
+,AATSC1se,"AATSC(1, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by sanderson EN
+,AATSC2se,"AATSC(2, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by sanderson EN
+,AATSC3se,"AATSC(3, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by sanderson EN
+,AATSC4se,"AATSC(4, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by sanderson EN
+,AATSC5se,"AATSC(5, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by sanderson EN
+,AATSC6se,"AATSC(6, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by sanderson EN
+,AATSC7se,"AATSC(7, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by sanderson EN
+,AATSC8se,"AATSC(8, 'se')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by sanderson EN
+,AATSC0pe,"AATSC(0, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by pauling EN
+,AATSC1pe,"AATSC(1, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by pauling EN
+,AATSC2pe,"AATSC(2, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by pauling EN
+,AATSC3pe,"AATSC(3, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by pauling EN
+,AATSC4pe,"AATSC(4, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by pauling EN
+,AATSC5pe,"AATSC(5, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by pauling EN
+,AATSC6pe,"AATSC(6, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by pauling EN
+,AATSC7pe,"AATSC(7, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by pauling EN
+,AATSC8pe,"AATSC(8, 'pe')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by pauling EN
+,AATSC0are,"AATSC(0, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by allred-rocow EN
+,AATSC1are,"AATSC(1, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by allred-rocow EN
+,AATSC2are,"AATSC(2, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by allred-rocow EN
+,AATSC3are,"AATSC(3, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by allred-rocow EN
+,AATSC4are,"AATSC(4, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by allred-rocow EN
+,AATSC5are,"AATSC(5, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by allred-rocow EN
+,AATSC6are,"AATSC(6, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by allred-rocow EN
+,AATSC7are,"AATSC(7, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by allred-rocow EN
+,AATSC8are,"AATSC(8, 'are')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by allred-rocow EN
+,AATSC0p,"AATSC(0, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by polarizability
+,AATSC1p,"AATSC(1, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by polarizability
+,AATSC2p,"AATSC(2, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by polarizability
+,AATSC3p,"AATSC(3, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by polarizability
+,AATSC4p,"AATSC(4, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by polarizability
+,AATSC5p,"AATSC(5, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by polarizability
+,AATSC6p,"AATSC(6, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by polarizability
+,AATSC7p,"AATSC(7, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by polarizability
+,AATSC8p,"AATSC(8, 'p')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by polarizability
+,AATSC0i,"AATSC(0, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 0 weighted by ionization potential
+,AATSC1i,"AATSC(1, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 1 weighted by ionization potential
+,AATSC2i,"AATSC(2, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 2 weighted by ionization potential
+,AATSC3i,"AATSC(3, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 3 weighted by ionization potential
+,AATSC4i,"AATSC(4, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 4 weighted by ionization potential
+,AATSC5i,"AATSC(5, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 5 weighted by ionization potential
+,AATSC6i,"AATSC(6, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 6 weighted by ionization potential
+,AATSC7i,"AATSC(7, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 7 weighted by ionization potential
+,AATSC8i,"AATSC(8, 'i')",2D,averaged and centered moreau-broto autocorrelation of lag 8 weighted by ionization potential
+,MATS1c,"MATS(1, 'c')",2D,moran coefficient of lag 1 weighted by gasteiger charge
+,MATS2c,"MATS(2, 'c')",2D,moran coefficient of lag 2 weighted by gasteiger charge
+,MATS3c,"MATS(3, 'c')",2D,moran coefficient of lag 3 weighted by gasteiger charge
+,MATS4c,"MATS(4, 'c')",2D,moran coefficient of lag 4 weighted by gasteiger charge
+,MATS5c,"MATS(5, 'c')",2D,moran coefficient of lag 5 weighted by gasteiger charge
+,MATS6c,"MATS(6, 'c')",2D,moran coefficient of lag 6 weighted by gasteiger charge
+,MATS7c,"MATS(7, 'c')",2D,moran coefficient of lag 7 weighted by gasteiger charge
+,MATS8c,"MATS(8, 'c')",2D,moran coefficient of lag 8 weighted by gasteiger charge
+,MATS1dv,"MATS(1, 'dv')",2D,moran coefficient of lag 1 weighted by valence electrons
+,MATS2dv,"MATS(2, 'dv')",2D,moran coefficient of lag 2 weighted by valence electrons
+,MATS3dv,"MATS(3, 'dv')",2D,moran coefficient of lag 3 weighted by valence electrons
+,MATS4dv,"MATS(4, 'dv')",2D,moran coefficient of lag 4 weighted by valence electrons
+,MATS5dv,"MATS(5, 'dv')",2D,moran coefficient of lag 5 weighted by valence electrons
+,MATS6dv,"MATS(6, 'dv')",2D,moran coefficient of lag 6 weighted by valence electrons
+,MATS7dv,"MATS(7, 'dv')",2D,moran coefficient of lag 7 weighted by valence electrons
+,MATS8dv,"MATS(8, 'dv')",2D,moran coefficient of lag 8 weighted by valence electrons
+,MATS1d,"MATS(1, 'd')",2D,moran coefficient of lag 1 weighted by sigma electrons
+,MATS2d,"MATS(2, 'd')",2D,moran coefficient of lag 2 weighted by sigma electrons
+,MATS3d,"MATS(3, 'd')",2D,moran coefficient of lag 3 weighted by sigma electrons
+,MATS4d,"MATS(4, 'd')",2D,moran coefficient of lag 4 weighted by sigma electrons
+,MATS5d,"MATS(5, 'd')",2D,moran coefficient of lag 5 weighted by sigma electrons
+,MATS6d,"MATS(6, 'd')",2D,moran coefficient of lag 6 weighted by sigma electrons
+,MATS7d,"MATS(7, 'd')",2D,moran coefficient of lag 7 weighted by sigma electrons
+,MATS8d,"MATS(8, 'd')",2D,moran coefficient of lag 8 weighted by sigma electrons
+,MATS1s,"MATS(1, 's')",2D,moran coefficient of lag 1 weighted by intrinsic state
+,MATS2s,"MATS(2, 's')",2D,moran coefficient of lag 2 weighted by intrinsic state
+,MATS3s,"MATS(3, 's')",2D,moran coefficient of lag 3 weighted by intrinsic state
+,MATS4s,"MATS(4, 's')",2D,moran coefficient of lag 4 weighted by intrinsic state
+,MATS5s,"MATS(5, 's')",2D,moran coefficient of lag 5 weighted by intrinsic state
+,MATS6s,"MATS(6, 's')",2D,moran coefficient of lag 6 weighted by intrinsic state
+,MATS7s,"MATS(7, 's')",2D,moran coefficient of lag 7 weighted by intrinsic state
+,MATS8s,"MATS(8, 's')",2D,moran coefficient of lag 8 weighted by intrinsic state
+,MATS1Z,"MATS(1, 'Z')",2D,moran coefficient of lag 1 weighted by atomic number
+,MATS2Z,"MATS(2, 'Z')",2D,moran coefficient of lag 2 weighted by atomic number
+,MATS3Z,"MATS(3, 'Z')",2D,moran coefficient of lag 3 weighted by atomic number
+,MATS4Z,"MATS(4, 'Z')",2D,moran coefficient of lag 4 weighted by atomic number
+,MATS5Z,"MATS(5, 'Z')",2D,moran coefficient of lag 5 weighted by atomic number
+,MATS6Z,"MATS(6, 'Z')",2D,moran coefficient of lag 6 weighted by atomic number
+,MATS7Z,"MATS(7, 'Z')",2D,moran coefficient of lag 7 weighted by atomic number
+,MATS8Z,"MATS(8, 'Z')",2D,moran coefficient of lag 8 weighted by atomic number
+,MATS1m,"MATS(1, 'm')",2D,moran coefficient of lag 1 weighted by mass
+,MATS2m,"MATS(2, 'm')",2D,moran coefficient of lag 2 weighted by mass
+,MATS3m,"MATS(3, 'm')",2D,moran coefficient of lag 3 weighted by mass
+,MATS4m,"MATS(4, 'm')",2D,moran coefficient of lag 4 weighted by mass
+,MATS5m,"MATS(5, 'm')",2D,moran coefficient of lag 5 weighted by mass
+,MATS6m,"MATS(6, 'm')",2D,moran coefficient of lag 6 weighted by mass
+,MATS7m,"MATS(7, 'm')",2D,moran coefficient of lag 7 weighted by mass
+,MATS8m,"MATS(8, 'm')",2D,moran coefficient of lag 8 weighted by mass
+,MATS1v,"MATS(1, 'v')",2D,moran coefficient of lag 1 weighted by vdw volume
+,MATS2v,"MATS(2, 'v')",2D,moran coefficient of lag 2 weighted by vdw volume
+,MATS3v,"MATS(3, 'v')",2D,moran coefficient of lag 3 weighted by vdw volume
+,MATS4v,"MATS(4, 'v')",2D,moran coefficient of lag 4 weighted by vdw volume
+,MATS5v,"MATS(5, 'v')",2D,moran coefficient of lag 5 weighted by vdw volume
+,MATS6v,"MATS(6, 'v')",2D,moran coefficient of lag 6 weighted by vdw volume
+,MATS7v,"MATS(7, 'v')",2D,moran coefficient of lag 7 weighted by vdw volume
+,MATS8v,"MATS(8, 'v')",2D,moran coefficient of lag 8 weighted by vdw volume
+,MATS1se,"MATS(1, 'se')",2D,moran coefficient of lag 1 weighted by sanderson EN
+,MATS2se,"MATS(2, 'se')",2D,moran coefficient of lag 2 weighted by sanderson EN
+,MATS3se,"MATS(3, 'se')",2D,moran coefficient of lag 3 weighted by sanderson EN
+,MATS4se,"MATS(4, 'se')",2D,moran coefficient of lag 4 weighted by sanderson EN
+,MATS5se,"MATS(5, 'se')",2D,moran coefficient of lag 5 weighted by sanderson EN
+,MATS6se,"MATS(6, 'se')",2D,moran coefficient of lag 6 weighted by sanderson EN
+,MATS7se,"MATS(7, 'se')",2D,moran coefficient of lag 7 weighted by sanderson EN
+,MATS8se,"MATS(8, 'se')",2D,moran coefficient of lag 8 weighted by sanderson EN
+,MATS1pe,"MATS(1, 'pe')",2D,moran coefficient of lag 1 weighted by pauling EN
+,MATS2pe,"MATS(2, 'pe')",2D,moran coefficient of lag 2 weighted by pauling EN
+,MATS3pe,"MATS(3, 'pe')",2D,moran coefficient of lag 3 weighted by pauling EN
+,MATS4pe,"MATS(4, 'pe')",2D,moran coefficient of lag 4 weighted by pauling EN
+,MATS5pe,"MATS(5, 'pe')",2D,moran coefficient of lag 5 weighted by pauling EN
+,MATS6pe,"MATS(6, 'pe')",2D,moran coefficient of lag 6 weighted by pauling EN
+,MATS7pe,"MATS(7, 'pe')",2D,moran coefficient of lag 7 weighted by pauling EN
+,MATS8pe,"MATS(8, 'pe')",2D,moran coefficient of lag 8 weighted by pauling EN
+,MATS1are,"MATS(1, 'are')",2D,moran coefficient of lag 1 weighted by allred-rocow EN
+,MATS2are,"MATS(2, 'are')",2D,moran coefficient of lag 2 weighted by allred-rocow EN
+,MATS3are,"MATS(3, 'are')",2D,moran coefficient of lag 3 weighted by allred-rocow EN
+,MATS4are,"MATS(4, 'are')",2D,moran coefficient of lag 4 weighted by allred-rocow EN
+,MATS5are,"MATS(5, 'are')",2D,moran coefficient of lag 5 weighted by allred-rocow EN
+,MATS6are,"MATS(6, 'are')",2D,moran coefficient of lag 6 weighted by allred-rocow EN
+,MATS7are,"MATS(7, 'are')",2D,moran coefficient of lag 7 weighted by allred-rocow EN
+,MATS8are,"MATS(8, 'are')",2D,moran coefficient of lag 8 weighted by allred-rocow EN
+,MATS1p,"MATS(1, 'p')",2D,moran coefficient of lag 1 weighted by polarizability
+,MATS2p,"MATS(2, 'p')",2D,moran coefficient of lag 2 weighted by polarizability
+,MATS3p,"MATS(3, 'p')",2D,moran coefficient of lag 3 weighted by polarizability
+,MATS4p,"MATS(4, 'p')",2D,moran coefficient of lag 4 weighted by polarizability
+,MATS5p,"MATS(5, 'p')",2D,moran coefficient of lag 5 weighted by polarizability
+,MATS6p,"MATS(6, 'p')",2D,moran coefficient of lag 6 weighted by polarizability
+,MATS7p,"MATS(7, 'p')",2D,moran coefficient of lag 7 weighted by polarizability
+,MATS8p,"MATS(8, 'p')",2D,moran coefficient of lag 8 weighted by polarizability
+,MATS1i,"MATS(1, 'i')",2D,moran coefficient of lag 1 weighted by ionization potential
+,MATS2i,"MATS(2, 'i')",2D,moran coefficient of lag 2 weighted by ionization potential
+,MATS3i,"MATS(3, 'i')",2D,moran coefficient of lag 3 weighted by ionization potential
+,MATS4i,"MATS(4, 'i')",2D,moran coefficient of lag 4 weighted by ionization potential
+,MATS5i,"MATS(5, 'i')",2D,moran coefficient of lag 5 weighted by ionization potential
+,MATS6i,"MATS(6, 'i')",2D,moran coefficient of lag 6 weighted by ionization potential
+,MATS7i,"MATS(7, 'i')",2D,moran coefficient of lag 7 weighted by ionization potential
+,MATS8i,"MATS(8, 'i')",2D,moran coefficient of lag 8 weighted by ionization potential
+,GATS1c,"GATS(1, 'c')",2D,geary coefficient of lag 1 weighted by gasteiger charge
+,GATS2c,"GATS(2, 'c')",2D,geary coefficient of lag 2 weighted by gasteiger charge
+,GATS3c,"GATS(3, 'c')",2D,geary coefficient of lag 3 weighted by gasteiger charge
+,GATS4c,"GATS(4, 'c')",2D,geary coefficient of lag 4 weighted by gasteiger charge
+,GATS5c,"GATS(5, 'c')",2D,geary coefficient of lag 5 weighted by gasteiger charge
+,GATS6c,"GATS(6, 'c')",2D,geary coefficient of lag 6 weighted by gasteiger charge
+,GATS7c,"GATS(7, 'c')",2D,geary coefficient of lag 7 weighted by gasteiger charge
+,GATS8c,"GATS(8, 'c')",2D,geary coefficient of lag 8 weighted by gasteiger charge
+,GATS1dv,"GATS(1, 'dv')",2D,geary coefficient of lag 1 weighted by valence electrons
+,GATS2dv,"GATS(2, 'dv')",2D,geary coefficient of lag 2 weighted by valence electrons
+,GATS3dv,"GATS(3, 'dv')",2D,geary coefficient of lag 3 weighted by valence electrons
+,GATS4dv,"GATS(4, 'dv')",2D,geary coefficient of lag 4 weighted by valence electrons
+,GATS5dv,"GATS(5, 'dv')",2D,geary coefficient of lag 5 weighted by valence electrons
+,GATS6dv,"GATS(6, 'dv')",2D,geary coefficient of lag 6 weighted by valence electrons
+,GATS7dv,"GATS(7, 'dv')",2D,geary coefficient of lag 7 weighted by valence electrons
+,GATS8dv,"GATS(8, 'dv')",2D,geary coefficient of lag 8 weighted by valence electrons
+,GATS1d,"GATS(1, 'd')",2D,geary coefficient of lag 1 weighted by sigma electrons
+,GATS2d,"GATS(2, 'd')",2D,geary coefficient of lag 2 weighted by sigma electrons
+,GATS3d,"GATS(3, 'd')",2D,geary coefficient of lag 3 weighted by sigma electrons
+,GATS4d,"GATS(4, 'd')",2D,geary coefficient of lag 4 weighted by sigma electrons
+,GATS5d,"GATS(5, 'd')",2D,geary coefficient of lag 5 weighted by sigma electrons
+,GATS6d,"GATS(6, 'd')",2D,geary coefficient of lag 6 weighted by sigma electrons
+,GATS7d,"GATS(7, 'd')",2D,geary coefficient of lag 7 weighted by sigma electrons
+,GATS8d,"GATS(8, 'd')",2D,geary coefficient of lag 8 weighted by sigma electrons
+,GATS1s,"GATS(1, 's')",2D,geary coefficient of lag 1 weighted by intrinsic state
+,GATS2s,"GATS(2, 's')",2D,geary coefficient of lag 2 weighted by intrinsic state
+,GATS3s,"GATS(3, 's')",2D,geary coefficient of lag 3 weighted by intrinsic state
+,GATS4s,"GATS(4, 's')",2D,geary coefficient of lag 4 weighted by intrinsic state
+,GATS5s,"GATS(5, 's')",2D,geary coefficient of lag 5 weighted by intrinsic state
+,GATS6s,"GATS(6, 's')",2D,geary coefficient of lag 6 weighted by intrinsic state
+,GATS7s,"GATS(7, 's')",2D,geary coefficient of lag 7 weighted by intrinsic state
+,GATS8s,"GATS(8, 's')",2D,geary coefficient of lag 8 weighted by intrinsic state
+,GATS1Z,"GATS(1, 'Z')",2D,geary coefficient of lag 1 weighted by atomic number
+,GATS2Z,"GATS(2, 'Z')",2D,geary coefficient of lag 2 weighted by atomic number
+,GATS3Z,"GATS(3, 'Z')",2D,geary coefficient of lag 3 weighted by atomic number
+,GATS4Z,"GATS(4, 'Z')",2D,geary coefficient of lag 4 weighted by atomic number
+,GATS5Z,"GATS(5, 'Z')",2D,geary coefficient of lag 5 weighted by atomic number
+,GATS6Z,"GATS(6, 'Z')",2D,geary coefficient of lag 6 weighted by atomic number
+,GATS7Z,"GATS(7, 'Z')",2D,geary coefficient of lag 7 weighted by atomic number
+,GATS8Z,"GATS(8, 'Z')",2D,geary coefficient of lag 8 weighted by atomic number
+,GATS1m,"GATS(1, 'm')",2D,geary coefficient of lag 1 weighted by mass
+,GATS2m,"GATS(2, 'm')",2D,geary coefficient of lag 2 weighted by mass
+,GATS3m,"GATS(3, 'm')",2D,geary coefficient of lag 3 weighted by mass
+,GATS4m,"GATS(4, 'm')",2D,geary coefficient of lag 4 weighted by mass
+,GATS5m,"GATS(5, 'm')",2D,geary coefficient of lag 5 weighted by mass
+,GATS6m,"GATS(6, 'm')",2D,geary coefficient of lag 6 weighted by mass
+,GATS7m,"GATS(7, 'm')",2D,geary coefficient of lag 7 weighted by mass
+,GATS8m,"GATS(8, 'm')",2D,geary coefficient of lag 8 weighted by mass
+,GATS1v,"GATS(1, 'v')",2D,geary coefficient of lag 1 weighted by vdw volume
+,GATS2v,"GATS(2, 'v')",2D,geary coefficient of lag 2 weighted by vdw volume
+,GATS3v,"GATS(3, 'v')",2D,geary coefficient of lag 3 weighted by vdw volume
+,GATS4v,"GATS(4, 'v')",2D,geary coefficient of lag 4 weighted by vdw volume
+,GATS5v,"GATS(5, 'v')",2D,geary coefficient of lag 5 weighted by vdw volume
+,GATS6v,"GATS(6, 'v')",2D,geary coefficient of lag 6 weighted by vdw volume
+,GATS7v,"GATS(7, 'v')",2D,geary coefficient of lag 7 weighted by vdw volume
+,GATS8v,"GATS(8, 'v')",2D,geary coefficient of lag 8 weighted by vdw volume
+,GATS1se,"GATS(1, 'se')",2D,geary coefficient of lag 1 weighted by sanderson EN
+,GATS2se,"GATS(2, 'se')",2D,geary coefficient of lag 2 weighted by sanderson EN
+,GATS3se,"GATS(3, 'se')",2D,geary coefficient of lag 3 weighted by sanderson EN
+,GATS4se,"GATS(4, 'se')",2D,geary coefficient of lag 4 weighted by sanderson EN
+,GATS5se,"GATS(5, 'se')",2D,geary coefficient of lag 5 weighted by sanderson EN
+,GATS6se,"GATS(6, 'se')",2D,geary coefficient of lag 6 weighted by sanderson EN
+,GATS7se,"GATS(7, 'se')",2D,geary coefficient of lag 7 weighted by sanderson EN
+,GATS8se,"GATS(8, 'se')",2D,geary coefficient of lag 8 weighted by sanderson EN
+,GATS1pe,"GATS(1, 'pe')",2D,geary coefficient of lag 1 weighted by pauling EN
+,GATS2pe,"GATS(2, 'pe')",2D,geary coefficient of lag 2 weighted by pauling EN
+,GATS3pe,"GATS(3, 'pe')",2D,geary coefficient of lag 3 weighted by pauling EN
+,GATS4pe,"GATS(4, 'pe')",2D,geary coefficient of lag 4 weighted by pauling EN
+,GATS5pe,"GATS(5, 'pe')",2D,geary coefficient of lag 5 weighted by pauling EN
+,GATS6pe,"GATS(6, 'pe')",2D,geary coefficient of lag 6 weighted by pauling EN
+,GATS7pe,"GATS(7, 'pe')",2D,geary coefficient of lag 7 weighted by pauling EN
+,GATS8pe,"GATS(8, 'pe')",2D,geary coefficient of lag 8 weighted by pauling EN
+,GATS1are,"GATS(1, 'are')",2D,geary coefficient of lag 1 weighted by allred-rocow EN
+,GATS2are,"GATS(2, 'are')",2D,geary coefficient of lag 2 weighted by allred-rocow EN
+,GATS3are,"GATS(3, 'are')",2D,geary coefficient of lag 3 weighted by allred-rocow EN
+,GATS4are,"GATS(4, 'are')",2D,geary coefficient of lag 4 weighted by allred-rocow EN
+,GATS5are,"GATS(5, 'are')",2D,geary coefficient of lag 5 weighted by allred-rocow EN
+,GATS6are,"GATS(6, 'are')",2D,geary coefficient of lag 6 weighted by allred-rocow EN
+,GATS7are,"GATS(7, 'are')",2D,geary coefficient of lag 7 weighted by allred-rocow EN
+,GATS8are,"GATS(8, 'are')",2D,geary coefficient of lag 8 weighted by allred-rocow EN
+,GATS1p,"GATS(1, 'p')",2D,geary coefficient of lag 1 weighted by polarizability
+,GATS2p,"GATS(2, 'p')",2D,geary coefficient of lag 2 weighted by polarizability
+,GATS3p,"GATS(3, 'p')",2D,geary coefficient of lag 3 weighted by polarizability
+,GATS4p,"GATS(4, 'p')",2D,geary coefficient of lag 4 weighted by polarizability
+,GATS5p,"GATS(5, 'p')",2D,geary coefficient of lag 5 weighted by polarizability
+,GATS6p,"GATS(6, 'p')",2D,geary coefficient of lag 6 weighted by polarizability
+,GATS7p,"GATS(7, 'p')",2D,geary coefficient of lag 7 weighted by polarizability
+,GATS8p,"GATS(8, 'p')",2D,geary coefficient of lag 8 weighted by polarizability
+,GATS1i,"GATS(1, 'i')",2D,geary coefficient of lag 1 weighted by ionization potential
+,GATS2i,"GATS(2, 'i')",2D,geary coefficient of lag 2 weighted by ionization potential
+,GATS3i,"GATS(3, 'i')",2D,geary coefficient of lag 3 weighted by ionization potential
+,GATS4i,"GATS(4, 'i')",2D,geary coefficient of lag 4 weighted by ionization potential
+,GATS5i,"GATS(5, 'i')",2D,geary coefficient of lag 5 weighted by ionization potential
+,GATS6i,"GATS(6, 'i')",2D,geary coefficient of lag 6 weighted by ionization potential
+,GATS7i,"GATS(7, 'i')",2D,geary coefficient of lag 7 weighted by ionization potential
+,GATS8i,"GATS(8, 'i')",2D,geary coefficient of lag 8 weighted by ionization potential
+BalabanJ,BalabanJ,BalabanJ(),2D,Balaban's J index
+BaryszMatrix,SpAbs_DzZ,"BaryszMatrix('Z', 'SpAbs')",2D,graph energy from Barysz matrix weighted by atomic number
+,SpMax_DzZ,"BaryszMatrix('Z', 'SpMax')",2D,leading eigenvalue from Barysz matrix weighted by atomic number
+,SpDiam_DzZ,"BaryszMatrix('Z', 'SpDiam')",2D,spectral diamiter from Barysz matrix weighted by atomic number
+,SpAD_DzZ,"BaryszMatrix('Z', 'SpAD')",2D,spectral absolute diviation from Barysz matrix weighted by atomic number
+,SpMAD_DzZ,"BaryszMatrix('Z', 'SpMAD')",2D,spectral mean absolute diviation from Barysz matrix weighted by atomic number
+,LogEE_DzZ,"BaryszMatrix('Z', 'LogEE')",2D,Estrada-like index from Barysz matrix weighted by atomic number
+,SM1_DzZ,"BaryszMatrix('Z', 'SM1')",2D,spectral moment from Barysz matrix weighted by atomic number
+,VE1_DzZ,"BaryszMatrix('Z', 'VE1')",2D,coefficient sum of the last eigenvector from Barysz matrix weighted by atomic number
+,VE2_DzZ,"BaryszMatrix('Z', 'VE2')",2D,average coefficient of the last eigenvector from Barysz matrix weighted by atomic number
+,VE3_DzZ,"BaryszMatrix('Z', 'VE3')",2D,logarithmic coefficient sum of the last eigenvector from Barysz matrix weighted by atomic number
+,VR1_DzZ,"BaryszMatrix('Z', 'VR1')",2D,Randic-like eigenvector-based index from Barysz matrix weighted by atomic number
+,VR2_DzZ,"BaryszMatrix('Z', 'VR2')",2D,normalized Randic-like eigenvector-based index from Barysz matrix weighted by atomic number
+,VR3_DzZ,"BaryszMatrix('Z', 'VR3')",2D,logarithmic Randic-like eigenvector-based index from Barysz matrix weighted by atomic number
+,SpAbs_Dzm,"BaryszMatrix('m', 'SpAbs')",2D,graph energy from Barysz matrix weighted by mass
+,SpMax_Dzm,"BaryszMatrix('m', 'SpMax')",2D,leading eigenvalue from Barysz matrix weighted by mass
+,SpDiam_Dzm,"BaryszMatrix('m', 'SpDiam')",2D,spectral diamiter from Barysz matrix weighted by mass
+,SpAD_Dzm,"BaryszMatrix('m', 'SpAD')",2D,spectral absolute diviation from Barysz matrix weighted by mass
+,SpMAD_Dzm,"BaryszMatrix('m', 'SpMAD')",2D,spectral mean absolute diviation from Barysz matrix weighted by mass
+,LogEE_Dzm,"BaryszMatrix('m', 'LogEE')",2D,Estrada-like index from Barysz matrix weighted by mass
+,SM1_Dzm,"BaryszMatrix('m', 'SM1')",2D,spectral moment from Barysz matrix weighted by mass
+,VE1_Dzm,"BaryszMatrix('m', 'VE1')",2D,coefficient sum of the last eigenvector from Barysz matrix weighted by mass
+,VE2_Dzm,"BaryszMatrix('m', 'VE2')",2D,average coefficient of the last eigenvector from Barysz matrix weighted by mass
+,VE3_Dzm,"BaryszMatrix('m', 'VE3')",2D,logarithmic coefficient sum of the last eigenvector from Barysz matrix weighted by mass
+,VR1_Dzm,"BaryszMatrix('m', 'VR1')",2D,Randic-like eigenvector-based index from Barysz matrix weighted by mass
+,VR2_Dzm,"BaryszMatrix('m', 'VR2')",2D,normalized Randic-like eigenvector-based index from Barysz matrix weighted by mass
+,VR3_Dzm,"BaryszMatrix('m', 'VR3')",2D,logarithmic Randic-like eigenvector-based index from Barysz matrix weighted by mass
+,SpAbs_Dzv,"BaryszMatrix('v', 'SpAbs')",2D,graph energy from Barysz matrix weighted by vdw volume
+,SpMax_Dzv,"BaryszMatrix('v', 'SpMax')",2D,leading eigenvalue from Barysz matrix weighted by vdw volume
+,SpDiam_Dzv,"BaryszMatrix('v', 'SpDiam')",2D,spectral diamiter from Barysz matrix weighted by vdw volume
+,SpAD_Dzv,"BaryszMatrix('v', 'SpAD')",2D,spectral absolute diviation from Barysz matrix weighted by vdw volume
+,SpMAD_Dzv,"BaryszMatrix('v', 'SpMAD')",2D,spectral mean absolute diviation from Barysz matrix weighted by vdw volume
+,LogEE_Dzv,"BaryszMatrix('v', 'LogEE')",2D,Estrada-like index from Barysz matrix weighted by vdw volume
+,SM1_Dzv,"BaryszMatrix('v', 'SM1')",2D,spectral moment from Barysz matrix weighted by vdw volume
+,VE1_Dzv,"BaryszMatrix('v', 'VE1')",2D,coefficient sum of the last eigenvector from Barysz matrix weighted by vdw volume
+,VE2_Dzv,"BaryszMatrix('v', 'VE2')",2D,average coefficient of the last eigenvector from Barysz matrix weighted by vdw volume
+,VE3_Dzv,"BaryszMatrix('v', 'VE3')",2D,logarithmic coefficient sum of the last eigenvector from Barysz matrix weighted by vdw volume
+,VR1_Dzv,"BaryszMatrix('v', 'VR1')",2D,Randic-like eigenvector-based index from Barysz matrix weighted by vdw volume
+,VR2_Dzv,"BaryszMatrix('v', 'VR2')",2D,normalized Randic-like eigenvector-based index from Barysz matrix weighted by vdw volume
+,VR3_Dzv,"BaryszMatrix('v', 'VR3')",2D,logarithmic Randic-like eigenvector-based index from Barysz matrix weighted by vdw volume
+,SpAbs_Dzse,"BaryszMatrix('se', 'SpAbs')",2D,graph energy from Barysz matrix weighted by sanderson EN
+,SpMax_Dzse,"BaryszMatrix('se', 'SpMax')",2D,leading eigenvalue from Barysz matrix weighted by sanderson EN
+,SpDiam_Dzse,"BaryszMatrix('se', 'SpDiam')",2D,spectral diamiter from Barysz matrix weighted by sanderson EN
+,SpAD_Dzse,"BaryszMatrix('se', 'SpAD')",2D,spectral absolute diviation from Barysz matrix weighted by sanderson EN
+,SpMAD_Dzse,"BaryszMatrix('se', 'SpMAD')",2D,spectral mean absolute diviation from Barysz matrix weighted by sanderson EN
+,LogEE_Dzse,"BaryszMatrix('se', 'LogEE')",2D,Estrada-like index from Barysz matrix weighted by sanderson EN
+,SM1_Dzse,"BaryszMatrix('se', 'SM1')",2D,spectral moment from Barysz matrix weighted by sanderson EN
+,VE1_Dzse,"BaryszMatrix('se', 'VE1')",2D,coefficient sum of the last eigenvector from Barysz matrix weighted by sanderson EN
+,VE2_Dzse,"BaryszMatrix('se', 'VE2')",2D,average coefficient of the last eigenvector from Barysz matrix weighted by sanderson EN
+,VE3_Dzse,"BaryszMatrix('se', 'VE3')",2D,logarithmic coefficient sum of the last eigenvector from Barysz matrix weighted by sanderson EN
+,VR1_Dzse,"BaryszMatrix('se', 'VR1')",2D,Randic-like eigenvector-based index from Barysz matrix weighted by sanderson EN
+,VR2_Dzse,"BaryszMatrix('se', 'VR2')",2D,normalized Randic-like eigenvector-based index from Barysz matrix weighted by sanderson EN
+,VR3_Dzse,"BaryszMatrix('se', 'VR3')",2D,logarithmic Randic-like eigenvector-based index from Barysz matrix weighted by sanderson EN
+,SpAbs_Dzpe,"BaryszMatrix('pe', 'SpAbs')",2D,graph energy from Barysz matrix weighted by pauling EN
+,SpMax_Dzpe,"BaryszMatrix('pe', 'SpMax')",2D,leading eigenvalue from Barysz matrix weighted by pauling EN
+,SpDiam_Dzpe,"BaryszMatrix('pe', 'SpDiam')",2D,spectral diamiter from Barysz matrix weighted by pauling EN
+,SpAD_Dzpe,"BaryszMatrix('pe', 'SpAD')",2D,spectral absolute diviation from Barysz matrix weighted by pauling EN
+,SpMAD_Dzpe,"BaryszMatrix('pe', 'SpMAD')",2D,spectral mean absolute diviation from Barysz matrix weighted by pauling EN
+,LogEE_Dzpe,"BaryszMatrix('pe', 'LogEE')",2D,Estrada-like index from Barysz matrix weighted by pauling EN
+,SM1_Dzpe,"BaryszMatrix('pe', 'SM1')",2D,spectral moment from Barysz matrix weighted by pauling EN
+,VE1_Dzpe,"BaryszMatrix('pe', 'VE1')",2D,coefficient sum of the last eigenvector from Barysz matrix weighted by pauling EN
+,VE2_Dzpe,"BaryszMatrix('pe', 'VE2')",2D,average coefficient of the last eigenvector from Barysz matrix weighted by pauling EN
+,VE3_Dzpe,"BaryszMatrix('pe', 'VE3')",2D,logarithmic coefficient sum of the last eigenvector from Barysz matrix weighted by pauling EN
+,VR1_Dzpe,"BaryszMatrix('pe', 'VR1')",2D,Randic-like eigenvector-based index from Barysz matrix weighted by pauling EN
+,VR2_Dzpe,"BaryszMatrix('pe', 'VR2')",2D,normalized Randic-like eigenvector-based index from Barysz matrix weighted by pauling EN
+,VR3_Dzpe,"BaryszMatrix('pe', 'VR3')",2D,logarithmic Randic-like eigenvector-based index from Barysz matrix weighted by pauling EN
+,SpAbs_Dzare,"BaryszMatrix('are', 'SpAbs')",2D,graph energy from Barysz matrix weighted by allred-rocow EN
+,SpMax_Dzare,"BaryszMatrix('are', 'SpMax')",2D,leading eigenvalue from Barysz matrix weighted by allred-rocow EN
+,SpDiam_Dzare,"BaryszMatrix('are', 'SpDiam')",2D,spectral diamiter from Barysz matrix weighted by allred-rocow EN
+,SpAD_Dzare,"BaryszMatrix('are', 'SpAD')",2D,spectral absolute diviation from Barysz matrix weighted by allred-rocow EN
+,SpMAD_Dzare,"BaryszMatrix('are', 'SpMAD')",2D,spectral mean absolute diviation from Barysz matrix weighted by allred-rocow EN
+,LogEE_Dzare,"BaryszMatrix('are', 'LogEE')",2D,Estrada-like index from Barysz matrix weighted by allred-rocow EN
+,SM1_Dzare,"BaryszMatrix('are', 'SM1')",2D,spectral moment from Barysz matrix weighted by allred-rocow EN
+,VE1_Dzare,"BaryszMatrix('are', 'VE1')",2D,coefficient sum of the last eigenvector from Barysz matrix weighted by allred-rocow EN
+,VE2_Dzare,"BaryszMatrix('are', 'VE2')",2D,average coefficient of the last eigenvector from Barysz matrix weighted by allred-rocow EN
+,VE3_Dzare,"BaryszMatrix('are', 'VE3')",2D,logarithmic coefficient sum of the last eigenvector from Barysz matrix weighted by allred-rocow EN
+,VR1_Dzare,"BaryszMatrix('are', 'VR1')",2D,Randic-like eigenvector-based index from Barysz matrix weighted by allred-rocow EN
+,VR2_Dzare,"BaryszMatrix('are', 'VR2')",2D,normalized Randic-like eigenvector-based index from Barysz matrix weighted by allred-rocow EN
+,VR3_Dzare,"BaryszMatrix('are', 'VR3')",2D,logarithmic Randic-like eigenvector-based index from Barysz matrix weighted by allred-rocow EN
+,SpAbs_Dzp,"BaryszMatrix('p', 'SpAbs')",2D,graph energy from Barysz matrix weighted by polarizability
+,SpMax_Dzp,"BaryszMatrix('p', 'SpMax')",2D,leading eigenvalue from Barysz matrix weighted by polarizability
+,SpDiam_Dzp,"BaryszMatrix('p', 'SpDiam')",2D,spectral diamiter from Barysz matrix weighted by polarizability
+,SpAD_Dzp,"BaryszMatrix('p', 'SpAD')",2D,spectral absolute diviation from Barysz matrix weighted by polarizability
+,SpMAD_Dzp,"BaryszMatrix('p', 'SpMAD')",2D,spectral mean absolute diviation from Barysz matrix weighted by polarizability
+,LogEE_Dzp,"BaryszMatrix('p', 'LogEE')",2D,Estrada-like index from Barysz matrix weighted by polarizability
+,SM1_Dzp,"BaryszMatrix('p', 'SM1')",2D,spectral moment from Barysz matrix weighted by polarizability
+,VE1_Dzp,"BaryszMatrix('p', 'VE1')",2D,coefficient sum of the last eigenvector from Barysz matrix weighted by polarizability
+,VE2_Dzp,"BaryszMatrix('p', 'VE2')",2D,average coefficient of the last eigenvector from Barysz matrix weighted by polarizability
+,VE3_Dzp,"BaryszMatrix('p', 'VE3')",2D,logarithmic coefficient sum of the last eigenvector from Barysz matrix weighted by polarizability
+,VR1_Dzp,"BaryszMatrix('p', 'VR1')",2D,Randic-like eigenvector-based index from Barysz matrix weighted by polarizability
+,VR2_Dzp,"BaryszMatrix('p', 'VR2')",2D,normalized Randic-like eigenvector-based index from Barysz matrix weighted by polarizability
+,VR3_Dzp,"BaryszMatrix('p', 'VR3')",2D,logarithmic Randic-like eigenvector-based index from Barysz matrix weighted by polarizability
+,SpAbs_Dzi,"BaryszMatrix('i', 'SpAbs')",2D,graph energy from Barysz matrix weighted by ionization potential
+,SpMax_Dzi,"BaryszMatrix('i', 'SpMax')",2D,leading eigenvalue from Barysz matrix weighted by ionization potential
+,SpDiam_Dzi,"BaryszMatrix('i', 'SpDiam')",2D,spectral diamiter from Barysz matrix weighted by ionization potential
+,SpAD_Dzi,"BaryszMatrix('i', 'SpAD')",2D,spectral absolute diviation from Barysz matrix weighted by ionization potential
+,SpMAD_Dzi,"BaryszMatrix('i', 'SpMAD')",2D,spectral mean absolute diviation from Barysz matrix weighted by ionization potential
+,LogEE_Dzi,"BaryszMatrix('i', 'LogEE')",2D,Estrada-like index from Barysz matrix weighted by ionization potential
+,SM1_Dzi,"BaryszMatrix('i', 'SM1')",2D,spectral moment from Barysz matrix weighted by ionization potential
+,VE1_Dzi,"BaryszMatrix('i', 'VE1')",2D,coefficient sum of the last eigenvector from Barysz matrix weighted by ionization potential
+,VE2_Dzi,"BaryszMatrix('i', 'VE2')",2D,average coefficient of the last eigenvector from Barysz matrix weighted by ionization potential
+,VE3_Dzi,"BaryszMatrix('i', 'VE3')",2D,logarithmic coefficient sum of the last eigenvector from Barysz matrix weighted by ionization potential
+,VR1_Dzi,"BaryszMatrix('i', 'VR1')",2D,Randic-like eigenvector-based index from Barysz matrix weighted by ionization potential
+,VR2_Dzi,"BaryszMatrix('i', 'VR2')",2D,normalized Randic-like eigenvector-based index from Barysz matrix weighted by ionization potential
+,VR3_Dzi,"BaryszMatrix('i', 'VR3')",2D,logarithmic Randic-like eigenvector-based index from Barysz matrix weighted by ionization potential
+BCUT,BCUTc-1h,"BCUT('c', 0)",2D,first heighest eigenvalue of Burden matrix weighted by gasteiger charge
+,BCUTc-1l,"BCUT('c', -1)",2D,first lowest eigenvalue of Burden matrix weighted by gasteiger charge
+,BCUTdv-1h,"BCUT('dv', 0)",2D,first heighest eigenvalue of Burden matrix weighted by valence electrons
+,BCUTdv-1l,"BCUT('dv', -1)",2D,first lowest eigenvalue of Burden matrix weighted by valence electrons
+,BCUTd-1h,"BCUT('d', 0)",2D,first heighest eigenvalue of Burden matrix weighted by sigma electrons
+,BCUTd-1l,"BCUT('d', -1)",2D,first lowest eigenvalue of Burden matrix weighted by sigma electrons
+,BCUTs-1h,"BCUT('s', 0)",2D,first heighest eigenvalue of Burden matrix weighted by intrinsic state
+,BCUTs-1l,"BCUT('s', -1)",2D,first lowest eigenvalue of Burden matrix weighted by intrinsic state
+,BCUTZ-1h,"BCUT('Z', 0)",2D,first heighest eigenvalue of Burden matrix weighted by atomic number
+,BCUTZ-1l,"BCUT('Z', -1)",2D,first lowest eigenvalue of Burden matrix weighted by atomic number
+,BCUTm-1h,"BCUT('m', 0)",2D,first heighest eigenvalue of Burden matrix weighted by mass
+,BCUTm-1l,"BCUT('m', -1)",2D,first lowest eigenvalue of Burden matrix weighted by mass
+,BCUTv-1h,"BCUT('v', 0)",2D,first heighest eigenvalue of Burden matrix weighted by vdw volume
+,BCUTv-1l,"BCUT('v', -1)",2D,first lowest eigenvalue of Burden matrix weighted by vdw volume
+,BCUTse-1h,"BCUT('se', 0)",2D,first heighest eigenvalue of Burden matrix weighted by sanderson EN
+,BCUTse-1l,"BCUT('se', -1)",2D,first lowest eigenvalue of Burden matrix weighted by sanderson EN
+,BCUTpe-1h,"BCUT('pe', 0)",2D,first heighest eigenvalue of Burden matrix weighted by pauling EN
+,BCUTpe-1l,"BCUT('pe', -1)",2D,first lowest eigenvalue of Burden matrix weighted by pauling EN
+,BCUTare-1h,"BCUT('are', 0)",2D,first heighest eigenvalue of Burden matrix weighted by allred-rocow EN
+,BCUTare-1l,"BCUT('are', -1)",2D,first lowest eigenvalue of Burden matrix weighted by allred-rocow EN
+,BCUTp-1h,"BCUT('p', 0)",2D,first heighest eigenvalue of Burden matrix weighted by polarizability
+,BCUTp-1l,"BCUT('p', -1)",2D,first lowest eigenvalue of Burden matrix weighted by polarizability
+,BCUTi-1h,"BCUT('i', 0)",2D,first heighest eigenvalue of Burden matrix weighted by ionization potential
+,BCUTi-1l,"BCUT('i', -1)",2D,first lowest eigenvalue of Burden matrix weighted by ionization potential
+BertzCT,BertzCT,BertzCT(),2D,Bertz CT
+BondCount,nBonds,"BondCount('any', False)",2D,number of all bonds in non-kekulized structure
+,nBondsO,"BondCount('heavy', False)",2D,number of bonds connecting to heavy atom in non-kekulized structure
+,nBondsS,"BondCount('single', False)",2D,number of single bonds in non-kekulized structure
+,nBondsD,"BondCount('double', False)",2D,number of double bonds in non-kekulized structure
+,nBondsT,"BondCount('triple', False)",2D,number of triple bonds in non-kekulized structure
+,nBondsA,"BondCount('aromatic', False)",2D,number of aromatic bonds in non-kekulized structure
+,nBondsM,"BondCount('multiple', False)",2D,number of multiple bonds in non-kekulized structure
+,nBondsKS,"BondCount('single', True)",2D,number of single bonds in kekulized structure
+,nBondsKD,"BondCount('double', True)",2D,number of double bonds in kekulized structure
+CarbonTypes,C1SP1,"CarbonTypes(1, 1)",2D,SP carbon bound to 1 other carbon
+,C2SP1,"CarbonTypes(2, 1)",2D,SP carbon bound to 2 other carbons
+,C1SP2,"CarbonTypes(1, 2)",2D,SP2 carbon bound to 1 other carbon
+,C2SP2,"CarbonTypes(2, 2)",2D,SP2 carbon bound to 2 other carbons
+,C3SP2,"CarbonTypes(3, 2)",2D,SP2 carbon bound to 3 other carbons
+,C1SP3,"CarbonTypes(1, 3)",2D,SP3 carbon bound to 1 other carbon
+,C2SP3,"CarbonTypes(2, 3)",2D,SP3 carbon bound to 2 other carbons
+,C3SP3,"CarbonTypes(3, 3)",2D,SP3 carbon bound to 3 other carbons
+,C4SP3,"CarbonTypes(4, 3)",2D,SP3 carbon bound to 4 other carbons
+,HybRatio,HybridizationRatio(),2D,hybridization ratio
+Chi,Xch-3d,"Chi('chain', 3, 'd', False)",2D,3-ordered Chi chain weighted by sigma electrons
+,Xch-4d,"Chi('chain', 4, 'd', False)",2D,4-ordered Chi chain weighted by sigma electrons
+,Xch-5d,"Chi('chain', 5, 'd', False)",2D,5-ordered Chi chain weighted by sigma electrons
+,Xch-6d,"Chi('chain', 6, 'd', False)",2D,6-ordered Chi chain weighted by sigma electrons
+,Xch-7d,"Chi('chain', 7, 'd', False)",2D,7-ordered Chi chain weighted by sigma electrons
+,Xch-3dv,"Chi('chain', 3, 'dv', False)",2D,3-ordered Chi chain weighted by valence electrons
+,Xch-4dv,"Chi('chain', 4, 'dv', False)",2D,4-ordered Chi chain weighted by valence electrons
+,Xch-5dv,"Chi('chain', 5, 'dv', False)",2D,5-ordered Chi chain weighted by valence electrons
+,Xch-6dv,"Chi('chain', 6, 'dv', False)",2D,6-ordered Chi chain weighted by valence electrons
+,Xch-7dv,"Chi('chain', 7, 'dv', False)",2D,7-ordered Chi chain weighted by valence electrons
+,Xc-3d,"Chi('cluster', 3, 'd', False)",2D,3-ordered Chi cluster weighted by sigma electrons
+,Xc-4d,"Chi('cluster', 4, 'd', False)",2D,4-ordered Chi cluster weighted by sigma electrons
+,Xc-5d,"Chi('cluster', 5, 'd', False)",2D,5-ordered Chi cluster weighted by sigma electrons
+,Xc-6d,"Chi('cluster', 6, 'd', False)",2D,6-ordered Chi cluster weighted by sigma electrons
+,Xc-3dv,"Chi('cluster', 3, 'dv', False)",2D,3-ordered Chi cluster weighted by valence electrons
+,Xc-4dv,"Chi('cluster', 4, 'dv', False)",2D,4-ordered Chi cluster weighted by valence electrons
+,Xc-5dv,"Chi('cluster', 5, 'dv', False)",2D,5-ordered Chi cluster weighted by valence electrons
+,Xc-6dv,"Chi('cluster', 6, 'dv', False)",2D,6-ordered Chi cluster weighted by valence electrons
+,Xpc-4d,"Chi('path_cluster', 4, 'd', False)",2D,4-ordered Chi path-cluster weighted by sigma electrons
+,Xpc-5d,"Chi('path_cluster', 5, 'd', False)",2D,5-ordered Chi path-cluster weighted by sigma electrons
+,Xpc-6d,"Chi('path_cluster', 6, 'd', False)",2D,6-ordered Chi path-cluster weighted by sigma electrons
+,Xpc-4dv,"Chi('path_cluster', 4, 'dv', False)",2D,4-ordered Chi path-cluster weighted by valence electrons
+,Xpc-5dv,"Chi('path_cluster', 5, 'dv', False)",2D,5-ordered Chi path-cluster weighted by valence electrons
+,Xpc-6dv,"Chi('path_cluster', 6, 'dv', False)",2D,6-ordered Chi path-cluster weighted by valence electrons
+,Xp-0d,"Chi('path', 0, 'd', False)",2D,0-ordered Chi path weighted by sigma electrons
+,Xp-1d,"Chi('path', 1, 'd', False)",2D,1-ordered Chi path weighted by sigma electrons
+,Xp-2d,"Chi('path', 2, 'd', False)",2D,2-ordered Chi path weighted by sigma electrons
+,Xp-3d,"Chi('path', 3, 'd', False)",2D,3-ordered Chi path weighted by sigma electrons
+,Xp-4d,"Chi('path', 4, 'd', False)",2D,4-ordered Chi path weighted by sigma electrons
+,Xp-5d,"Chi('path', 5, 'd', False)",2D,5-ordered Chi path weighted by sigma electrons
+,Xp-6d,"Chi('path', 6, 'd', False)",2D,6-ordered Chi path weighted by sigma electrons
+,Xp-7d,"Chi('path', 7, 'd', False)",2D,7-ordered Chi path weighted by sigma electrons
+,AXp-0d,"Chi('path', 0, 'd', True)",2D,0-ordered averaged Chi path weighted by sigma electrons
+,AXp-1d,"Chi('path', 1, 'd', True)",2D,1-ordered averaged Chi path weighted by sigma electrons
+,AXp-2d,"Chi('path', 2, 'd', True)",2D,2-ordered averaged Chi path weighted by sigma electrons
+,AXp-3d,"Chi('path', 3, 'd', True)",2D,3-ordered averaged Chi path weighted by sigma electrons
+,AXp-4d,"Chi('path', 4, 'd', True)",2D,4-ordered averaged Chi path weighted by sigma electrons
+,AXp-5d,"Chi('path', 5, 'd', True)",2D,5-ordered averaged Chi path weighted by sigma electrons
+,AXp-6d,"Chi('path', 6, 'd', True)",2D,6-ordered averaged Chi path weighted by sigma electrons
+,AXp-7d,"Chi('path', 7, 'd', True)",2D,7-ordered averaged Chi path weighted by sigma electrons
+,Xp-0dv,"Chi('path', 0, 'dv', False)",2D,0-ordered Chi path weighted by valence electrons
+,Xp-1dv,"Chi('path', 1, 'dv', False)",2D,1-ordered Chi path weighted by valence electrons
+,Xp-2dv,"Chi('path', 2, 'dv', False)",2D,2-ordered Chi path weighted by valence electrons
+,Xp-3dv,"Chi('path', 3, 'dv', False)",2D,3-ordered Chi path weighted by valence electrons
+,Xp-4dv,"Chi('path', 4, 'dv', False)",2D,4-ordered Chi path weighted by valence electrons
+,Xp-5dv,"Chi('path', 5, 'dv', False)",2D,5-ordered Chi path weighted by valence electrons
+,Xp-6dv,"Chi('path', 6, 'dv', False)",2D,6-ordered Chi path weighted by valence electrons
+,Xp-7dv,"Chi('path', 7, 'dv', False)",2D,7-ordered Chi path weighted by valence electrons
+,AXp-0dv,"Chi('path', 0, 'dv', True)",2D,0-ordered averaged Chi path weighted by valence electrons
+,AXp-1dv,"Chi('path', 1, 'dv', True)",2D,1-ordered averaged Chi path weighted by valence electrons
+,AXp-2dv,"Chi('path', 2, 'dv', True)",2D,2-ordered averaged Chi path weighted by valence electrons
+,AXp-3dv,"Chi('path', 3, 'dv', True)",2D,3-ordered averaged Chi path weighted by valence electrons
+,AXp-4dv,"Chi('path', 4, 'dv', True)",2D,4-ordered averaged Chi path weighted by valence electrons
+,AXp-5dv,"Chi('path', 5, 'dv', True)",2D,5-ordered averaged Chi path weighted by valence electrons
+,AXp-6dv,"Chi('path', 6, 'dv', True)",2D,6-ordered averaged Chi path weighted by valence electrons
+,AXp-7dv,"Chi('path', 7, 'dv', True)",2D,7-ordered averaged Chi path weighted by valence electrons
+Constitutional,SZ,ConstitutionalSum('Z'),2D,sum of constitutional weighted by atomic number
+,Sm,ConstitutionalSum('m'),2D,sum of constitutional weighted by mass
+,Sv,ConstitutionalSum('v'),2D,sum of constitutional weighted by vdw volume
+,Sse,ConstitutionalSum('se'),2D,sum of constitutional weighted by sanderson EN
+,Spe,ConstitutionalSum('pe'),2D,sum of constitutional weighted by pauling EN
+,Sare,ConstitutionalSum('are'),2D,sum of constitutional weighted by allred-rocow EN
+,Sp,ConstitutionalSum('p'),2D,sum of constitutional weighted by polarizability
+,Si,ConstitutionalSum('i'),2D,sum of constitutional weighted by ionization potential
+,MZ,ConstitutionalMean('Z'),2D,mean of constitutional weighted by atomic number
+,Mm,ConstitutionalMean('m'),2D,mean of constitutional weighted by mass
+,Mv,ConstitutionalMean('v'),2D,mean of constitutional weighted by vdw volume
+,Mse,ConstitutionalMean('se'),2D,mean of constitutional weighted by sanderson EN
+,Mpe,ConstitutionalMean('pe'),2D,mean of constitutional weighted by pauling EN
+,Mare,ConstitutionalMean('are'),2D,mean of constitutional weighted by allred-rocow EN
+,Mp,ConstitutionalMean('p'),2D,mean of constitutional weighted by polarizability
+,Mi,ConstitutionalMean('i'),2D,mean of constitutional weighted by ionization potential
+CPSA,PNSA1,PNSA(1),3D,partial negative surface area (version 1)
+,PNSA2,PNSA(2),3D,partial negative surface area (version 2)
+,PNSA3,PNSA(3),3D,partial negative surface area (version 3)
+,PNSA4,PNSA(4),3D,partial negative surface area (version 4)
+,PNSA5,PNSA(5),3D,partial negative surface area (version 5)
+,PPSA1,PPSA(1),3D,partial positive surface area (version 1)
+,PPSA2,PPSA(2),3D,partial positive surface area (version 2)
+,PPSA3,PPSA(3),3D,partial positive surface area (version 3)
+,PPSA4,PPSA(4),3D,partial positive surface area (version 4)
+,PPSA5,PPSA(5),3D,partial positive surface area (version 5)
+,DPSA1,DPSA(1),3D,difference in charged partial surface area (version 1)
+,DPSA2,DPSA(2),3D,difference in charged partial surface area (version 2)
+,DPSA3,DPSA(3),3D,difference in charged partial surface area (version 3)
+,DPSA4,DPSA(4),3D,difference in charged partial surface area (version 4)
+,DPSA5,DPSA(5),3D,difference in charged partial surface area (version 5)
+,FNSA1,FNSA(1),3D,fractional charged partial negative surface area (version 1)
+,FNSA2,FNSA(2),3D,fractional charged partial negative surface area (version 2)
+,FNSA3,FNSA(3),3D,fractional charged partial negative surface area (version 3)
+,FNSA4,FNSA(4),3D,fractional charged partial negative surface area (version 4)
+,FNSA5,FNSA(5),3D,fractional charged partial negative surface area (version 5)
+,FPSA1,FPSA(1),3D,fractional charged partial positive surface area (version 1)
+,FPSA2,FPSA(2),3D,fractional charged partial positive surface area (version 2)
+,FPSA3,FPSA(3),3D,fractional charged partial positive surface area (version 3)
+,FPSA4,FPSA(4),3D,fractional charged partial positive surface area (version 4)
+,FPSA5,FPSA(5),3D,fractional charged partial positive surface area (version 5)
+,WNSA1,WNSA(1),3D,surface weighted charged partial negative surface area (version 1)
+,WNSA2,WNSA(2),3D,surface weighted charged partial negative surface area (version 2)
+,WNSA3,WNSA(3),3D,surface weighted charged partial negative surface area (version 3)
+,WNSA4,WNSA(4),3D,surface weighted charged partial negative surface area (version 4)
+,WNSA5,WNSA(5),3D,surface weighted charged partial negative surface area (version 5)
+,WPSA1,WPSA(1),3D,surface weighted charged partial positive surface area (version 1)
+,WPSA2,WPSA(2),3D,surface weighted charged partial positive surface area (version 2)
+,WPSA3,WPSA(3),3D,surface weighted charged partial positive surface area (version 3)
+,WPSA4,WPSA(4),3D,surface weighted charged partial positive surface area (version 4)
+,WPSA5,WPSA(5),3D,surface weighted charged partial positive surface area (version 5)
+,RNCG,RNCG(),2D,relative negative charge
+,RPCG,RPCG(),2D,relative positive charge
+,RNCS,RNCS(),3D,relative negative charge surface area
+,RPCS,RPCS(),3D,relative positive charge surface area
+,TASA,TASA(),3D,total hydrophobic surface area
+,TPSA,TPSA(),3D,total polar surface area
+,RASA,RASA(),3D,relative hydrophobic surface area
+,RPSA,RPSA(),3D,relative polar surface area
+DetourMatrix,SpAbs_Dt,DetourMatrix('SpAbs'),2D,graph energy from detourn matrix
+,SpMax_Dt,DetourMatrix('SpMax'),2D,leading eigenvalue from detourn matrix
+,SpDiam_Dt,DetourMatrix('SpDiam'),2D,spectral diamiter from detourn matrix
+,SpAD_Dt,DetourMatrix('SpAD'),2D,spectral absolute diviation from detourn matrix
+,SpMAD_Dt,DetourMatrix('SpMAD'),2D,spectral mean absolute diviation from detourn matrix
+,LogEE_Dt,DetourMatrix('LogEE'),2D,Estrada-like index from detourn matrix
+,SM1_Dt,DetourMatrix('SM1'),2D,spectral moment from detourn matrix
+,VE1_Dt,DetourMatrix('VE1'),2D,coefficient sum of the last eigenvector from detourn matrix
+,VE2_Dt,DetourMatrix('VE2'),2D,average coefficient of the last eigenvector from detourn matrix
+,VE3_Dt,DetourMatrix('VE3'),2D,logarithmic coefficient sum of the last eigenvector from detourn matrix
+,VR1_Dt,DetourMatrix('VR1'),2D,Randic-like eigenvector-based index from detourn matrix
+,VR2_Dt,DetourMatrix('VR2'),2D,normalized Randic-like eigenvector-based index from detourn matrix
+,VR3_Dt,DetourMatrix('VR3'),2D,logarithmic Randic-like eigenvector-based index from detourn matrix
+,DetourIndex,DetourIndex(),2D,detour index
+DistanceMatrix,SpAbs_D,DistanceMatrix('SpAbs'),2D,graph energy from distance matrix
+,SpMax_D,DistanceMatrix('SpMax'),2D,leading eigenvalue from distance matrix
+,SpDiam_D,DistanceMatrix('SpDiam'),2D,spectral diamiter from distance matrix
+,SpAD_D,DistanceMatrix('SpAD'),2D,spectral absolute diviation from distance matrix
+,SpMAD_D,DistanceMatrix('SpMAD'),2D,spectral mean absolute diviation from distance matrix
+,LogEE_D,DistanceMatrix('LogEE'),2D,Estrada-like index from distance matrix
+,SM1_D,DistanceMatrix('SM1'),2D,spectral moment from distance matrix
+,VE1_D,DistanceMatrix('VE1'),2D,coefficient sum of the last eigenvector from distance matrix
+,VE2_D,DistanceMatrix('VE2'),2D,average coefficient of the last eigenvector from distance matrix
+,VE3_D,DistanceMatrix('VE3'),2D,logarithmic coefficient sum of the last eigenvector from distance matrix
+,VR1_D,DistanceMatrix('VR1'),2D,Randic-like eigenvector-based index from distance matrix
+,VR2_D,DistanceMatrix('VR2'),2D,normalized Randic-like eigenvector-based index from distance matrix
+,VR3_D,DistanceMatrix('VR3'),2D,logarithmic Randic-like eigenvector-based index from distance matrix
+EccentricConnectivityIndex,ECIndex,EccentricConnectivityIndex(),2D,eccentric connectivity index
+EState,NsLi,"AtomTypeEState('count', 'sLi')",2D,number of sLi
+,NssBe,"AtomTypeEState('count', 'ssBe')",2D,number of ssBe
+,NssssBe,"AtomTypeEState('count', 'ssssBe')",2D,number of ssssBe
+,NssBH,"AtomTypeEState('count', 'ssBH')",2D,number of ssBH
+,NsssB,"AtomTypeEState('count', 'sssB')",2D,number of sssB
+,NssssB,"AtomTypeEState('count', 'ssssB')",2D,number of ssssB
+,NsCH3,"AtomTypeEState('count', 'sCH3')",2D,number of sCH3
+,NdCH2,"AtomTypeEState('count', 'dCH2')",2D,number of dCH2
+,NssCH2,"AtomTypeEState('count', 'ssCH2')",2D,number of ssCH2
+,NtCH,"AtomTypeEState('count', 'tCH')",2D,number of tCH
+,NdsCH,"AtomTypeEState('count', 'dsCH')",2D,number of dsCH
+,NaaCH,"AtomTypeEState('count', 'aaCH')",2D,number of aaCH
+,NsssCH,"AtomTypeEState('count', 'sssCH')",2D,number of sssCH
+,NddC,"AtomTypeEState('count', 'ddC')",2D,number of ddC
+,NtsC,"AtomTypeEState('count', 'tsC')",2D,number of tsC
+,NdssC,"AtomTypeEState('count', 'dssC')",2D,number of dssC
+,NaasC,"AtomTypeEState('count', 'aasC')",2D,number of aasC
+,NaaaC,"AtomTypeEState('count', 'aaaC')",2D,number of aaaC
+,NssssC,"AtomTypeEState('count', 'ssssC')",2D,number of ssssC
+,NsNH3,"AtomTypeEState('count', 'sNH3')",2D,number of sNH3
+,NsNH2,"AtomTypeEState('count', 'sNH2')",2D,number of sNH2
+,NssNH2,"AtomTypeEState('count', 'ssNH2')",2D,number of ssNH2
+,NdNH,"AtomTypeEState('count', 'dNH')",2D,number of dNH
+,NssNH,"AtomTypeEState('count', 'ssNH')",2D,number of ssNH
+,NaaNH,"AtomTypeEState('count', 'aaNH')",2D,number of aaNH
+,NtN,"AtomTypeEState('count', 'tN')",2D,number of tN
+,NsssNH,"AtomTypeEState('count', 'sssNH')",2D,number of sssNH
+,NdsN,"AtomTypeEState('count', 'dsN')",2D,number of dsN
+,NaaN,"AtomTypeEState('count', 'aaN')",2D,number of aaN
+,NsssN,"AtomTypeEState('count', 'sssN')",2D,number of sssN
+,NddsN,"AtomTypeEState('count', 'ddsN')",2D,number of ddsN
+,NaasN,"AtomTypeEState('count', 'aasN')",2D,number of aasN
+,NssssN,"AtomTypeEState('count', 'ssssN')",2D,number of ssssN
+,NsOH,"AtomTypeEState('count', 'sOH')",2D,number of sOH
+,NdO,"AtomTypeEState('count', 'dO')",2D,number of dO
+,NssO,"AtomTypeEState('count', 'ssO')",2D,number of ssO
+,NaaO,"AtomTypeEState('count', 'aaO')",2D,number of aaO
+,NsF,"AtomTypeEState('count', 'sF')",2D,number of sF
+,NsSiH3,"AtomTypeEState('count', 'sSiH3')",2D,number of sSiH3
+,NssSiH2,"AtomTypeEState('count', 'ssSiH2')",2D,number of ssSiH2
+,NsssSiH,"AtomTypeEState('count', 'sssSiH')",2D,number of sssSiH
+,NssssSi,"AtomTypeEState('count', 'ssssSi')",2D,number of ssssSi
+,NsPH2,"AtomTypeEState('count', 'sPH2')",2D,number of sPH2
+,NssPH,"AtomTypeEState('count', 'ssPH')",2D,number of ssPH
+,NsssP,"AtomTypeEState('count', 'sssP')",2D,number of sssP
+,NdsssP,"AtomTypeEState('count', 'dsssP')",2D,number of dsssP
+,NsssssP,"AtomTypeEState('count', 'sssssP')",2D,number of sssssP
+,NsSH,"AtomTypeEState('count', 'sSH')",2D,number of sSH
+,NdS,"AtomTypeEState('count', 'dS')",2D,number of dS
+,NssS,"AtomTypeEState('count', 'ssS')",2D,number of ssS
+,NaaS,"AtomTypeEState('count', 'aaS')",2D,number of aaS
+,NdssS,"AtomTypeEState('count', 'dssS')",2D,number of dssS
+,NddssS,"AtomTypeEState('count', 'ddssS')",2D,number of ddssS
+,NsCl,"AtomTypeEState('count', 'sCl')",2D,number of sCl
+,NsGeH3,"AtomTypeEState('count', 'sGeH3')",2D,number of sGeH3
+,NssGeH2,"AtomTypeEState('count', 'ssGeH2')",2D,number of ssGeH2
+,NsssGeH,"AtomTypeEState('count', 'sssGeH')",2D,number of sssGeH
+,NssssGe,"AtomTypeEState('count', 'ssssGe')",2D,number of ssssGe
+,NsAsH2,"AtomTypeEState('count', 'sAsH2')",2D,number of sAsH2
+,NssAsH,"AtomTypeEState('count', 'ssAsH')",2D,number of ssAsH
+,NsssAs,"AtomTypeEState('count', 'sssAs')",2D,number of sssAs
+,NsssdAs,"AtomTypeEState('count', 'sssdAs')",2D,number of sssdAs
+,NsssssAs,"AtomTypeEState('count', 'sssssAs')",2D,number of sssssAs
+,NsSeH,"AtomTypeEState('count', 'sSeH')",2D,number of sSeH
+,NdSe,"AtomTypeEState('count', 'dSe')",2D,number of dSe
+,NssSe,"AtomTypeEState('count', 'ssSe')",2D,number of ssSe
+,NaaSe,"AtomTypeEState('count', 'aaSe')",2D,number of aaSe
+,NdssSe,"AtomTypeEState('count', 'dssSe')",2D,number of dssSe
+,NddssSe,"AtomTypeEState('count', 'ddssSe')",2D,number of ddssSe
+,NsBr,"AtomTypeEState('count', 'sBr')",2D,number of sBr
+,NsSnH3,"AtomTypeEState('count', 'sSnH3')",2D,number of sSnH3
+,NssSnH2,"AtomTypeEState('count', 'ssSnH2')",2D,number of ssSnH2
+,NsssSnH,"AtomTypeEState('count', 'sssSnH')",2D,number of sssSnH
+,NssssSn,"AtomTypeEState('count', 'ssssSn')",2D,number of ssssSn
+,NsI,"AtomTypeEState('count', 'sI')",2D,number of sI
+,NsPbH3,"AtomTypeEState('count', 'sPbH3')",2D,number of sPbH3
+,NssPbH2,"AtomTypeEState('count', 'ssPbH2')",2D,number of ssPbH2
+,NsssPbH,"AtomTypeEState('count', 'sssPbH')",2D,number of sssPbH
+,NssssPb,"AtomTypeEState('count', 'ssssPb')",2D,number of ssssPb
+,SsLi,"AtomTypeEState('sum', 'sLi')",2D,sum of sLi
+,SssBe,"AtomTypeEState('sum', 'ssBe')",2D,sum of ssBe
+,SssssBe,"AtomTypeEState('sum', 'ssssBe')",2D,sum of ssssBe
+,SssBH,"AtomTypeEState('sum', 'ssBH')",2D,sum of ssBH
+,SsssB,"AtomTypeEState('sum', 'sssB')",2D,sum of sssB
+,SssssB,"AtomTypeEState('sum', 'ssssB')",2D,sum of ssssB
+,SsCH3,"AtomTypeEState('sum', 'sCH3')",2D,sum of sCH3
+,SdCH2,"AtomTypeEState('sum', 'dCH2')",2D,sum of dCH2
+,SssCH2,"AtomTypeEState('sum', 'ssCH2')",2D,sum of ssCH2
+,StCH,"AtomTypeEState('sum', 'tCH')",2D,sum of tCH
+,SdsCH,"AtomTypeEState('sum', 'dsCH')",2D,sum of dsCH
+,SaaCH,"AtomTypeEState('sum', 'aaCH')",2D,sum of aaCH
+,SsssCH,"AtomTypeEState('sum', 'sssCH')",2D,sum of sssCH
+,SddC,"AtomTypeEState('sum', 'ddC')",2D,sum of ddC
+,StsC,"AtomTypeEState('sum', 'tsC')",2D,sum of tsC
+,SdssC,"AtomTypeEState('sum', 'dssC')",2D,sum of dssC
+,SaasC,"AtomTypeEState('sum', 'aasC')",2D,sum of aasC
+,SaaaC,"AtomTypeEState('sum', 'aaaC')",2D,sum of aaaC
+,SssssC,"AtomTypeEState('sum', 'ssssC')",2D,sum of ssssC
+,SsNH3,"AtomTypeEState('sum', 'sNH3')",2D,sum of sNH3
+,SsNH2,"AtomTypeEState('sum', 'sNH2')",2D,sum of sNH2
+,SssNH2,"AtomTypeEState('sum', 'ssNH2')",2D,sum of ssNH2
+,SdNH,"AtomTypeEState('sum', 'dNH')",2D,sum of dNH
+,SssNH,"AtomTypeEState('sum', 'ssNH')",2D,sum of ssNH
+,SaaNH,"AtomTypeEState('sum', 'aaNH')",2D,sum of aaNH
+,StN,"AtomTypeEState('sum', 'tN')",2D,sum of tN
+,SsssNH,"AtomTypeEState('sum', 'sssNH')",2D,sum of sssNH
+,SdsN,"AtomTypeEState('sum', 'dsN')",2D,sum of dsN
+,SaaN,"AtomTypeEState('sum', 'aaN')",2D,sum of aaN
+,SsssN,"AtomTypeEState('sum', 'sssN')",2D,sum of sssN
+,SddsN,"AtomTypeEState('sum', 'ddsN')",2D,sum of ddsN
+,SaasN,"AtomTypeEState('sum', 'aasN')",2D,sum of aasN
+,SssssN,"AtomTypeEState('sum', 'ssssN')",2D,sum of ssssN
+,SsOH,"AtomTypeEState('sum', 'sOH')",2D,sum of sOH
+,SdO,"AtomTypeEState('sum', 'dO')",2D,sum of dO
+,SssO,"AtomTypeEState('sum', 'ssO')",2D,sum of ssO
+,SaaO,"AtomTypeEState('sum', 'aaO')",2D,sum of aaO
+,SsF,"AtomTypeEState('sum', 'sF')",2D,sum of sF
+,SsSiH3,"AtomTypeEState('sum', 'sSiH3')",2D,sum of sSiH3
+,SssSiH2,"AtomTypeEState('sum', 'ssSiH2')",2D,sum of ssSiH2
+,SsssSiH,"AtomTypeEState('sum', 'sssSiH')",2D,sum of sssSiH
+,SssssSi,"AtomTypeEState('sum', 'ssssSi')",2D,sum of ssssSi
+,SsPH2,"AtomTypeEState('sum', 'sPH2')",2D,sum of sPH2
+,SssPH,"AtomTypeEState('sum', 'ssPH')",2D,sum of ssPH
+,SsssP,"AtomTypeEState('sum', 'sssP')",2D,sum of sssP
+,SdsssP,"AtomTypeEState('sum', 'dsssP')",2D,sum of dsssP
+,SsssssP,"AtomTypeEState('sum', 'sssssP')",2D,sum of sssssP
+,SsSH,"AtomTypeEState('sum', 'sSH')",2D,sum of sSH
+,SdS,"AtomTypeEState('sum', 'dS')",2D,sum of dS
+,SssS,"AtomTypeEState('sum', 'ssS')",2D,sum of ssS
+,SaaS,"AtomTypeEState('sum', 'aaS')",2D,sum of aaS
+,SdssS,"AtomTypeEState('sum', 'dssS')",2D,sum of dssS
+,SddssS,"AtomTypeEState('sum', 'ddssS')",2D,sum of ddssS
+,SsCl,"AtomTypeEState('sum', 'sCl')",2D,sum of sCl
+,SsGeH3,"AtomTypeEState('sum', 'sGeH3')",2D,sum of sGeH3
+,SssGeH2,"AtomTypeEState('sum', 'ssGeH2')",2D,sum of ssGeH2
+,SsssGeH,"AtomTypeEState('sum', 'sssGeH')",2D,sum of sssGeH
+,SssssGe,"AtomTypeEState('sum', 'ssssGe')",2D,sum of ssssGe
+,SsAsH2,"AtomTypeEState('sum', 'sAsH2')",2D,sum of sAsH2
+,SssAsH,"AtomTypeEState('sum', 'ssAsH')",2D,sum of ssAsH
+,SsssAs,"AtomTypeEState('sum', 'sssAs')",2D,sum of sssAs
+,SsssdAs,"AtomTypeEState('sum', 'sssdAs')",2D,sum of sssdAs
+,SsssssAs,"AtomTypeEState('sum', 'sssssAs')",2D,sum of sssssAs
+,SsSeH,"AtomTypeEState('sum', 'sSeH')",2D,sum of sSeH
+,SdSe,"AtomTypeEState('sum', 'dSe')",2D,sum of dSe
+,SssSe,"AtomTypeEState('sum', 'ssSe')",2D,sum of ssSe
+,SaaSe,"AtomTypeEState('sum', 'aaSe')",2D,sum of aaSe
+,SdssSe,"AtomTypeEState('sum', 'dssSe')",2D,sum of dssSe
+,SddssSe,"AtomTypeEState('sum', 'ddssSe')",2D,sum of ddssSe
+,SsBr,"AtomTypeEState('sum', 'sBr')",2D,sum of sBr
+,SsSnH3,"AtomTypeEState('sum', 'sSnH3')",2D,sum of sSnH3
+,SssSnH2,"AtomTypeEState('sum', 'ssSnH2')",2D,sum of ssSnH2
+,SsssSnH,"AtomTypeEState('sum', 'sssSnH')",2D,sum of sssSnH
+,SssssSn,"AtomTypeEState('sum', 'ssssSn')",2D,sum of ssssSn
+,SsI,"AtomTypeEState('sum', 'sI')",2D,sum of sI
+,SsPbH3,"AtomTypeEState('sum', 'sPbH3')",2D,sum of sPbH3
+,SssPbH2,"AtomTypeEState('sum', 'ssPbH2')",2D,sum of ssPbH2
+,SsssPbH,"AtomTypeEState('sum', 'sssPbH')",2D,sum of sssPbH
+,SssssPb,"AtomTypeEState('sum', 'ssssPb')",2D,sum of ssssPb
+,MAXsLi,"AtomTypeEState('max', 'sLi')",2D,max of sLi
+,MAXssBe,"AtomTypeEState('max', 'ssBe')",2D,max of ssBe
+,MAXssssBe,"AtomTypeEState('max', 'ssssBe')",2D,max of ssssBe
+,MAXssBH,"AtomTypeEState('max', 'ssBH')",2D,max of ssBH
+,MAXsssB,"AtomTypeEState('max', 'sssB')",2D,max of sssB
+,MAXssssB,"AtomTypeEState('max', 'ssssB')",2D,max of ssssB
+,MAXsCH3,"AtomTypeEState('max', 'sCH3')",2D,max of sCH3
+,MAXdCH2,"AtomTypeEState('max', 'dCH2')",2D,max of dCH2
+,MAXssCH2,"AtomTypeEState('max', 'ssCH2')",2D,max of ssCH2
+,MAXtCH,"AtomTypeEState('max', 'tCH')",2D,max of tCH
+,MAXdsCH,"AtomTypeEState('max', 'dsCH')",2D,max of dsCH
+,MAXaaCH,"AtomTypeEState('max', 'aaCH')",2D,max of aaCH
+,MAXsssCH,"AtomTypeEState('max', 'sssCH')",2D,max of sssCH
+,MAXddC,"AtomTypeEState('max', 'ddC')",2D,max of ddC
+,MAXtsC,"AtomTypeEState('max', 'tsC')",2D,max of tsC
+,MAXdssC,"AtomTypeEState('max', 'dssC')",2D,max of dssC
+,MAXaasC,"AtomTypeEState('max', 'aasC')",2D,max of aasC
+,MAXaaaC,"AtomTypeEState('max', 'aaaC')",2D,max of aaaC
+,MAXssssC,"AtomTypeEState('max', 'ssssC')",2D,max of ssssC
+,MAXsNH3,"AtomTypeEState('max', 'sNH3')",2D,max of sNH3
+,MAXsNH2,"AtomTypeEState('max', 'sNH2')",2D,max of sNH2
+,MAXssNH2,"AtomTypeEState('max', 'ssNH2')",2D,max of ssNH2
+,MAXdNH,"AtomTypeEState('max', 'dNH')",2D,max of dNH
+,MAXssNH,"AtomTypeEState('max', 'ssNH')",2D,max of ssNH
+,MAXaaNH,"AtomTypeEState('max', 'aaNH')",2D,max of aaNH
+,MAXtN,"AtomTypeEState('max', 'tN')",2D,max of tN
+,MAXsssNH,"AtomTypeEState('max', 'sssNH')",2D,max of sssNH
+,MAXdsN,"AtomTypeEState('max', 'dsN')",2D,max of dsN
+,MAXaaN,"AtomTypeEState('max', 'aaN')",2D,max of aaN
+,MAXsssN,"AtomTypeEState('max', 'sssN')",2D,max of sssN
+,MAXddsN,"AtomTypeEState('max', 'ddsN')",2D,max of ddsN
+,MAXaasN,"AtomTypeEState('max', 'aasN')",2D,max of aasN
+,MAXssssN,"AtomTypeEState('max', 'ssssN')",2D,max of ssssN
+,MAXsOH,"AtomTypeEState('max', 'sOH')",2D,max of sOH
+,MAXdO,"AtomTypeEState('max', 'dO')",2D,max of dO
+,MAXssO,"AtomTypeEState('max', 'ssO')",2D,max of ssO
+,MAXaaO,"AtomTypeEState('max', 'aaO')",2D,max of aaO
+,MAXsF,"AtomTypeEState('max', 'sF')",2D,max of sF
+,MAXsSiH3,"AtomTypeEState('max', 'sSiH3')",2D,max of sSiH3
+,MAXssSiH2,"AtomTypeEState('max', 'ssSiH2')",2D,max of ssSiH2
+,MAXsssSiH,"AtomTypeEState('max', 'sssSiH')",2D,max of sssSiH
+,MAXssssSi,"AtomTypeEState('max', 'ssssSi')",2D,max of ssssSi
+,MAXsPH2,"AtomTypeEState('max', 'sPH2')",2D,max of sPH2
+,MAXssPH,"AtomTypeEState('max', 'ssPH')",2D,max of ssPH
+,MAXsssP,"AtomTypeEState('max', 'sssP')",2D,max of sssP
+,MAXdsssP,"AtomTypeEState('max', 'dsssP')",2D,max of dsssP
+,MAXsssssP,"AtomTypeEState('max', 'sssssP')",2D,max of sssssP
+,MAXsSH,"AtomTypeEState('max', 'sSH')",2D,max of sSH
+,MAXdS,"AtomTypeEState('max', 'dS')",2D,max of dS
+,MAXssS,"AtomTypeEState('max', 'ssS')",2D,max of ssS
+,MAXaaS,"AtomTypeEState('max', 'aaS')",2D,max of aaS
+,MAXdssS,"AtomTypeEState('max', 'dssS')",2D,max of dssS
+,MAXddssS,"AtomTypeEState('max', 'ddssS')",2D,max of ddssS
+,MAXsCl,"AtomTypeEState('max', 'sCl')",2D,max of sCl
+,MAXsGeH3,"AtomTypeEState('max', 'sGeH3')",2D,max of sGeH3
+,MAXssGeH2,"AtomTypeEState('max', 'ssGeH2')",2D,max of ssGeH2
+,MAXsssGeH,"AtomTypeEState('max', 'sssGeH')",2D,max of sssGeH
+,MAXssssGe,"AtomTypeEState('max', 'ssssGe')",2D,max of ssssGe
+,MAXsAsH2,"AtomTypeEState('max', 'sAsH2')",2D,max of sAsH2
+,MAXssAsH,"AtomTypeEState('max', 'ssAsH')",2D,max of ssAsH
+,MAXsssAs,"AtomTypeEState('max', 'sssAs')",2D,max of sssAs
+,MAXsssdAs,"AtomTypeEState('max', 'sssdAs')",2D,max of sssdAs
+,MAXsssssAs,"AtomTypeEState('max', 'sssssAs')",2D,max of sssssAs
+,MAXsSeH,"AtomTypeEState('max', 'sSeH')",2D,max of sSeH
+,MAXdSe,"AtomTypeEState('max', 'dSe')",2D,max of dSe
+,MAXssSe,"AtomTypeEState('max', 'ssSe')",2D,max of ssSe
+,MAXaaSe,"AtomTypeEState('max', 'aaSe')",2D,max of aaSe
+,MAXdssSe,"AtomTypeEState('max', 'dssSe')",2D,max of dssSe
+,MAXddssSe,"AtomTypeEState('max', 'ddssSe')",2D,max of ddssSe
+,MAXsBr,"AtomTypeEState('max', 'sBr')",2D,max of sBr
+,MAXsSnH3,"AtomTypeEState('max', 'sSnH3')",2D,max of sSnH3
+,MAXssSnH2,"AtomTypeEState('max', 'ssSnH2')",2D,max of ssSnH2
+,MAXsssSnH,"AtomTypeEState('max', 'sssSnH')",2D,max of sssSnH
+,MAXssssSn,"AtomTypeEState('max', 'ssssSn')",2D,max of ssssSn
+,MAXsI,"AtomTypeEState('max', 'sI')",2D,max of sI
+,MAXsPbH3,"AtomTypeEState('max', 'sPbH3')",2D,max of sPbH3
+,MAXssPbH2,"AtomTypeEState('max', 'ssPbH2')",2D,max of ssPbH2
+,MAXsssPbH,"AtomTypeEState('max', 'sssPbH')",2D,max of sssPbH
+,MAXssssPb,"AtomTypeEState('max', 'ssssPb')",2D,max of ssssPb
+,MINsLi,"AtomTypeEState('min', 'sLi')",2D,min of sLi
+,MINssBe,"AtomTypeEState('min', 'ssBe')",2D,min of ssBe
+,MINssssBe,"AtomTypeEState('min', 'ssssBe')",2D,min of ssssBe
+,MINssBH,"AtomTypeEState('min', 'ssBH')",2D,min of ssBH
+,MINsssB,"AtomTypeEState('min', 'sssB')",2D,min of sssB
+,MINssssB,"AtomTypeEState('min', 'ssssB')",2D,min of ssssB
+,MINsCH3,"AtomTypeEState('min', 'sCH3')",2D,min of sCH3
+,MINdCH2,"AtomTypeEState('min', 'dCH2')",2D,min of dCH2
+,MINssCH2,"AtomTypeEState('min', 'ssCH2')",2D,min of ssCH2
+,MINtCH,"AtomTypeEState('min', 'tCH')",2D,min of tCH
+,MINdsCH,"AtomTypeEState('min', 'dsCH')",2D,min of dsCH
+,MINaaCH,"AtomTypeEState('min', 'aaCH')",2D,min of aaCH
+,MINsssCH,"AtomTypeEState('min', 'sssCH')",2D,min of sssCH
+,MINddC,"AtomTypeEState('min', 'ddC')",2D,min of ddC
+,MINtsC,"AtomTypeEState('min', 'tsC')",2D,min of tsC
+,MINdssC,"AtomTypeEState('min', 'dssC')",2D,min of dssC
+,MINaasC,"AtomTypeEState('min', 'aasC')",2D,min of aasC
+,MINaaaC,"AtomTypeEState('min', 'aaaC')",2D,min of aaaC
+,MINssssC,"AtomTypeEState('min', 'ssssC')",2D,min of ssssC
+,MINsNH3,"AtomTypeEState('min', 'sNH3')",2D,min of sNH3
+,MINsNH2,"AtomTypeEState('min', 'sNH2')",2D,min of sNH2
+,MINssNH2,"AtomTypeEState('min', 'ssNH2')",2D,min of ssNH2
+,MINdNH,"AtomTypeEState('min', 'dNH')",2D,min of dNH
+,MINssNH,"AtomTypeEState('min', 'ssNH')",2D,min of ssNH
+,MINaaNH,"AtomTypeEState('min', 'aaNH')",2D,min of aaNH
+,MINtN,"AtomTypeEState('min', 'tN')",2D,min of tN
+,MINsssNH,"AtomTypeEState('min', 'sssNH')",2D,min of sssNH
+,MINdsN,"AtomTypeEState('min', 'dsN')",2D,min of dsN
+,MINaaN,"AtomTypeEState('min', 'aaN')",2D,min of aaN
+,MINsssN,"AtomTypeEState('min', 'sssN')",2D,min of sssN
+,MINddsN,"AtomTypeEState('min', 'ddsN')",2D,min of ddsN
+,MINaasN,"AtomTypeEState('min', 'aasN')",2D,min of aasN
+,MINssssN,"AtomTypeEState('min', 'ssssN')",2D,min of ssssN
+,MINsOH,"AtomTypeEState('min', 'sOH')",2D,min of sOH
+,MINdO,"AtomTypeEState('min', 'dO')",2D,min of dO
+,MINssO,"AtomTypeEState('min', 'ssO')",2D,min of ssO
+,MINaaO,"AtomTypeEState('min', 'aaO')",2D,min of aaO
+,MINsF,"AtomTypeEState('min', 'sF')",2D,min of sF
+,MINsSiH3,"AtomTypeEState('min', 'sSiH3')",2D,min of sSiH3
+,MINssSiH2,"AtomTypeEState('min', 'ssSiH2')",2D,min of ssSiH2
+,MINsssSiH,"AtomTypeEState('min', 'sssSiH')",2D,min of sssSiH
+,MINssssSi,"AtomTypeEState('min', 'ssssSi')",2D,min of ssssSi
+,MINsPH2,"AtomTypeEState('min', 'sPH2')",2D,min of sPH2
+,MINssPH,"AtomTypeEState('min', 'ssPH')",2D,min of ssPH
+,MINsssP,"AtomTypeEState('min', 'sssP')",2D,min of sssP
+,MINdsssP,"AtomTypeEState('min', 'dsssP')",2D,min of dsssP
+,MINsssssP,"AtomTypeEState('min', 'sssssP')",2D,min of sssssP
+,MINsSH,"AtomTypeEState('min', 'sSH')",2D,min of sSH
+,MINdS,"AtomTypeEState('min', 'dS')",2D,min of dS
+,MINssS,"AtomTypeEState('min', 'ssS')",2D,min of ssS
+,MINaaS,"AtomTypeEState('min', 'aaS')",2D,min of aaS
+,MINdssS,"AtomTypeEState('min', 'dssS')",2D,min of dssS
+,MINddssS,"AtomTypeEState('min', 'ddssS')",2D,min of ddssS
+,MINsCl,"AtomTypeEState('min', 'sCl')",2D,min of sCl
+,MINsGeH3,"AtomTypeEState('min', 'sGeH3')",2D,min of sGeH3
+,MINssGeH2,"AtomTypeEState('min', 'ssGeH2')",2D,min of ssGeH2
+,MINsssGeH,"AtomTypeEState('min', 'sssGeH')",2D,min of sssGeH
+,MINssssGe,"AtomTypeEState('min', 'ssssGe')",2D,min of ssssGe
+,MINsAsH2,"AtomTypeEState('min', 'sAsH2')",2D,min of sAsH2
+,MINssAsH,"AtomTypeEState('min', 'ssAsH')",2D,min of ssAsH
+,MINsssAs,"AtomTypeEState('min', 'sssAs')",2D,min of sssAs
+,MINsssdAs,"AtomTypeEState('min', 'sssdAs')",2D,min of sssdAs
+,MINsssssAs,"AtomTypeEState('min', 'sssssAs')",2D,min of sssssAs
+,MINsSeH,"AtomTypeEState('min', 'sSeH')",2D,min of sSeH
+,MINdSe,"AtomTypeEState('min', 'dSe')",2D,min of dSe
+,MINssSe,"AtomTypeEState('min', 'ssSe')",2D,min of ssSe
+,MINaaSe,"AtomTypeEState('min', 'aaSe')",2D,min of aaSe
+,MINdssSe,"AtomTypeEState('min', 'dssSe')",2D,min of dssSe
+,MINddssSe,"AtomTypeEState('min', 'ddssSe')",2D,min of ddssSe
+,MINsBr,"AtomTypeEState('min', 'sBr')",2D,min of sBr
+,MINsSnH3,"AtomTypeEState('min', 'sSnH3')",2D,min of sSnH3
+,MINssSnH2,"AtomTypeEState('min', 'ssSnH2')",2D,min of ssSnH2
+,MINsssSnH,"AtomTypeEState('min', 'sssSnH')",2D,min of sssSnH
+,MINssssSn,"AtomTypeEState('min', 'ssssSn')",2D,min of ssssSn
+,MINsI,"AtomTypeEState('min', 'sI')",2D,min of sI
+,MINsPbH3,"AtomTypeEState('min', 'sPbH3')",2D,min of sPbH3
+,MINssPbH2,"AtomTypeEState('min', 'ssPbH2')",2D,min of ssPbH2
+,MINsssPbH,"AtomTypeEState('min', 'sssPbH')",2D,min of sssPbH
+,MINssssPb,"AtomTypeEState('min', 'ssssPb')",2D,min of ssssPb
+ExtendedTopochemicalAtom,ETA_alpha,"EtaCoreCount(False, False)",2D,ETA core count
+,AETA_alpha,"EtaCoreCount(True, False)",2D,averaged ETA core count
+,ETA_shape_p,EtaShapeIndex('p'),2D,ETA shape index (type: p)
+,ETA_shape_y,EtaShapeIndex('y'),2D,ETA shape index (type: y)
+,ETA_shape_x,EtaShapeIndex('x'),2D,ETA shape index (type: x)
+,ETA_beta,"EtaVEMCount('', False)",2D,valence electron mobile count
+,AETA_beta,"EtaVEMCount('', True)",2D,averaged valence electron mobile count
+,ETA_beta_s,"EtaVEMCount('s', False)",2D,sigma contribution to valence electron mobile count
+,AETA_beta_s,"EtaVEMCount('s', True)",2D,averaged sigma contribution to valence electron mobile count
+,ETA_beta_ns,"EtaVEMCount('ns', False)",2D,nonsigma contribution to valence electron mobile count
+,AETA_beta_ns,"EtaVEMCount('ns', True)",2D,averaged nonsigma contribution to valence electron mobile count
+,ETA_beta_ns_d,"EtaVEMCount('ns_d', False)",2D,delta contribution to valence electron mobile count
+,AETA_beta_ns_d,"EtaVEMCount('ns_d', True)",2D,averaged delta contribution to valence electron mobile count
+,ETA_eta,"EtaCompositeIndex(False, False, False)",2D,ETA composite index for reference graph
+,AETA_eta,"EtaCompositeIndex(False, False, True)",2D,averaged ETA composite index for reference graph
+,ETA_eta_L,"EtaCompositeIndex(False, True, False)",2D,local ETA composite index for reference graph
+,AETA_eta_L,"EtaCompositeIndex(False, True, True)",2D,averaged local ETA composite index for reference graph
+,ETA_eta_R,"EtaCompositeIndex(True, False, False)",2D,ETA composite index for reference graph
+,AETA_eta_R,"EtaCompositeIndex(True, False, True)",2D,averaged ETA composite index for reference graph
+,ETA_eta_RL,"EtaCompositeIndex(True, True, False)",2D,local ETA composite index for reference graph
+,AETA_eta_RL,"EtaCompositeIndex(True, True, True)",2D,averaged local ETA composite index for reference graph
+,ETA_eta_F,"EtaFunctionalityIndex(False, False)",2D,ETA functionality index
+,AETA_eta_F,"EtaFunctionalityIndex(False, True)",2D,averaged ETA functionality index
+,ETA_eta_FL,"EtaFunctionalityIndex(True, False)",2D,local ETA functionality index
+,AETA_eta_FL,"EtaFunctionalityIndex(True, True)",2D,averaged local ETA functionality index
+,ETA_eta_B,"EtaBranchingIndex(False, False)",2D,ETA branching index
+,AETA_eta_B,"EtaBranchingIndex(False, True)",2D,averaged ETA branching index
+,ETA_eta_BR,"EtaBranchingIndex(True, False)",2D,ETA branching index (use ring count)
+,AETA_eta_BR,"EtaBranchingIndex(True, True)",2D,averaged ETA branching index (use ring count)
+,ETA_dAlpha_A,EtaDeltaAlpha('A'),2D,ETA delta alpha (type: A)
+,ETA_dAlpha_B,EtaDeltaAlpha('B'),2D,ETA delta alpha (type: B)
+,ETA_epsilon_1,EtaEpsilon(1),2D,ETA epsilon (type: 1)
+,ETA_epsilon_2,EtaEpsilon(2),2D,ETA epsilon (type: 2)
+,ETA_epsilon_3,EtaEpsilon(3),2D,ETA epsilon (type: 3)
+,ETA_epsilon_4,EtaEpsilon(4),2D,ETA epsilon (type: 4)
+,ETA_epsilon_5,EtaEpsilon(5),2D,ETA epsilon (type: 5)
+,ETA_dEpsilon_A,EtaDeltaEpsilon('A'),2D,ETA delta epsilon (type: A)
+,ETA_dEpsilon_B,EtaDeltaEpsilon('B'),2D,ETA delta epsilon (type: B)
+,ETA_dEpsilon_C,EtaDeltaEpsilon('C'),2D,ETA delta epsilon (type: C)
+,ETA_dEpsilon_D,EtaDeltaEpsilon('D'),2D,ETA delta epsilon (type: D)
+,ETA_dBeta,EtaDeltaBeta(False),2D,ETA delta beta
+,AETA_dBeta,EtaDeltaBeta(True),2D,averaged ETA delta beta
+,ETA_psi_1,EtaPsi(),2D,ETA psi
+,ETA_dPsi_A,EtaDeltaPsi('A'),2D,ETA delta psi (type: A)
+,ETA_dPsi_B,EtaDeltaPsi('B'),2D,ETA delta psi (type: B)
+FragmentComplexity,fragCpx,FragmentComplexity(),2D,fragment complexity
+Framework,fMF,Framework(),2D,molecular framework ratio
+GeometricalIndex,GeomDiameter,Diameter3D(),3D,geometric diameter
+,GeomRadius,Radius3D(),3D,geometric radius
+,GeomShapeIndex,GeometricalShapeIndex(),3D,geometrical shape index
+,GeomPetitjeanIndex,PetitjeanIndex3D(),3D,geometric Petitjean index
+GravitationalIndex,GRAV,"GravitationalIndex(True, False)",3D,heavy atom gravitational index
+,GRAVH,"GravitationalIndex(False, False)",3D,gravitational index
+,GRAVp,"GravitationalIndex(True, True)",3D,heavy atom pair gravitational index
+,GRAVHp,"GravitationalIndex(False, True)",3D,pair gravitational index
+HydrogenBond,nHBAcc,HBondAcceptor(),2D,number of hydrogen bond acceptor
+,nHBDon,HBondDonor(),2D,number of hydrogen bond donor
+InformationContent,IC0,InformationContent(0),2D,0-ordered neighborhood information content
+,IC1,InformationContent(1),2D,1-ordered neighborhood information content
+,IC2,InformationContent(2),2D,2-ordered neighborhood information content
+,IC3,InformationContent(3),2D,3-ordered neighborhood information content
+,IC4,InformationContent(4),2D,4-ordered neighborhood information content
+,IC5,InformationContent(5),2D,5-ordered neighborhood information content
+,TIC0,TotalIC(0),2D,0-ordered neighborhood total information content
+,TIC1,TotalIC(1),2D,1-ordered neighborhood total information content
+,TIC2,TotalIC(2),2D,2-ordered neighborhood total information content
+,TIC3,TotalIC(3),2D,3-ordered neighborhood total information content
+,TIC4,TotalIC(4),2D,4-ordered neighborhood total information content
+,TIC5,TotalIC(5),2D,5-ordered neighborhood total information content
+,SIC0,StructuralIC(0),2D,0-ordered structural information content
+,SIC1,StructuralIC(1),2D,1-ordered structural information content
+,SIC2,StructuralIC(2),2D,2-ordered structural information content
+,SIC3,StructuralIC(3),2D,3-ordered structural information content
+,SIC4,StructuralIC(4),2D,4-ordered structural information content
+,SIC5,StructuralIC(5),2D,5-ordered structural information content
+,BIC0,BondingIC(0),2D,0-ordered bonding information content
+,BIC1,BondingIC(1),2D,1-ordered bonding information content
+,BIC2,BondingIC(2),2D,2-ordered bonding information content
+,BIC3,BondingIC(3),2D,3-ordered bonding information content
+,BIC4,BondingIC(4),2D,4-ordered bonding information content
+,BIC5,BondingIC(5),2D,5-ordered bonding information content
+,CIC0,ComplementaryIC(0),2D,0-ordered complementary information content
+,CIC1,ComplementaryIC(1),2D,1-ordered complementary information content
+,CIC2,ComplementaryIC(2),2D,2-ordered complementary information content
+,CIC3,ComplementaryIC(3),2D,3-ordered complementary information content
+,CIC4,ComplementaryIC(4),2D,4-ordered complementary information content
+,CIC5,ComplementaryIC(5),2D,5-ordered complementary information content
+,MIC0,ModifiedIC(0),2D,0-ordered modified information content
+,MIC1,ModifiedIC(1),2D,1-ordered modified information content
+,MIC2,ModifiedIC(2),2D,2-ordered modified information content
+,MIC3,ModifiedIC(3),2D,3-ordered modified information content
+,MIC4,ModifiedIC(4),2D,4-ordered modified information content
+,MIC5,ModifiedIC(5),2D,5-ordered modified information content
+,ZMIC0,ZModifiedIC(0),2D,0-ordered Z-modified information content
+,ZMIC1,ZModifiedIC(1),2D,1-ordered Z-modified information content
+,ZMIC2,ZModifiedIC(2),2D,2-ordered Z-modified information content
+,ZMIC3,ZModifiedIC(3),2D,3-ordered Z-modified information content
+,ZMIC4,ZModifiedIC(4),2D,4-ordered Z-modified information content
+,ZMIC5,ZModifiedIC(5),2D,5-ordered Z-modified information content
+KappaShapeIndex,Kier1,KappaShapeIndex1(),2D,kappa shape index 1
+,Kier2,KappaShapeIndex2(),2D,kappa shape index 2
+,Kier3,KappaShapeIndex3(),2D,kappa shape index 3
+Lipinski,Lipinski,Lipinski(),2D,Lipinski rule of five
+,GhoseFilter,GhoseFilter(),2D,Ghose filter
+McGowanVolume,VMcGowan,McGowanVolume(),2D,McGowan volume
+MoeType,LabuteASA,LabuteASA(),2D,Labute's Approximate Surface Area
+,PEOE_VSA1,PEOE_VSA(1),2D,MOE Charge VSA Descriptor 1 (-inf < x < -0.30)
+,PEOE_VSA2,PEOE_VSA(2),2D,MOE Charge VSA Descriptor 2 (-0.30 <= x < -0.25)
+,PEOE_VSA3,PEOE_VSA(3),2D,MOE Charge VSA Descriptor 3 (-0.25 <= x < -0.20)
+,PEOE_VSA4,PEOE_VSA(4),2D,MOE Charge VSA Descriptor 4 (-0.20 <= x < -0.15)
+,PEOE_VSA5,PEOE_VSA(5),2D,MOE Charge VSA Descriptor 5 (-0.15 <= x < -0.10)
+,PEOE_VSA6,PEOE_VSA(6),2D,MOE Charge VSA Descriptor 6 (-0.10 <= x < -0.05)
+,PEOE_VSA7,PEOE_VSA(7),2D,MOE Charge VSA Descriptor 7 (-0.05 <= x <  0.00)
+,PEOE_VSA8,PEOE_VSA(8),2D,MOE Charge VSA Descriptor 8 ( 0.00 <= x <  0.05)
+,PEOE_VSA9,PEOE_VSA(9),2D,MOE Charge VSA Descriptor 9 ( 0.05 <= x <  0.10)
+,PEOE_VSA10,PEOE_VSA(10),2D,MOE Charge VSA Descriptor 10 ( 0.10 <= x <  0.15)
+,PEOE_VSA11,PEOE_VSA(11),2D,MOE Charge VSA Descriptor 11 ( 0.15 <= x <  0.20)
+,PEOE_VSA12,PEOE_VSA(12),2D,MOE Charge VSA Descriptor 12 ( 0.20 <= x <  0.25)
+,PEOE_VSA13,PEOE_VSA(13),2D,MOE Charge VSA Descriptor 13 ( 0.25 <= x <  0.30)
+,SMR_VSA1,SMR_VSA(1),2D,MOE MR VSA Descriptor 1 (-inf < x <  1.29)
+,SMR_VSA2,SMR_VSA(2),2D,MOE MR VSA Descriptor 2 ( 1.29 <= x <  1.82)
+,SMR_VSA3,SMR_VSA(3),2D,MOE MR VSA Descriptor 3 ( 1.82 <= x <  2.24)
+,SMR_VSA4,SMR_VSA(4),2D,MOE MR VSA Descriptor 4 ( 2.24 <= x <  2.45)
+,SMR_VSA5,SMR_VSA(5),2D,MOE MR VSA Descriptor 5 ( 2.45 <= x <  2.75)
+,SMR_VSA6,SMR_VSA(6),2D,MOE MR VSA Descriptor 6 ( 2.75 <= x <  3.05)
+,SMR_VSA7,SMR_VSA(7),2D,MOE MR VSA Descriptor 7 ( 3.05 <= x <  3.63)
+,SMR_VSA8,SMR_VSA(8),2D,MOE MR VSA Descriptor 8 ( 3.63 <= x <  3.80)
+,SMR_VSA9,SMR_VSA(9),2D,MOE MR VSA Descriptor 9 ( 3.80 <= x <  4.00)
+,SlogP_VSA1,SlogP_VSA(1),2D,MOE logP VSA Descriptor 1 (-inf < x < -0.40)
+,SlogP_VSA2,SlogP_VSA(2),2D,MOE logP VSA Descriptor 2 (-0.40 <= x < -0.20)
+,SlogP_VSA3,SlogP_VSA(3),2D,MOE logP VSA Descriptor 3 (-0.20 <= x <  0.00)
+,SlogP_VSA4,SlogP_VSA(4),2D,MOE logP VSA Descriptor 4 ( 0.00 <= x <  0.10)
+,SlogP_VSA5,SlogP_VSA(5),2D,MOE logP VSA Descriptor 5 ( 0.10 <= x <  0.15)
+,SlogP_VSA6,SlogP_VSA(6),2D,MOE logP VSA Descriptor 6 ( 0.15 <= x <  0.20)
+,SlogP_VSA7,SlogP_VSA(7),2D,MOE logP VSA Descriptor 7 ( 0.20 <= x <  0.25)
+,SlogP_VSA8,SlogP_VSA(8),2D,MOE logP VSA Descriptor 8 ( 0.25 <= x <  0.30)
+,SlogP_VSA9,SlogP_VSA(9),2D,MOE logP VSA Descriptor 9 ( 0.30 <= x <  0.40)
+,SlogP_VSA10,SlogP_VSA(10),2D,MOE logP VSA Descriptor 10 ( 0.40 <= x <  0.50)
+,SlogP_VSA11,SlogP_VSA(11),2D,MOE logP VSA Descriptor 11 ( 0.50 <= x <  0.60)
+,EState_VSA1,EState_VSA(1),2D,EState VSA Descriptor 1 (-inf < x <  -0.39)
+,EState_VSA2,EState_VSA(2),2D,EState VSA Descriptor 2 ( -0.39 <= x <  0.29)
+,EState_VSA3,EState_VSA(3),2D,EState VSA Descriptor 3 ( 0.29 <= x <  0.72)
+,EState_VSA4,EState_VSA(4),2D,EState VSA Descriptor 4 ( 0.72 <= x <  1.17)
+,EState_VSA5,EState_VSA(5),2D,EState VSA Descriptor 5 ( 1.17 <= x <  1.54)
+,EState_VSA6,EState_VSA(6),2D,EState VSA Descriptor 6 ( 1.54 <= x <  1.81)
+,EState_VSA7,EState_VSA(7),2D,EState VSA Descriptor 7 ( 1.81 <= x <  2.05)
+,EState_VSA8,EState_VSA(8),2D,EState VSA Descriptor 8 ( 2.05 <= x <  4.69)
+,EState_VSA9,EState_VSA(9),2D,EState VSA Descriptor 9 ( 4.69 <= x <  9.17)
+,EState_VSA10,EState_VSA(10),2D,EState VSA Descriptor 10 ( 9.17 <= x <  15.00)
+,VSA_EState1,VSA_EState(1),2D,VSA EState Descriptor 1 (-inf < x <  4.78)
+,VSA_EState2,VSA_EState(2),2D,VSA EState Descriptor 2 ( 4.78 <= x <  5.00)
+,VSA_EState3,VSA_EState(3),2D,VSA EState Descriptor 3 ( 5.00 <= x <  5.41)
+,VSA_EState4,VSA_EState(4),2D,VSA EState Descriptor 4 ( 5.41 <= x <  5.74)
+,VSA_EState5,VSA_EState(5),2D,VSA EState Descriptor 5 ( 5.74 <= x <  6.00)
+,VSA_EState6,VSA_EState(6),2D,VSA EState Descriptor 6 ( 6.00 <= x <  6.07)
+,VSA_EState7,VSA_EState(7),2D,VSA EState Descriptor 7 ( 6.07 <= x <  6.45)
+,VSA_EState8,VSA_EState(8),2D,VSA EState Descriptor 8 ( 6.45 <= x <  7.00)
+,VSA_EState9,VSA_EState(9),2D,VSA EState Descriptor 9 ( 7.00 <= x <  11.00)
+MolecularDistanceEdge,MDEC-11,"MolecularDistanceEdge(1, 1, 'C')",2D,molecular distance edge between primary C and primary C
+,MDEC-12,"MolecularDistanceEdge(1, 2, 'C')",2D,molecular distance edge between primary C and secondary C
+,MDEC-13,"MolecularDistanceEdge(1, 3, 'C')",2D,molecular distance edge between primary C and tertiary C
+,MDEC-14,"MolecularDistanceEdge(1, 4, 'C')",2D,molecular distance edge between primary C and quaternary C
+,MDEC-22,"MolecularDistanceEdge(2, 2, 'C')",2D,molecular distance edge between secondary C and secondary C
+,MDEC-23,"MolecularDistanceEdge(2, 3, 'C')",2D,molecular distance edge between secondary C and tertiary C
+,MDEC-24,"MolecularDistanceEdge(2, 4, 'C')",2D,molecular distance edge between secondary C and quaternary C
+,MDEC-33,"MolecularDistanceEdge(3, 3, 'C')",2D,molecular distance edge between tertiary C and tertiary C
+,MDEC-34,"MolecularDistanceEdge(3, 4, 'C')",2D,molecular distance edge between tertiary C and quaternary C
+,MDEC-44,"MolecularDistanceEdge(4, 4, 'C')",2D,molecular distance edge between quaternary C and quaternary C
+,MDEO-11,"MolecularDistanceEdge(1, 1, 'O')",2D,molecular distance edge between primary O and primary O
+,MDEO-12,"MolecularDistanceEdge(1, 2, 'O')",2D,molecular distance edge between primary O and secondary O
+,MDEO-22,"MolecularDistanceEdge(2, 2, 'O')",2D,molecular distance edge between secondary O and secondary O
+,MDEN-11,"MolecularDistanceEdge(1, 1, 'N')",2D,molecular distance edge between primary N and primary N
+,MDEN-12,"MolecularDistanceEdge(1, 2, 'N')",2D,molecular distance edge between primary N and secondary N
+,MDEN-13,"MolecularDistanceEdge(1, 3, 'N')",2D,molecular distance edge between primary N and tertiary N
+,MDEN-22,"MolecularDistanceEdge(2, 2, 'N')",2D,molecular distance edge between secondary N and secondary N
+,MDEN-23,"MolecularDistanceEdge(2, 3, 'N')",2D,molecular distance edge between secondary N and tertiary N
+,MDEN-33,"MolecularDistanceEdge(3, 3, 'N')",2D,molecular distance edge between tertiary N and tertiary N
+MolecularId,MID,"MolecularId('any', False, 1e-10)",2D,molecular ID
+,AMID,"MolecularId('any', True, 1e-10)",2D,averaged molecular ID
+,MID_h,"MolecularId('hetero', False, 1e-10)",2D,molecular ID on h atoms
+,AMID_h,"MolecularId('hetero', True, 1e-10)",2D,averaged molecular ID on h atoms
+,MID_C,"MolecularId('C', False, 1e-10)",2D,molecular ID on C atoms
+,AMID_C,"MolecularId('C', True, 1e-10)",2D,averaged molecular ID on C atoms
+,MID_N,"MolecularId('N', False, 1e-10)",2D,molecular ID on N atoms
+,AMID_N,"MolecularId('N', True, 1e-10)",2D,averaged molecular ID on N atoms
+,MID_O,"MolecularId('O', False, 1e-10)",2D,molecular ID on O atoms
+,AMID_O,"MolecularId('O', True, 1e-10)",2D,averaged molecular ID on O atoms
+,MID_X,"MolecularId('X', False, 1e-10)",2D,molecular ID on halogen atoms
+,AMID_X,"MolecularId('X', True, 1e-10)",2D,averaged molecular ID on halogen atoms
+MomentOfInertia,MOMI-X,MomentOfInertia('X'),3D,moment of inertia (axis = X)
+,MOMI-Y,MomentOfInertia('Y'),3D,moment of inertia (axis = Y)
+,MOMI-Z,MomentOfInertia('Z'),3D,moment of inertia (axis = Z)
+MoRSE,Mor01,"MoRSE(None, 1)",3D,3D-MoRSE (distance = 1)
+,Mor02,"MoRSE(None, 2)",3D,3D-MoRSE (distance = 2)
+,Mor03,"MoRSE(None, 3)",3D,3D-MoRSE (distance = 3)
+,Mor04,"MoRSE(None, 4)",3D,3D-MoRSE (distance = 4)
+,Mor05,"MoRSE(None, 5)",3D,3D-MoRSE (distance = 5)
+,Mor06,"MoRSE(None, 6)",3D,3D-MoRSE (distance = 6)
+,Mor07,"MoRSE(None, 7)",3D,3D-MoRSE (distance = 7)
+,Mor08,"MoRSE(None, 8)",3D,3D-MoRSE (distance = 8)
+,Mor09,"MoRSE(None, 9)",3D,3D-MoRSE (distance = 9)
+,Mor10,"MoRSE(None, 10)",3D,3D-MoRSE (distance = 10)
+,Mor11,"MoRSE(None, 11)",3D,3D-MoRSE (distance = 11)
+,Mor12,"MoRSE(None, 12)",3D,3D-MoRSE (distance = 12)
+,Mor13,"MoRSE(None, 13)",3D,3D-MoRSE (distance = 13)
+,Mor14,"MoRSE(None, 14)",3D,3D-MoRSE (distance = 14)
+,Mor15,"MoRSE(None, 15)",3D,3D-MoRSE (distance = 15)
+,Mor16,"MoRSE(None, 16)",3D,3D-MoRSE (distance = 16)
+,Mor17,"MoRSE(None, 17)",3D,3D-MoRSE (distance = 17)
+,Mor18,"MoRSE(None, 18)",3D,3D-MoRSE (distance = 18)
+,Mor19,"MoRSE(None, 19)",3D,3D-MoRSE (distance = 19)
+,Mor20,"MoRSE(None, 20)",3D,3D-MoRSE (distance = 20)
+,Mor21,"MoRSE(None, 21)",3D,3D-MoRSE (distance = 21)
+,Mor22,"MoRSE(None, 22)",3D,3D-MoRSE (distance = 22)
+,Mor23,"MoRSE(None, 23)",3D,3D-MoRSE (distance = 23)
+,Mor24,"MoRSE(None, 24)",3D,3D-MoRSE (distance = 24)
+,Mor25,"MoRSE(None, 25)",3D,3D-MoRSE (distance = 25)
+,Mor26,"MoRSE(None, 26)",3D,3D-MoRSE (distance = 26)
+,Mor27,"MoRSE(None, 27)",3D,3D-MoRSE (distance = 27)
+,Mor28,"MoRSE(None, 28)",3D,3D-MoRSE (distance = 28)
+,Mor29,"MoRSE(None, 29)",3D,3D-MoRSE (distance = 29)
+,Mor30,"MoRSE(None, 30)",3D,3D-MoRSE (distance = 30)
+,Mor31,"MoRSE(None, 31)",3D,3D-MoRSE (distance = 31)
+,Mor32,"MoRSE(None, 32)",3D,3D-MoRSE (distance = 32)
+,Mor01m,"MoRSE('m', 1)",3D,3D-MoRSE weighted by mass (distance = 1)
+,Mor02m,"MoRSE('m', 2)",3D,3D-MoRSE weighted by mass (distance = 2)
+,Mor03m,"MoRSE('m', 3)",3D,3D-MoRSE weighted by mass (distance = 3)
+,Mor04m,"MoRSE('m', 4)",3D,3D-MoRSE weighted by mass (distance = 4)
+,Mor05m,"MoRSE('m', 5)",3D,3D-MoRSE weighted by mass (distance = 5)
+,Mor06m,"MoRSE('m', 6)",3D,3D-MoRSE weighted by mass (distance = 6)
+,Mor07m,"MoRSE('m', 7)",3D,3D-MoRSE weighted by mass (distance = 7)
+,Mor08m,"MoRSE('m', 8)",3D,3D-MoRSE weighted by mass (distance = 8)
+,Mor09m,"MoRSE('m', 9)",3D,3D-MoRSE weighted by mass (distance = 9)
+,Mor10m,"MoRSE('m', 10)",3D,3D-MoRSE weighted by mass (distance = 10)
+,Mor11m,"MoRSE('m', 11)",3D,3D-MoRSE weighted by mass (distance = 11)
+,Mor12m,"MoRSE('m', 12)",3D,3D-MoRSE weighted by mass (distance = 12)
+,Mor13m,"MoRSE('m', 13)",3D,3D-MoRSE weighted by mass (distance = 13)
+,Mor14m,"MoRSE('m', 14)",3D,3D-MoRSE weighted by mass (distance = 14)
+,Mor15m,"MoRSE('m', 15)",3D,3D-MoRSE weighted by mass (distance = 15)
+,Mor16m,"MoRSE('m', 16)",3D,3D-MoRSE weighted by mass (distance = 16)
+,Mor17m,"MoRSE('m', 17)",3D,3D-MoRSE weighted by mass (distance = 17)
+,Mor18m,"MoRSE('m', 18)",3D,3D-MoRSE weighted by mass (distance = 18)
+,Mor19m,"MoRSE('m', 19)",3D,3D-MoRSE weighted by mass (distance = 19)
+,Mor20m,"MoRSE('m', 20)",3D,3D-MoRSE weighted by mass (distance = 20)
+,Mor21m,"MoRSE('m', 21)",3D,3D-MoRSE weighted by mass (distance = 21)
+,Mor22m,"MoRSE('m', 22)",3D,3D-MoRSE weighted by mass (distance = 22)
+,Mor23m,"MoRSE('m', 23)",3D,3D-MoRSE weighted by mass (distance = 23)
+,Mor24m,"MoRSE('m', 24)",3D,3D-MoRSE weighted by mass (distance = 24)
+,Mor25m,"MoRSE('m', 25)",3D,3D-MoRSE weighted by mass (distance = 25)
+,Mor26m,"MoRSE('m', 26)",3D,3D-MoRSE weighted by mass (distance = 26)
+,Mor27m,"MoRSE('m', 27)",3D,3D-MoRSE weighted by mass (distance = 27)
+,Mor28m,"MoRSE('m', 28)",3D,3D-MoRSE weighted by mass (distance = 28)
+,Mor29m,"MoRSE('m', 29)",3D,3D-MoRSE weighted by mass (distance = 29)
+,Mor30m,"MoRSE('m', 30)",3D,3D-MoRSE weighted by mass (distance = 30)
+,Mor31m,"MoRSE('m', 31)",3D,3D-MoRSE weighted by mass (distance = 31)
+,Mor32m,"MoRSE('m', 32)",3D,3D-MoRSE weighted by mass (distance = 32)
+,Mor01v,"MoRSE('v', 1)",3D,3D-MoRSE weighted by vdw volume (distance = 1)
+,Mor02v,"MoRSE('v', 2)",3D,3D-MoRSE weighted by vdw volume (distance = 2)
+,Mor03v,"MoRSE('v', 3)",3D,3D-MoRSE weighted by vdw volume (distance = 3)
+,Mor04v,"MoRSE('v', 4)",3D,3D-MoRSE weighted by vdw volume (distance = 4)
+,Mor05v,"MoRSE('v', 5)",3D,3D-MoRSE weighted by vdw volume (distance = 5)
+,Mor06v,"MoRSE('v', 6)",3D,3D-MoRSE weighted by vdw volume (distance = 6)
+,Mor07v,"MoRSE('v', 7)",3D,3D-MoRSE weighted by vdw volume (distance = 7)
+,Mor08v,"MoRSE('v', 8)",3D,3D-MoRSE weighted by vdw volume (distance = 8)
+,Mor09v,"MoRSE('v', 9)",3D,3D-MoRSE weighted by vdw volume (distance = 9)
+,Mor10v,"MoRSE('v', 10)",3D,3D-MoRSE weighted by vdw volume (distance = 10)
+,Mor11v,"MoRSE('v', 11)",3D,3D-MoRSE weighted by vdw volume (distance = 11)
+,Mor12v,"MoRSE('v', 12)",3D,3D-MoRSE weighted by vdw volume (distance = 12)
+,Mor13v,"MoRSE('v', 13)",3D,3D-MoRSE weighted by vdw volume (distance = 13)
+,Mor14v,"MoRSE('v', 14)",3D,3D-MoRSE weighted by vdw volume (distance = 14)
+,Mor15v,"MoRSE('v', 15)",3D,3D-MoRSE weighted by vdw volume (distance = 15)
+,Mor16v,"MoRSE('v', 16)",3D,3D-MoRSE weighted by vdw volume (distance = 16)
+,Mor17v,"MoRSE('v', 17)",3D,3D-MoRSE weighted by vdw volume (distance = 17)
+,Mor18v,"MoRSE('v', 18)",3D,3D-MoRSE weighted by vdw volume (distance = 18)
+,Mor19v,"MoRSE('v', 19)",3D,3D-MoRSE weighted by vdw volume (distance = 19)
+,Mor20v,"MoRSE('v', 20)",3D,3D-MoRSE weighted by vdw volume (distance = 20)
+,Mor21v,"MoRSE('v', 21)",3D,3D-MoRSE weighted by vdw volume (distance = 21)
+,Mor22v,"MoRSE('v', 22)",3D,3D-MoRSE weighted by vdw volume (distance = 22)
+,Mor23v,"MoRSE('v', 23)",3D,3D-MoRSE weighted by vdw volume (distance = 23)
+,Mor24v,"MoRSE('v', 24)",3D,3D-MoRSE weighted by vdw volume (distance = 24)
+,Mor25v,"MoRSE('v', 25)",3D,3D-MoRSE weighted by vdw volume (distance = 25)
+,Mor26v,"MoRSE('v', 26)",3D,3D-MoRSE weighted by vdw volume (distance = 26)
+,Mor27v,"MoRSE('v', 27)",3D,3D-MoRSE weighted by vdw volume (distance = 27)
+,Mor28v,"MoRSE('v', 28)",3D,3D-MoRSE weighted by vdw volume (distance = 28)
+,Mor29v,"MoRSE('v', 29)",3D,3D-MoRSE weighted by vdw volume (distance = 29)
+,Mor30v,"MoRSE('v', 30)",3D,3D-MoRSE weighted by vdw volume (distance = 30)
+,Mor31v,"MoRSE('v', 31)",3D,3D-MoRSE weighted by vdw volume (distance = 31)
+,Mor32v,"MoRSE('v', 32)",3D,3D-MoRSE weighted by vdw volume (distance = 32)
+,Mor01se,"MoRSE('se', 1)",3D,3D-MoRSE weighted by sanderson EN (distance = 1)
+,Mor02se,"MoRSE('se', 2)",3D,3D-MoRSE weighted by sanderson EN (distance = 2)
+,Mor03se,"MoRSE('se', 3)",3D,3D-MoRSE weighted by sanderson EN (distance = 3)
+,Mor04se,"MoRSE('se', 4)",3D,3D-MoRSE weighted by sanderson EN (distance = 4)
+,Mor05se,"MoRSE('se', 5)",3D,3D-MoRSE weighted by sanderson EN (distance = 5)
+,Mor06se,"MoRSE('se', 6)",3D,3D-MoRSE weighted by sanderson EN (distance = 6)
+,Mor07se,"MoRSE('se', 7)",3D,3D-MoRSE weighted by sanderson EN (distance = 7)
+,Mor08se,"MoRSE('se', 8)",3D,3D-MoRSE weighted by sanderson EN (distance = 8)
+,Mor09se,"MoRSE('se', 9)",3D,3D-MoRSE weighted by sanderson EN (distance = 9)
+,Mor10se,"MoRSE('se', 10)",3D,3D-MoRSE weighted by sanderson EN (distance = 10)
+,Mor11se,"MoRSE('se', 11)",3D,3D-MoRSE weighted by sanderson EN (distance = 11)
+,Mor12se,"MoRSE('se', 12)",3D,3D-MoRSE weighted by sanderson EN (distance = 12)
+,Mor13se,"MoRSE('se', 13)",3D,3D-MoRSE weighted by sanderson EN (distance = 13)
+,Mor14se,"MoRSE('se', 14)",3D,3D-MoRSE weighted by sanderson EN (distance = 14)
+,Mor15se,"MoRSE('se', 15)",3D,3D-MoRSE weighted by sanderson EN (distance = 15)
+,Mor16se,"MoRSE('se', 16)",3D,3D-MoRSE weighted by sanderson EN (distance = 16)
+,Mor17se,"MoRSE('se', 17)",3D,3D-MoRSE weighted by sanderson EN (distance = 17)
+,Mor18se,"MoRSE('se', 18)",3D,3D-MoRSE weighted by sanderson EN (distance = 18)
+,Mor19se,"MoRSE('se', 19)",3D,3D-MoRSE weighted by sanderson EN (distance = 19)
+,Mor20se,"MoRSE('se', 20)",3D,3D-MoRSE weighted by sanderson EN (distance = 20)
+,Mor21se,"MoRSE('se', 21)",3D,3D-MoRSE weighted by sanderson EN (distance = 21)
+,Mor22se,"MoRSE('se', 22)",3D,3D-MoRSE weighted by sanderson EN (distance = 22)
+,Mor23se,"MoRSE('se', 23)",3D,3D-MoRSE weighted by sanderson EN (distance = 23)
+,Mor24se,"MoRSE('se', 24)",3D,3D-MoRSE weighted by sanderson EN (distance = 24)
+,Mor25se,"MoRSE('se', 25)",3D,3D-MoRSE weighted by sanderson EN (distance = 25)
+,Mor26se,"MoRSE('se', 26)",3D,3D-MoRSE weighted by sanderson EN (distance = 26)
+,Mor27se,"MoRSE('se', 27)",3D,3D-MoRSE weighted by sanderson EN (distance = 27)
+,Mor28se,"MoRSE('se', 28)",3D,3D-MoRSE weighted by sanderson EN (distance = 28)
+,Mor29se,"MoRSE('se', 29)",3D,3D-MoRSE weighted by sanderson EN (distance = 29)
+,Mor30se,"MoRSE('se', 30)",3D,3D-MoRSE weighted by sanderson EN (distance = 30)
+,Mor31se,"MoRSE('se', 31)",3D,3D-MoRSE weighted by sanderson EN (distance = 31)
+,Mor32se,"MoRSE('se', 32)",3D,3D-MoRSE weighted by sanderson EN (distance = 32)
+,Mor01p,"MoRSE('p', 1)",3D,3D-MoRSE weighted by polarizability (distance = 1)
+,Mor02p,"MoRSE('p', 2)",3D,3D-MoRSE weighted by polarizability (distance = 2)
+,Mor03p,"MoRSE('p', 3)",3D,3D-MoRSE weighted by polarizability (distance = 3)
+,Mor04p,"MoRSE('p', 4)",3D,3D-MoRSE weighted by polarizability (distance = 4)
+,Mor05p,"MoRSE('p', 5)",3D,3D-MoRSE weighted by polarizability (distance = 5)
+,Mor06p,"MoRSE('p', 6)",3D,3D-MoRSE weighted by polarizability (distance = 6)
+,Mor07p,"MoRSE('p', 7)",3D,3D-MoRSE weighted by polarizability (distance = 7)
+,Mor08p,"MoRSE('p', 8)",3D,3D-MoRSE weighted by polarizability (distance = 8)
+,Mor09p,"MoRSE('p', 9)",3D,3D-MoRSE weighted by polarizability (distance = 9)
+,Mor10p,"MoRSE('p', 10)",3D,3D-MoRSE weighted by polarizability (distance = 10)
+,Mor11p,"MoRSE('p', 11)",3D,3D-MoRSE weighted by polarizability (distance = 11)
+,Mor12p,"MoRSE('p', 12)",3D,3D-MoRSE weighted by polarizability (distance = 12)
+,Mor13p,"MoRSE('p', 13)",3D,3D-MoRSE weighted by polarizability (distance = 13)
+,Mor14p,"MoRSE('p', 14)",3D,3D-MoRSE weighted by polarizability (distance = 14)
+,Mor15p,"MoRSE('p', 15)",3D,3D-MoRSE weighted by polarizability (distance = 15)
+,Mor16p,"MoRSE('p', 16)",3D,3D-MoRSE weighted by polarizability (distance = 16)
+,Mor17p,"MoRSE('p', 17)",3D,3D-MoRSE weighted by polarizability (distance = 17)
+,Mor18p,"MoRSE('p', 18)",3D,3D-MoRSE weighted by polarizability (distance = 18)
+,Mor19p,"MoRSE('p', 19)",3D,3D-MoRSE weighted by polarizability (distance = 19)
+,Mor20p,"MoRSE('p', 20)",3D,3D-MoRSE weighted by polarizability (distance = 20)
+,Mor21p,"MoRSE('p', 21)",3D,3D-MoRSE weighted by polarizability (distance = 21)
+,Mor22p,"MoRSE('p', 22)",3D,3D-MoRSE weighted by polarizability (distance = 22)
+,Mor23p,"MoRSE('p', 23)",3D,3D-MoRSE weighted by polarizability (distance = 23)
+,Mor24p,"MoRSE('p', 24)",3D,3D-MoRSE weighted by polarizability (distance = 24)
+,Mor25p,"MoRSE('p', 25)",3D,3D-MoRSE weighted by polarizability (distance = 25)
+,Mor26p,"MoRSE('p', 26)",3D,3D-MoRSE weighted by polarizability (distance = 26)
+,Mor27p,"MoRSE('p', 27)",3D,3D-MoRSE weighted by polarizability (distance = 27)
+,Mor28p,"MoRSE('p', 28)",3D,3D-MoRSE weighted by polarizability (distance = 28)
+,Mor29p,"MoRSE('p', 29)",3D,3D-MoRSE weighted by polarizability (distance = 29)
+,Mor30p,"MoRSE('p', 30)",3D,3D-MoRSE weighted by polarizability (distance = 30)
+,Mor31p,"MoRSE('p', 31)",3D,3D-MoRSE weighted by polarizability (distance = 31)
+,Mor32p,"MoRSE('p', 32)",3D,3D-MoRSE weighted by polarizability (distance = 32)
+PathCount,MPC2,"PathCount(2, False, False, False)",2D,2-ordered path count
+,MPC3,"PathCount(3, False, False, False)",2D,3-ordered path count
+,MPC4,"PathCount(4, False, False, False)",2D,4-ordered path count
+,MPC5,"PathCount(5, False, False, False)",2D,5-ordered path count
+,MPC6,"PathCount(6, False, False, False)",2D,6-ordered path count
+,MPC7,"PathCount(7, False, False, False)",2D,7-ordered path count
+,MPC8,"PathCount(8, False, False, False)",2D,8-ordered path count
+,MPC9,"PathCount(9, False, False, False)",2D,9-ordered path count
+,MPC10,"PathCount(10, False, False, False)",2D,10-ordered path count
+,TMPC10,"PathCount(10, False, True, False)",2D,10-ordered total path count
+,piPC1,"PathCount(1, True, False, True)",2D,1-ordered pi-path count (log scale)
+,piPC2,"PathCount(2, True, False, True)",2D,2-ordered pi-path count (log scale)
+,piPC3,"PathCount(3, True, False, True)",2D,3-ordered pi-path count (log scale)
+,piPC4,"PathCount(4, True, False, True)",2D,4-ordered pi-path count (log scale)
+,piPC5,"PathCount(5, True, False, True)",2D,5-ordered pi-path count (log scale)
+,piPC6,"PathCount(6, True, False, True)",2D,6-ordered pi-path count (log scale)
+,piPC7,"PathCount(7, True, False, True)",2D,7-ordered pi-path count (log scale)
+,piPC8,"PathCount(8, True, False, True)",2D,8-ordered pi-path count (log scale)
+,piPC9,"PathCount(9, True, False, True)",2D,9-ordered pi-path count (log scale)
+,piPC10,"PathCount(10, True, False, True)",2D,10-ordered pi-path count (log scale)
+,TpiPC10,"PathCount(10, True, True, True)",2D,10-ordered total pi-path count (log scale)
+Polarizability,apol,APol(False),2D,atomic polarizability
+,bpol,BPol(False),2D,bond polarizability
+RingCount,nRing,"RingCount(None, False, False, None, None)",2D,ring count
+,n3Ring,"RingCount(3, False, False, None, None)",2D,3-membered ring count
+,n4Ring,"RingCount(4, False, False, None, None)",2D,4-membered ring count
+,n5Ring,"RingCount(5, False, False, None, None)",2D,5-membered ring count
+,n6Ring,"RingCount(6, False, False, None, None)",2D,6-membered ring count
+,n7Ring,"RingCount(7, False, False, None, None)",2D,7-membered ring count
+,n8Ring,"RingCount(8, False, False, None, None)",2D,8-membered ring count
+,n9Ring,"RingCount(9, False, False, None, None)",2D,9-membered ring count
+,n10Ring,"RingCount(10, False, False, None, None)",2D,10-membered ring count
+,n11Ring,"RingCount(11, False, False, None, None)",2D,11-membered ring count
+,n12Ring,"RingCount(12, False, False, None, None)",2D,12-membered ring count
+,nG12Ring,"RingCount(12, True, False, None, None)",2D,12-or-greater-membered ring count
+,nHRing,"RingCount(None, False, False, None, True)",2D,hetero ring count
+,n3HRing,"RingCount(3, False, False, None, True)",2D,3-membered hetero ring count
+,n4HRing,"RingCount(4, False, False, None, True)",2D,4-membered hetero ring count
+,n5HRing,"RingCount(5, False, False, None, True)",2D,5-membered hetero ring count
+,n6HRing,"RingCount(6, False, False, None, True)",2D,6-membered hetero ring count
+,n7HRing,"RingCount(7, False, False, None, True)",2D,7-membered hetero ring count
+,n8HRing,"RingCount(8, False, False, None, True)",2D,8-membered hetero ring count
+,n9HRing,"RingCount(9, False, False, None, True)",2D,9-membered hetero ring count
+,n10HRing,"RingCount(10, False, False, None, True)",2D,10-membered hetero ring count
+,n11HRing,"RingCount(11, False, False, None, True)",2D,11-membered hetero ring count
+,n12HRing,"RingCount(12, False, False, None, True)",2D,12-membered hetero ring count
+,nG12HRing,"RingCount(12, True, False, None, True)",2D,12-or-greater-membered hetero ring count
+,naRing,"RingCount(None, False, False, True, None)",2D,aromatic ring count
+,n3aRing,"RingCount(3, False, False, True, None)",2D,3-membered aromatic ring count
+,n4aRing,"RingCount(4, False, False, True, None)",2D,4-membered aromatic ring count
+,n5aRing,"RingCount(5, False, False, True, None)",2D,5-membered aromatic ring count
+,n6aRing,"RingCount(6, False, False, True, None)",2D,6-membered aromatic ring count
+,n7aRing,"RingCount(7, False, False, True, None)",2D,7-membered aromatic ring count
+,n8aRing,"RingCount(8, False, False, True, None)",2D,8-membered aromatic ring count
+,n9aRing,"RingCount(9, False, False, True, None)",2D,9-membered aromatic ring count
+,n10aRing,"RingCount(10, False, False, True, None)",2D,10-membered aromatic ring count
+,n11aRing,"RingCount(11, False, False, True, None)",2D,11-membered aromatic ring count
+,n12aRing,"RingCount(12, False, False, True, None)",2D,12-membered aromatic ring count
+,nG12aRing,"RingCount(12, True, False, True, None)",2D,12-or-greater-membered aromatic ring count
+,naHRing,"RingCount(None, False, False, True, True)",2D,aromatic hetero ring count
+,n3aHRing,"RingCount(3, False, False, True, True)",2D,3-membered aromatic hetero ring count
+,n4aHRing,"RingCount(4, False, False, True, True)",2D,4-membered aromatic hetero ring count
+,n5aHRing,"RingCount(5, False, False, True, True)",2D,5-membered aromatic hetero ring count
+,n6aHRing,"RingCount(6, False, False, True, True)",2D,6-membered aromatic hetero ring count
+,n7aHRing,"RingCount(7, False, False, True, True)",2D,7-membered aromatic hetero ring count
+,n8aHRing,"RingCount(8, False, False, True, True)",2D,8-membered aromatic hetero ring count
+,n9aHRing,"RingCount(9, False, False, True, True)",2D,9-membered aromatic hetero ring count
+,n10aHRing,"RingCount(10, False, False, True, True)",2D,10-membered aromatic hetero ring count
+,n11aHRing,"RingCount(11, False, False, True, True)",2D,11-membered aromatic hetero ring count
+,n12aHRing,"RingCount(12, False, False, True, True)",2D,12-membered aromatic hetero ring count
+,nG12aHRing,"RingCount(12, True, False, True, True)",2D,12-or-greater-membered aromatic hetero ring count
+,nARing,"RingCount(None, False, False, False, None)",2D,aliphatic ring count
+,n3ARing,"RingCount(3, False, False, False, None)",2D,3-membered aliphatic ring count
+,n4ARing,"RingCount(4, False, False, False, None)",2D,4-membered aliphatic ring count
+,n5ARing,"RingCount(5, False, False, False, None)",2D,5-membered aliphatic ring count
+,n6ARing,"RingCount(6, False, False, False, None)",2D,6-membered aliphatic ring count
+,n7ARing,"RingCount(7, False, False, False, None)",2D,7-membered aliphatic ring count
+,n8ARing,"RingCount(8, False, False, False, None)",2D,8-membered aliphatic ring count
+,n9ARing,"RingCount(9, False, False, False, None)",2D,9-membered aliphatic ring count
+,n10ARing,"RingCount(10, False, False, False, None)",2D,10-membered aliphatic ring count
+,n11ARing,"RingCount(11, False, False, False, None)",2D,11-membered aliphatic ring count
+,n12ARing,"RingCount(12, False, False, False, None)",2D,12-membered aliphatic ring count
+,nG12ARing,"RingCount(12, True, False, False, None)",2D,12-or-greater-membered aliphatic ring count
+,nAHRing,"RingCount(None, False, False, False, True)",2D,aliphatic hetero ring count
+,n3AHRing,"RingCount(3, False, False, False, True)",2D,3-membered aliphatic hetero ring count
+,n4AHRing,"RingCount(4, False, False, False, True)",2D,4-membered aliphatic hetero ring count
+,n5AHRing,"RingCount(5, False, False, False, True)",2D,5-membered aliphatic hetero ring count
+,n6AHRing,"RingCount(6, False, False, False, True)",2D,6-membered aliphatic hetero ring count
+,n7AHRing,"RingCount(7, False, False, False, True)",2D,7-membered aliphatic hetero ring count
+,n8AHRing,"RingCount(8, False, False, False, True)",2D,8-membered aliphatic hetero ring count
+,n9AHRing,"RingCount(9, False, False, False, True)",2D,9-membered aliphatic hetero ring count
+,n10AHRing,"RingCount(10, False, False, False, True)",2D,10-membered aliphatic hetero ring count
+,n11AHRing,"RingCount(11, False, False, False, True)",2D,11-membered aliphatic hetero ring count
+,n12AHRing,"RingCount(12, False, False, False, True)",2D,12-membered aliphatic hetero ring count
+,nG12AHRing,"RingCount(12, True, False, False, True)",2D,12-or-greater-membered aliphatic hetero ring count
+,nFRing,"RingCount(None, False, True, None, None)",2D,fused ring count
+,n4FRing,"RingCount(4, False, True, None, None)",2D,4-membered fused ring count
+,n5FRing,"RingCount(5, False, True, None, None)",2D,5-membered fused ring count
+,n6FRing,"RingCount(6, False, True, None, None)",2D,6-membered fused ring count
+,n7FRing,"RingCount(7, False, True, None, None)",2D,7-membered fused ring count
+,n8FRing,"RingCount(8, False, True, None, None)",2D,8-membered fused ring count
+,n9FRing,"RingCount(9, False, True, None, None)",2D,9-membered fused ring count
+,n10FRing,"RingCount(10, False, True, None, None)",2D,10-membered fused ring count
+,n11FRing,"RingCount(11, False, True, None, None)",2D,11-membered fused ring count
+,n12FRing,"RingCount(12, False, True, None, None)",2D,12-membered fused ring count
+,nG12FRing,"RingCount(12, True, True, None, None)",2D,12-or-greater-membered fused ring count
+,nFHRing,"RingCount(None, False, True, None, True)",2D,fused hetero ring count
+,n4FHRing,"RingCount(4, False, True, None, True)",2D,4-membered fused hetero ring count
+,n5FHRing,"RingCount(5, False, True, None, True)",2D,5-membered fused hetero ring count
+,n6FHRing,"RingCount(6, False, True, None, True)",2D,6-membered fused hetero ring count
+,n7FHRing,"RingCount(7, False, True, None, True)",2D,7-membered fused hetero ring count
+,n8FHRing,"RingCount(8, False, True, None, True)",2D,8-membered fused hetero ring count
+,n9FHRing,"RingCount(9, False, True, None, True)",2D,9-membered fused hetero ring count
+,n10FHRing,"RingCount(10, False, True, None, True)",2D,10-membered fused hetero ring count
+,n11FHRing,"RingCount(11, False, True, None, True)",2D,11-membered fused hetero ring count
+,n12FHRing,"RingCount(12, False, True, None, True)",2D,12-membered fused hetero ring count
+,nG12FHRing,"RingCount(12, True, True, None, True)",2D,12-or-greater-membered fused hetero ring count
+,nFaRing,"RingCount(None, False, True, True, None)",2D,aromatic fused ring count
+,n4FaRing,"RingCount(4, False, True, True, None)",2D,4-membered aromatic fused ring count
+,n5FaRing,"RingCount(5, False, True, True, None)",2D,5-membered aromatic fused ring count
+,n6FaRing,"RingCount(6, False, True, True, None)",2D,6-membered aromatic fused ring count
+,n7FaRing,"RingCount(7, False, True, True, None)",2D,7-membered aromatic fused ring count
+,n8FaRing,"RingCount(8, False, True, True, None)",2D,8-membered aromatic fused ring count
+,n9FaRing,"RingCount(9, False, True, True, None)",2D,9-membered aromatic fused ring count
+,n10FaRing,"RingCount(10, False, True, True, None)",2D,10-membered aromatic fused ring count
+,n11FaRing,"RingCount(11, False, True, True, None)",2D,11-membered aromatic fused ring count
+,n12FaRing,"RingCount(12, False, True, True, None)",2D,12-membered aromatic fused ring count
+,nG12FaRing,"RingCount(12, True, True, True, None)",2D,12-or-greater-membered aromatic fused ring count
+,nFaHRing,"RingCount(None, False, True, True, True)",2D,aromatic fused hetero ring count
+,n4FaHRing,"RingCount(4, False, True, True, True)",2D,4-membered aromatic fused hetero ring count
+,n5FaHRing,"RingCount(5, False, True, True, True)",2D,5-membered aromatic fused hetero ring count
+,n6FaHRing,"RingCount(6, False, True, True, True)",2D,6-membered aromatic fused hetero ring count
+,n7FaHRing,"RingCount(7, False, True, True, True)",2D,7-membered aromatic fused hetero ring count
+,n8FaHRing,"RingCount(8, False, True, True, True)",2D,8-membered aromatic fused hetero ring count
+,n9FaHRing,"RingCount(9, False, True, True, True)",2D,9-membered aromatic fused hetero ring count
+,n10FaHRing,"RingCount(10, False, True, True, True)",2D,10-membered aromatic fused hetero ring count
+,n11FaHRing,"RingCount(11, False, True, True, True)",2D,11-membered aromatic fused hetero ring count
+,n12FaHRing,"RingCount(12, False, True, True, True)",2D,12-membered aromatic fused hetero ring count
+,nG12FaHRing,"RingCount(12, True, True, True, True)",2D,12-or-greater-membered aromatic fused hetero ring count
+,nFARing,"RingCount(None, False, True, False, None)",2D,aliphatic fused ring count
+,n4FARing,"RingCount(4, False, True, False, None)",2D,4-membered aliphatic fused ring count
+,n5FARing,"RingCount(5, False, True, False, None)",2D,5-membered aliphatic fused ring count
+,n6FARing,"RingCount(6, False, True, False, None)",2D,6-membered aliphatic fused ring count
+,n7FARing,"RingCount(7, False, True, False, None)",2D,7-membered aliphatic fused ring count
+,n8FARing,"RingCount(8, False, True, False, None)",2D,8-membered aliphatic fused ring count
+,n9FARing,"RingCount(9, False, True, False, None)",2D,9-membered aliphatic fused ring count
+,n10FARing,"RingCount(10, False, True, False, None)",2D,10-membered aliphatic fused ring count
+,n11FARing,"RingCount(11, False, True, False, None)",2D,11-membered aliphatic fused ring count
+,n12FARing,"RingCount(12, False, True, False, None)",2D,12-membered aliphatic fused ring count
+,nG12FARing,"RingCount(12, True, True, False, None)",2D,12-or-greater-membered aliphatic fused ring count
+,nFAHRing,"RingCount(None, False, True, False, True)",2D,aliphatic fused hetero ring count
+,n4FAHRing,"RingCount(4, False, True, False, True)",2D,4-membered aliphatic fused hetero ring count
+,n5FAHRing,"RingCount(5, False, True, False, True)",2D,5-membered aliphatic fused hetero ring count
+,n6FAHRing,"RingCount(6, False, True, False, True)",2D,6-membered aliphatic fused hetero ring count
+,n7FAHRing,"RingCount(7, False, True, False, True)",2D,7-membered aliphatic fused hetero ring count
+,n8FAHRing,"RingCount(8, False, True, False, True)",2D,8-membered aliphatic fused hetero ring count
+,n9FAHRing,"RingCount(9, False, True, False, True)",2D,9-membered aliphatic fused hetero ring count
+,n10FAHRing,"RingCount(10, False, True, False, True)",2D,10-membered aliphatic fused hetero ring count
+,n11FAHRing,"RingCount(11, False, True, False, True)",2D,11-membered aliphatic fused hetero ring count
+,n12FAHRing,"RingCount(12, False, True, False, True)",2D,12-membered aliphatic fused hetero ring count
+,nG12FAHRing,"RingCount(12, True, True, False, True)",2D,12-or-greater-membered aliphatic fused hetero ring count
+RotatableBond,nRot,RotatableBondsCount(),2D,rotatable bonds count
+,RotRatio,RotatableBondsRatio(),2D,rotatable bonds ratio
+SLogP,SLogP,SLogP(),2D,Wildman-Crippen LogP
+,SMR,SMR(),2D,Wildman-Crippen MR
+TopologicalCharge,GGI1,"TopologicalCharge('raw', 1)",2D,1-ordered raw topological charge
+,GGI2,"TopologicalCharge('raw', 2)",2D,2-ordered raw topological charge
+,GGI3,"TopologicalCharge('raw', 3)",2D,3-ordered raw topological charge
+,GGI4,"TopologicalCharge('raw', 4)",2D,4-ordered raw topological charge
+,GGI5,"TopologicalCharge('raw', 5)",2D,5-ordered raw topological charge
+,GGI6,"TopologicalCharge('raw', 6)",2D,6-ordered raw topological charge
+,GGI7,"TopologicalCharge('raw', 7)",2D,7-ordered raw topological charge
+,GGI8,"TopologicalCharge('raw', 8)",2D,8-ordered raw topological charge
+,GGI9,"TopologicalCharge('raw', 9)",2D,9-ordered raw topological charge
+,GGI10,"TopologicalCharge('raw', 10)",2D,10-ordered raw topological charge
+,JGI1,"TopologicalCharge('mean', 1)",2D,1-ordered mean topological charge
+,JGI2,"TopologicalCharge('mean', 2)",2D,2-ordered mean topological charge
+,JGI3,"TopologicalCharge('mean', 3)",2D,3-ordered mean topological charge
+,JGI4,"TopologicalCharge('mean', 4)",2D,4-ordered mean topological charge
+,JGI5,"TopologicalCharge('mean', 5)",2D,5-ordered mean topological charge
+,JGI6,"TopologicalCharge('mean', 6)",2D,6-ordered mean topological charge
+,JGI7,"TopologicalCharge('mean', 7)",2D,7-ordered mean topological charge
+,JGI8,"TopologicalCharge('mean', 8)",2D,8-ordered mean topological charge
+,JGI9,"TopologicalCharge('mean', 9)",2D,9-ordered mean topological charge
+,JGI10,"TopologicalCharge('mean', 10)",2D,10-ordered mean topological charge
+,JGT10,"TopologicalCharge('global', 10)",2D,10-ordered global topological charge
+TopologicalIndex,Diameter,Diameter(),2D,topological diameter
+,Radius,Radius(),2D,topological radius
+,TopoShapeIndex,TopologicalShapeIndex(),2D,topological shape index
+,PetitjeanIndex,PetitjeanIndex(),2D,Petitjean index
+TopoPSA,TopoPSA(NO),TopoPSA(True),2D,topological polar surface area (use only nitrogen and oxygen)
+,TopoPSA,TopoPSA(False),2D,topological polar surface area
+VdwVolumeABC,Vabc,VdwVolumeABC(),2D,ABC van der waals volume
+VertexAdjacencyInformation,VAdjMat,VertexAdjacencyInformation(),2D,vertex adjacency information
+WalkCount,MWC01,"WalkCount(1, False, False)",2D,walk count (leg-1)
+,MWC02,"WalkCount(2, False, False)",2D,walk count (leg-2)
+,MWC03,"WalkCount(3, False, False)",2D,walk count (leg-3)
+,MWC04,"WalkCount(4, False, False)",2D,walk count (leg-4)
+,MWC05,"WalkCount(5, False, False)",2D,walk count (leg-5)
+,MWC06,"WalkCount(6, False, False)",2D,walk count (leg-6)
+,MWC07,"WalkCount(7, False, False)",2D,walk count (leg-7)
+,MWC08,"WalkCount(8, False, False)",2D,walk count (leg-8)
+,MWC09,"WalkCount(9, False, False)",2D,walk count (leg-9)
+,MWC10,"WalkCount(10, False, False)",2D,walk count (leg-10)
+,TMWC10,"WalkCount(10, True, False)",2D,total walk count (leg-10)
+,SRW02,"WalkCount(2, False, True)",2D,"walk count (leg-2, only self returning walk)"
+,SRW03,"WalkCount(3, False, True)",2D,"walk count (leg-3, only self returning walk)"
+,SRW04,"WalkCount(4, False, True)",2D,"walk count (leg-4, only self returning walk)"
+,SRW05,"WalkCount(5, False, True)",2D,"walk count (leg-5, only self returning walk)"
+,SRW06,"WalkCount(6, False, True)",2D,"walk count (leg-6, only self returning walk)"
+,SRW07,"WalkCount(7, False, True)",2D,"walk count (leg-7, only self returning walk)"
+,SRW08,"WalkCount(8, False, True)",2D,"walk count (leg-8, only self returning walk)"
+,SRW09,"WalkCount(9, False, True)",2D,"walk count (leg-9, only self returning walk)"
+,SRW10,"WalkCount(10, False, True)",2D,"walk count (leg-10, only self returning walk)"
+,TSRW10,"WalkCount(10, True, True)",2D,"total walk count (leg-10, only self returning walk)"
+Weight,MW,Weight(False),2D,molecular weight
+,AMW,Weight(True),2D,averaged molecular weight
+WienerIndex,WPath,WienerIndex(False),2D,Wiener index
+,WPol,WienerIndex(True),2D,Wiener polarity index
+ZagrebIndex,Zagreb1,"ZagrebIndex(1, 1)",2D,Zagreb index (version 1)
+,Zagreb2,"ZagrebIndex(2, 1)",2D,Zagreb index (version 2)
+,mZagreb1,"ZagrebIndex(1, -1)",2D,modified Zagreb index (version 1)
+,mZagreb2,"ZagrebIndex(2, -1)",2D,modified Zagreb index (version 2)
