@@ -138,3 +138,4 @@ dmypy.json
 .vscode
 *.h5
 *.pk
+examples/examples_in_progress/*
