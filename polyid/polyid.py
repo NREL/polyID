@@ -238,11 +238,11 @@ class SingleModel:
         # Check if train/test data exist and create generators
         if self.df_train_scaled is not None:
             self.train_generator = self._create_generator(
-                self.df_train_scaled, batch_size
+                self.df_train_scaled, batch_size=batch_size
             )
         if self.df_validate_scaled is not None:
             self.validate_generator = self._create_generator(
-                self.df_validate_scaled, batch_size
+                self.df_validate_scaled, batch_size=batch_size
             )
 
     def train(
