@@ -646,7 +646,7 @@ class MultiModel:
         for model in self.models:
             df_result = model.predict(df_prediction)
             df_result["model_id"] = model.model_id
-            df_results = df_results.append(df_result)
+            df_results.append(df_result)
 
         return pd.concat(df_results)
 
