@@ -85,7 +85,7 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
     model = tf.keras.Model([atom, bond, connectivity], outputs)
     model.compile(
         optimizer=tf.keras.optimizers.Adam(
-            learning_rate=params["learning_rate"], decay=params["decay"]
+            learning_rate=params["learning_rate"], weight_decay=params["decay"]
         ),
         loss=[masked_mean_absolute_error],
     )
