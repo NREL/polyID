@@ -535,8 +535,9 @@ class MultiModel:
 
         if nmodels == None:
             for model_folder in model_folders:
-                model_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + ".h5")
-                data_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + "_data.pk")
+                model_folder_path = Path(model_folder)
+                model_path = model_folder_path / (model_folder_path.stem + ".h5")
+                data_path = model_folder_path / (model_folder_path.stem + "_data.pk")
                 mm.models.append(
                     SingleModel.load_model(
                         model_path, data_path, custom_objects=custom_objects_dict
