@@ -15,4 +15,19 @@ Additional notebooks have been provided to provide more examples and capabilitie
 5. [Generating hierarchical fingerprints for performance comparison](https://github.com/NREL/polyID/blob/master/examples/example_hierarchical_fingerprints.ipynb): `examples/example_hierarchical_fingerprints.ipynb`
 6. [Predicting with the trained model](https://github.com/NREL/polyID/blob/master/examples/example_predict_with_trained_models.ipynb): `examples/example_predict_with_trained_models.ipynb` 
 
-Details for the methods are forthcoming in an upcoming manuscript.
+For more details, see the manuscript [PolyID: Artificial Intelligence for Discovering Performance-Advantaged and Sustainable Polymers](https://doi.org/10.1021/acs.macromol.3c00994), _Macromolecules_ 2023.
+
+## Cite 
+If you use PolyID in your work, please cite
+```
+@article{wilson2023polyid,
+  title={PolyID: Artificial Intelligence for Discovering Performance-Advantaged and Sustainable Polymers},
+  author={Wilson, A Nolan and St John, Peter C and Marin, Daniela H and Hoyt, Caroline B and Rognerud, Erik G and Nimlos, Mark R and Cywar, Robin M and Rorrer, Nicholas A and Shebek, Kevin M and Broadbelt, Linda J and Beckham, Gregg T and Crowley, Michael F},
+  journal={Macromolecules},
+  volume={56},
+  number={21},
+  pages={8547--8557},
+  year={2023},
+  publisher={ACS Publications}
+}
+```

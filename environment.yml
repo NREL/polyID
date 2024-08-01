@@ -3,18 +3,19 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.7
+  - python=3.10
   - pandas
   - numpy
   - rdkit
   - scikit-learn
-  - pip
   - tqdm
   - cudatoolkit
   - ipykernel
+  - jupyterlab
+  - tensorflow=2.10
   - pip
   - pip:
     - nfp
     - m2p
-    - tensorflow
+    - polyid
     - tensorflow-addons
