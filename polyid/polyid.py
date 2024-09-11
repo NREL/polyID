@@ -499,7 +499,7 @@ class MultiModel:
             , by default None
         nmodels : Union[int, list], optional
             Used to import models 0 through nmodels if value passed is an int. If value
-            passed is a list, then those models will be imported. Should be a list of 
+            passed is a list, then those models will be imported. Should be a list of
             integers. by default None
 
         Returns
@@ -758,7 +758,7 @@ class MultiModel:
 
         data = self.df_polymer.copy()
 
-        # Assign a data_id column to aid in kfolds; data id acts as a unique identifer for creating stratified splits. It should be a unique integer. 
+        # Assign a data_id column to aid in kfolds; data id acts as a unique identifer for creating stratified splits. It should be a unique integer.
         if "data_id" not in data:
             data["data_id"] = 0
             #replacing nans for logical statements later
@@ -767,12 +767,12 @@ class MultiModel:
 
                 if "pm" in row:
                     idxs = data[
-                        (data["smiles_monomer"] == row.smiles_monomer) & 
+                        (data["smiles_monomer"] == row.smiles_monomer) &
                         (data["distribution"] == row.distribution)&
                         (data["pm"]==row.pm)
                     ].index.tolist()
 
-                else: 
+                else:
                     idxs = data[(data["smiles_monomer"] == row.smiles_monomer) & (
                         data["distribution"] == row.distribution
                     )].index.tolist()
@@ -1019,7 +1019,7 @@ class MultiModel:
 
 class RenameUnpickler(pk.Unpickler):
     """For handling the renaming of modules previously named polyml. Backwards compatibilty for older models.
-    
+
     example:
 
     params = RenameUnpickler.load_pickle(filepath_of_picklefile)
