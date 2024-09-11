@@ -691,7 +691,8 @@ class MultiModel:
         df_prediction = self.make_predictions(df_prediction)
 
         # Required columns
-        groupby_columns = ["pm", "distribution"]
+        groupby_columns = ["pm", "polymer", "distribution"]
+        #groupby_columns = ["pm", "distribution"]
         groupby_columns.extend(additional_groupby)
         if not groupby_pm or "pm" not in df_prediction.columns:
             groupby_columns.remove("pm")
