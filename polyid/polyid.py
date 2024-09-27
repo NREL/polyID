@@ -28,10 +28,14 @@ from nfp import (EdgeUpdate, GlobalUpdate, NodeUpdate,
                  masked_mean_absolute_error)
 from sklearn import model_selection
 from sklearn.preprocessing import RobustScaler
-from tensorflow.keras.callbacks import CSVLogger, ModelCheckpoint
+#from tensorflow.keras.callbacks import CSVLogger, ModelCheckpoint
+from keras.callbacks import CSVLogger, ModelCheckpoint
 
 from polyid.models.callbacks import PandasLogger
 from polyid.preprocessors.features import atom_features_v1, bond_features_v1
+
+import keras
+from tqdm import tqdm
 
 
 def generate_hash(df, hash_cols=["smiles_polymer", "monomers"]) -> str:
@@ -229,7 +233,7 @@ class SingleModel:
             atom_features=atom_features, bond_features=bond_features, **kwargs
         )
 
-        for _, row in self.df_train.iterrows():
+        for _, row in tqdm(self.df_train.iterrows(), total=len(self.df_train)):
             self.preprocessor(row, train=True)
 
         if hasattr(self.preprocessor, "train"):
@@ -302,7 +306,7 @@ class SingleModel:
         if save_folder:
             self._save_model(save_folder, save_training)
 
-    def predict(self, df_prediction: pd.DataFrame) -> pd.DataFrame:
+    def predict(self, df_prediction: pd.DataFrame, batch_size: int = 1) -> pd.DataFrame:
         """Make a prediction using a trained model and a dataframe with unscaled values
 
         Parameters
@@ -317,15 +321,20 @@ class SingleModel:
             of the model.
         """
         # Predict, inverse scale, append to original df
-        prediction_generator = self._create_generator(df_prediction, predict=True)
+        print(f"Making predictions for {len(df_prediction)} with batch_size={batch_size}")
+        prediction_generator = self._create_generator(df_prediction, predict=True, batch_size=batch_size)
 
-        predictions = self.model.predict(prediction_generator)
+        predictions = self.model.predict(prediction_generator,
+                                         steps=np.ceil(len(df_prediction) / batch_size), 
+                                         verbose=1,
+                                         )
         if self.data_scaler:
             predictions = self.data_scaler.inverse_transform(predictions)
 
         df_prediction_results = pd.DataFrame(
             data=predictions, columns=[f"{col}_pred" for col in self.prediction_columns]
         )
+        #print(len(df_prediction), len(df_prediction_results))
 
         # append the columns with predictions to the original dataframe
         df_prediction_results.index = df_prediction.index
@@ -602,7 +611,7 @@ class MultiModel:
         fname = Path(fname)
         # Read file in as pandas df
         if fname.suffix == ".csv":
-            df_load = pd.read_csv(fname)
+            df_load = pd.read_csv(fname, index_col=0)
         elif fname.suffix == ".xlsx":
             df_load = pd.read_excel(fname)
         else:
@@ -864,9 +873,9 @@ class MultiModel:
 
         if save_folder:
             # checkpoint that saves the actual best models
-            save_subfolder = save_folder / f"model_{model_i}"
+            save_subfolder = Path(save_folder) / f"model_{model_i}"
             checkpoint = ModelCheckpoint(
-                save_subfolder / f"model_{model_i}.h5",
+                str(save_subfolder / f"model_{model_i}.h5"),
                 save_best_only=True,
                 save_freq="epoch",
                 verbose=verbose,
@@ -1005,7 +1014,12 @@ class MultiModel:
         """
         mm = cls()
         with open(fname, "rb") as f:
-            data_dicts = pk.load(f)
+            try:
+                data_dicts = pk.load(f)
+            except:
+                # backwards compability for models saved under polyml instead of polyid
+                data_dicts = RenameUnpickler.renamed_load(f)
+
             for key, val in data_dicts.items():
                 try:
                     setattr(mm, key, val)
@@ -1026,7 +1040,9 @@ class RenameUnpickler(pk.Unpickler):
     def find_class(self, module, name):
         renamed_module = module
         if "polyml" in module:
+            print("MODULE:", module)
             renamed_module = module.replace("polyml", "polyid")
+            print("NEW MODULE:", renamed_module)
 
         return super(RenameUnpickler, self).find_class(renamed_module, name)
 
