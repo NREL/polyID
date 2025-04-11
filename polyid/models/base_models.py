@@ -1,7 +1,8 @@
 import nfp
 import tensorflow as tf
 from nfp import masked_mean_absolute_error
-from tensorflow.keras import layers
+#from tensorflow.keras import layers
+from keras import layers
 
 
 def global100(preprocessor, model_summary=False, prediction_columns=None, params=None):
@@ -85,7 +86,7 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
     model = tf.keras.Model([atom, bond, connectivity], outputs)
     model.compile(
         optimizer=tf.keras.optimizers.Adam(
-            learning_rate=params["learning_rate"], decay=params["decay"]
+            learning_rate=params["learning_rate"], weight_decay=params["decay"]
         ),
         loss=[masked_mean_absolute_error],
     )

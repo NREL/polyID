@@ -12,7 +12,7 @@ dependencies:
   - cudatoolkit
   - ipykernel
   - jupyterlab
-  - tensorflow=2.10
+  - tensorflow=2.14
   - pip
   - pip:
     - nfp
