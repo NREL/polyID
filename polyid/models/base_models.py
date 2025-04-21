@@ -15,6 +15,8 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
     atom = layers.Input(shape=[None], dtype=tf.int64, name="atom")
     bond = layers.Input(shape=[None], dtype=tf.int64, name="bond")
     connectivity = layers.Input(shape=[None, 2], dtype=tf.int64, name="connectivity")
+    global_feature = layers.Input(shape=[None], dtype=tf.float32, name="log_poly_mw_norm")
+    global_feature2 = layers.Input(shape=[None], dtype=tf.float32, name="log_num_atoms")
 
     # Initialize the atom states
     atom_state = layers.Embedding(
@@ -32,22 +34,24 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
         mask_zero=True,
     )(bond)
 
+    # Reshape the molecular weight input
+    global_features_state1 = layers.Reshape((1,))(global_feature)
+    global_features_state2 = layers.Reshape((1,))(global_feature2)
+    global_features_state = layers.Concatenate()([global_features_state1, global_features_state2])
+
+    global_features_state = layers.Dense(
+        units=params["mol_features"], name="global_features_state"
+    )(global_features_state)
+
     # Here we use our first nfp layer. This is an attention layer that looks at
     # the atom and bond states and reduces them to a single, graph-level vector.
     # mum_heads * units has to be the same dimension as the atom / bond dimension
     global_state = nfp.GlobalUpdate(units=params["mol_features"], num_heads=1)(
-        [atom_state, bond_state, connectivity]
+        [atom_state, bond_state, connectivity, global_features_state]
     )
+    global_state = layers.Add()([global_state, global_features_state])
 
     def message_block(atom_state, bond_state, global_state, connectivity, i):
-
-        # Global update
-        global_update = nfp.GlobalUpdate(units=params["mol_features"], num_heads=1)(
-            [atom_state, bond_state, connectivity, global_state]
-        )
-        global_state = layers.Add()(
-            [global_state, global_update]
-        )  # global difference calculation
 
         # Bond update
         bond_update = nfp.EdgeUpdate()(
@@ -60,6 +64,14 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
             [atom_state, bond_state, connectivity, global_state]
         )
         atom_state = layers.Add()([atom_state, new_atom_state])
+
+        # Global update
+        global_update = nfp.GlobalUpdate(units=params["mol_features"], num_heads=1)(
+            [atom_state, bond_state, connectivity, global_state]
+        )
+        global_state = layers.Add()(
+            [global_state, global_update]
+        )  # global difference calculation
 
         return atom_state, bond_state, global_state
 
@@ -82,10 +94,10 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
         outputs = layers.Concatenate(name="all_predictions")(outputs)
 
     # compile model
-    model = tf.keras.Model([atom, bond, connectivity], outputs)
+    model = tf.keras.Model([atom, bond, connectivity, global_feature, global_feature2], outputs)
     model.compile(
         optimizer=tf.keras.optimizers.Adam(
-            learning_rate=params["learning_rate"], decay=params["decay"]
+            learning_rate=params["learning_rate"], weight_decay=params["decay"]
         ),
         loss=[masked_mean_absolute_error],
     )

@@ -13,13 +13,42 @@ from nfp.preprocessing.mol_preprocessor import SmilesPreprocessor
 from nfp.preprocessing.tokenizer import Tokenizer
 from numpy import linspace, log, log10
 from sklearn.preprocessing import KBinsDiscretizer, StandardScaler
+from rdkit.Chem import MolFromSmiles as mfs
+from rdkit.Chem.Descriptors import MolWt
 
 
 class PolymerPreprocessor(SmilesPreprocessor):
     """Preprocessor with pandas df rows as inputs."""
 
     def create_nx_graph(self, row: pd.Series, **kwargs) -> nx.DiGraph:
-        return super().create_nx_graph(row.smiles_polymer, **kwargs)
+        nx_graph = super().create_nx_graph(row.smiles_polymer, **kwargs)
+        mol = mfs(row.smiles_polymer)
+        num_atoms = mol.GetNumAtoms()
+        # we have observed that the monomer molecular weight correlates with some of the polymer properties
+        # so we will inclue the molecular weight as well as number of atoms as graph-level features
+        # normalize the molecular weight by the number of atoms
+        nx_graph.graph["log_poly_mw_norm"] = np.log10(MolWt(mol) / num_atoms)
+        nx_graph.graph["log_num_atoms"] = np.log10(num_atoms)
+        return nx_graph
+
+
+    def get_graph_features(self, graph_data: dict) -> Dict[str, np.ndarray]:
+        return {"log_poly_mw_norm": graph_data["log_poly_mw_norm"],
+                "log_num_atoms": graph_data["log_num_atoms"]}
+
+    @property
+    def output_signature(self) -> Dict[str, tf.TensorSpec]:
+        signature = super().output_signature
+        signature["log_poly_mw_norm"] = tf.TensorSpec(shape=tf.TensorShape([]), dtype="float32")
+        signature["log_num_atoms"] = tf.TensorSpec(shape=tf.TensorShape([]), dtype="float32")
+        return signature
+
+    @property
+    def padding_values(self) -> Dict[str, tf.constant]:
+        padding_values = super().padding_values
+        padding_values["log_poly_mw_norm"] = tf.constant(0, dtype=tf.float16)
+        padding_values["log_num_atoms"] = tf.constant(0, dtype=tf.float16)
+        return padding_values
 
 
 # class GlobalPreprocessor(PolymerPreprocessor):
