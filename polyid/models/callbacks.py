@@ -4,7 +4,7 @@ import collections
 
 import numpy as np
 import pandas as pd
-from keras import keras_export
+from tensorflow.python.util.tf_export import keras_export
 from keras.callbacks import Callback
 
 
