@@ -5,6 +5,32 @@ from nfp import masked_mean_absolute_error
 from keras import layers
 
 
+def message_block(params, atom_state, bond_state, global_state, connectivity, i):
+
+    # Global update
+    global_update = nfp.GlobalUpdate(units=params["mol_features"], num_heads=1)(
+        [atom_state, bond_state, connectivity, global_state]
+    )
+    global_state = layers.Add()(
+        [global_state, global_update]
+    )  # global difference calculation
+
+    # Bond update
+    bond_update = nfp.EdgeUpdate()(
+        [atom_state, bond_state, connectivity, global_state]
+    )
+    bond_state = layers.Add()([bond_state, bond_update])
+
+    # Atom update
+    new_atom_state = nfp.NodeUpdate()(
+        [atom_state, bond_state, connectivity, global_state]
+    )
+    atom_state = layers.Add()([atom_state, new_atom_state])
+
+    return atom_state, bond_state, global_state
+
+
+
 def global100(preprocessor, model_summary=False, prediction_columns=None, params=None):
     "this is the global state where the output is the bonds_states"
 
@@ -40,33 +66,9 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
         [atom_state, bond_state, connectivity]
     )
 
-    def message_block(atom_state, bond_state, global_state, connectivity, i):
-
-        # Global update
-        global_update = nfp.GlobalUpdate(units=params["mol_features"], num_heads=1)(
-            [atom_state, bond_state, connectivity, global_state]
-        )
-        global_state = layers.Add()(
-            [global_state, global_update]
-        )  # global difference calculation
-
-        # Bond update
-        bond_update = nfp.EdgeUpdate()(
-            [atom_state, bond_state, connectivity, global_state]
-        )
-        bond_state = layers.Add()([bond_state, bond_update])
-
-        # Atom update
-        new_atom_state = nfp.NodeUpdate()(
-            [atom_state, bond_state, connectivity, global_state]
-        )
-        atom_state = layers.Add()([atom_state, new_atom_state])
-
-        return atom_state, bond_state, global_state
-
     for j in range(params["num_messages"]):
         atom_state, bond_state, global_state = message_block(
-            atom_state, bond_state, global_state, connectivity, j
+            params, atom_state, bond_state, global_state, connectivity, j
         )
 
     # outputs
