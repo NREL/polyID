@@ -15,7 +15,8 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
     atom = layers.Input(shape=[None], dtype=tf.int64, name="atom")
     bond = layers.Input(shape=[None], dtype=tf.int64, name="bond")
     connectivity = layers.Input(shape=[None, 2], dtype=tf.int64, name="connectivity")
-    global_feature = layers.Input(shape=[None], dtype=tf.float32, name="log_poly_mw_norm")
+    # TODO combine these into one input
+    global_feature = layers.Input(shape=[None], dtype=tf.float32, name="log_poly_mw")
     global_feature2 = layers.Input(shape=[None], dtype=tf.float32, name="log_num_atoms")
 
     # Initialize the atom states
