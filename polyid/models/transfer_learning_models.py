@@ -4,7 +4,7 @@ import numpy as np
 from nfp import masked_mean_absolute_error
 #from tensorflow.keras import layers
 from keras import layers
-from base_models import message_block
+from .base_models import message_block
 
 
 def get_last_graph_layers(md_model, num_messages):
@@ -38,7 +38,7 @@ def transfer_learning_model(md_model, preprocessor, model_summary=False, predict
         print(f"Freezing layers up to {params['freeze_to_message_block']} message blocks")
         # TODO is the edge, node, or global update layer the last layer of the message block?
         bond_layer = md_model.get_layer(f"edge_update_{params['freeze_to_message_block'] - 1}")
-        print(f"{params["freeze_to_message_block"] = }, {bond_layer.name = }, "
+        print(f"{params['freeze_to_message_block'] = }, {bond_layer.name = }, "
               f"{md_model.layers.index(bond_layer) = }")
         for i in range(md_model.layers.index(bond_layer) + 1):
             md_model.layers[i].trainable = False
