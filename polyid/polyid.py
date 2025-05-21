@@ -258,6 +258,7 @@ class SingleModel:
         save_folder: str = None,
         save_training: bool = False,
         callbacks: List = None,
+        orig_model = None,
     ) -> None:
         """Train a SingleModel
 
@@ -277,12 +278,21 @@ class SingleModel:
         save_training: bool, False
             Whether or not to save training data.
         """
-        tf_model = modelbuilder(
-            self.preprocessor,
-            model_summary=model_summary,
-            prediction_columns=self.prediction_columns,
-            params=model_params,
-        )
+        if orig_model is not None:
+            tf_model = modelbuilder(
+                orig_model,
+                self.preprocessor,
+                model_summary=model_summary,
+                prediction_columns=self.prediction_columns,
+                params=model_params,
+            )
+        else:
+            tf_model = modelbuilder(
+                self.preprocessor,
+                model_summary=model_summary,
+                prediction_columns=self.prediction_columns,
+                params=model_params,
+            )
         print(tf_model.summary)
 
         hist = tf_model.fit(
@@ -838,6 +848,7 @@ class MultiModel:
         save_training: bool = False,
         save_report_log: bool = False,
         callbacks: List = None,
+        orig_model = None,
     ) -> None:
         """Train a single model
 
@@ -861,6 +872,8 @@ class MultiModel:
             Whether or not to save the real time training info in a .csv
         callbacks: List, optional
             Callbacks for tensor flow training, by default a checkpoint and csv logger
+        orig_model: SingleModel, optional
+            A model to use as a starting point for transfer learning
         """
         if type(callbacks) != list:
             callbacks_i = []
@@ -896,6 +909,7 @@ class MultiModel:
             save_subfolder,
             save_training,
             callbacks_i,
+            orig_model=orig_model,
         )
 
         # #TODO delete loss callback, not sure if necessary
