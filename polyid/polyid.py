@@ -294,11 +294,14 @@ class SingleModel:
                 params=model_params,
             )
         print(tf_model.summary)
+        print(f"Begin training: # epochs: {model_params['epochs']}, # steps_per_epoch: {model_params.get('steps_per_epoch')}")
 
         hist = tf_model.fit(
             self.train_generator,
             validation_data=self.validate_generator,
             epochs=model_params["epochs"],
+            steps_per_epoch=model_params.get("steps_per_epoch", None),
+            validation_steps=int(len(self.df_validate) / model_params["batch_size"]),
             verbose=verbose,
             callbacks=callbacks,
         )
@@ -410,6 +413,7 @@ class SingleModel:
                     ),
                 )
                 .cache()
+                .repeat()
                 .shuffle(buffer_size=200)
                 .padded_batch(batch_size=batch_size)
                 .prefetch(tf.data.experimental.AUTOTUNE)
