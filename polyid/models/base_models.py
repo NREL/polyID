@@ -1,7 +1,7 @@
 import nfp
+import keras
 import tensorflow as tf
 from nfp import masked_mean_absolute_error
-#from tensorflow.keras import layers
 from keras import layers
 
 
@@ -80,7 +80,9 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
         outputs.append(output)
 
     if len(outputs) > 1:
-        outputs = layers.Concatenate(name="all_predictions")(outputs)
+        outputs = keras.ops.concatenate(outputs, axis=-1)
+    else:
+        outputs = outputs[0]
 
     # compile model
     model = tf.keras.Model([atom, bond, connectivity], outputs)
@@ -89,6 +91,7 @@ def global100(preprocessor, model_summary=False, prediction_columns=None, params
             learning_rate=params["learning_rate"], weight_decay=params["decay"]
         ),
         loss=[masked_mean_absolute_error],
+        jit_compile=False,
     )
 
     # if modelsummary:model.summary()
