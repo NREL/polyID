@@ -139,3 +139,6 @@ dmypy.json
 *.h5
 *.pk
 examples/examples_in_progress/*
+
+# Example notebook outputs
+examples/quick_train_models/

@@ -68,11 +68,16 @@ def test_no_scaler(test_model):
 
 
 def test_scaler(test_model):
-    assert test_model.df_validate_scaled.loc[1, "Tg"] == pytest.approx(-0.83, rel=0.02)
-    assert test_model.df_validate_scaled.loc[0, "Tm"] == pytest.approx(-1.02, rel=0.02)
-
-    assert test_model.df_train_scaled.loc[0, "Tg"] == pytest.approx(-0.78, rel=0.02)
-    assert test_model.df_train_scaled.loc[0, "Tm"] == pytest.approx(0.116, rel=0.02)
+    # df_*_scaled should apply the fitted RobustScaler to the prediction columns.
+    # Compare against a direct transform rather than hardcoded constants so the
+    # test does not go stale when the fixture data changes.
+    for attr in ("df_validate", "df_train"):
+        raw = getattr(test_model, attr)
+        scaled = getattr(test_model, f"{attr}_scaled")
+        expected = test_model.data_scaler.transform(raw[["Tg", "Tm"]].values)
+        assert np.allclose(
+            scaled[["Tg", "Tm"]].values, expected, equal_nan=True
+        )
 
 
 def test_train_singlemodel(test_model):

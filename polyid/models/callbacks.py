@@ -4,11 +4,9 @@ import collections
 
 import numpy as np
 import pandas as pd
-from tensorflow.python.util.tf_export import keras_export
-from keras.callbacks import Callback
+from tensorflow.keras.callbacks import Callback
 
 
-@keras_export("keras.callbacks.CSVLogger")
 class PandasLogger(Callback):
     """Callback that logs a pandas df to a specified model"""
 

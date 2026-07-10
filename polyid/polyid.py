@@ -23,13 +23,12 @@ import pandas as pd
 import numpy as np
 import shortuuid
 import tensorflow as tf
-from keras.models import load_model as load_keras_model
+from tensorflow.keras.models import load_model as load_keras_model
+from tensorflow.keras.callbacks import CSVLogger, ModelCheckpoint
 from nfp import (EdgeUpdate, GlobalUpdate, NodeUpdate,
                  masked_mean_absolute_error)
 from sklearn import model_selection
 from sklearn.preprocessing import RobustScaler
-#from tensorflow.keras.callbacks import CSVLogger, ModelCheckpoint
-from keras.callbacks import CSVLogger, ModelCheckpoint
 
 from polyid.models.callbacks import PandasLogger
 from polyid.preprocessors.features import atom_features_v1, bond_features_v1
@@ -165,7 +164,7 @@ class SingleModel:
         Parameters
         ----------
         model_fname : Union[Path, str]
-            The filepath for the model .h5 file.
+            The filepath for the model .keras file.
         data_fname : Union[Path, str]
             The filepath for the model data .pk file.
         custom_objects : Dict[Callable], optional
@@ -200,7 +199,11 @@ class SingleModel:
         for key, val in load_dict.items():
             setattr(model, key, val)
 
-        model.model = load_keras_model(model_fname, custom_objects=custom_objects_dict)
+        model.model = load_keras_model(
+            model_fname,
+            custom_objects=custom_objects_dict,
+            compile=False,
+        )
 
         return model
 
@@ -325,7 +328,7 @@ class SingleModel:
         prediction_generator = self._create_generator(df_prediction, predict=True, batch_size=batch_size)
 
         predictions = self.model.predict(prediction_generator,
-                                         steps=np.ceil(len(df_prediction) / batch_size), 
+                                         steps=int(np.ceil(len(df_prediction) / batch_size)),
                                          verbose=1,
                                          )
         if self.data_scaler:
@@ -402,7 +405,7 @@ class SingleModel:
                 .cache()
                 .shuffle(buffer_size=200)
                 .padded_batch(batch_size=batch_size)
-                .prefetch(tf.data.experimental.AUTOTUNE)
+                .prefetch(tf.data.AUTOTUNE)
             )
 
         else:  # Prediction generator
@@ -414,7 +417,7 @@ class SingleModel:
                     output_signature=self.preprocessor.output_signature,
                 )
                 .padded_batch(batch_size=batch_size)
-                .prefetch(tf.data.experimental.AUTOTUNE)
+                .prefetch(tf.data.AUTOTUNE)
             )
 
     def _scale_data(self, df):
@@ -441,7 +444,7 @@ class SingleModel:
         """
         folder = Path(folder)
         folder.mkdir(parents=True, exist_ok=True)
-        # self.model.save(folder / f"model_final_{self.model_id}.h5")
+        # self.model.save(folder / f"model_final_{self.model_id}.keras")
 
         output_dict = {
             "prediction_columns": self.prediction_columns,
@@ -544,7 +547,7 @@ class MultiModel:
 
         if nmodels == None:
             for model_folder in model_folders:
-                model_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + ".h5")
+                model_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + ".keras")
                 data_path = Path(model_folder) / (model_folder.rsplit("/")[-1] + "_data.pk")
                 mm.models.append(
                     SingleModel.load_model(
@@ -554,7 +557,7 @@ class MultiModel:
         elif type(nmodels)==int:
             nmodels = list(np.arange(0,nmodels))
             for nmodel in nmodels:
-                model_path = Path(str(folder / 'model_{}/model_{}.h5'.format(nmodel,nmodel)))
+                model_path = Path(str(folder / 'model_{}/model_{}.keras'.format(nmodel,nmodel)))
                 data_path =  Path(str(folder / 'model_{}/model_{}_data.pk'.format(nmodel,nmodel)))
                 mm.models.append(
                     SingleModel.load_model(
@@ -563,7 +566,7 @@ class MultiModel:
                 )
         elif type(nmodels)==list:
             for nmodel in nmodels:
-                model_path = Path(str(folder / 'model_{}/model_{}.h5'.format(nmodel,nmodel)))
+                model_path = Path(str(folder / 'model_{}/model_{}.keras'.format(nmodel,nmodel)))
                 data_path =  Path(str(folder / 'model_{}/model_{}_data.pk'.format(nmodel,nmodel)))
                 mm.models.append(
                     SingleModel.load_model(
@@ -874,8 +877,9 @@ class MultiModel:
         if save_folder:
             # checkpoint that saves the actual best models
             save_subfolder = Path(save_folder) / f"model_{model_i}"
+            save_subfolder.mkdir(parents=True, exist_ok=True)
             checkpoint = ModelCheckpoint(
-                str(save_subfolder / f"model_{model_i}.h5"),
+                str(save_subfolder / f"model_{model_i}.keras"),
                 save_best_only=True,
                 save_freq="epoch",
                 verbose=verbose,

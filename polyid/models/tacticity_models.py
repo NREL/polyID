@@ -2,6 +2,7 @@
 # TODO document better
 
 import nfp
+import keras
 import tensorflow as tf
 from keras import layers
 
@@ -67,7 +68,10 @@ def pm_model(preprocessor, model_summary, prediction_columns, params):
         prediction_layer = layers.GlobalAveragePooling1D(name=col)(prediction_layer)
         prediction_layers.append(prediction_layer)
 
-    output = layers.Concatenate(name="predictions")(prediction_layers)
+    if len(prediction_layers) > 1:
+        output = keras.ops.concatenate(prediction_layers, axis=-1)
+    else:
+        output = prediction_layers[0]
 
     model = tf.keras.Model([atom, bond, connectivity, global_features], output)
 
